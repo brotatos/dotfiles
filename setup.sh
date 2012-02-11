@@ -4,7 +4,7 @@
 
 #ln -s source_file link_name
 
-files=('bash_profile' 'bashrc' 'rtorrent.rc' 'vimrc' 'xinitrc' 'xmobarrc' 'xmonad' 'Xresources')
+files=('bash_profile' 'bashrc' 'rtorrent.rc' 'vimrc' 'xinitrc' 'xmobarrc' 'xmonad' 'Xresources' 'mpd' 'mplayer')
 forced=true
 
 # itarate over all arguments
