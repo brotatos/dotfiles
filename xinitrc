@@ -11,6 +11,7 @@ if [ $? -ne 0 ]; then
 sh ~/.fehbg &
 redshift -l 36.8303:-119.6789 &
 xsetroot -cursor_name left_ptr &
+xset +fp /usr/share/fonts/local/ &
 xrdb -merge ~/.Xresources &
 unclutter -noevents &
 sleep 300s && dropboxd & 
