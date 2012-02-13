@@ -27,7 +27,7 @@ URxvt.scrollstyle:plain
 ! White
 *color7:      #cccccc
 *color15:     #ffffff
-URxvt.perl-ext-common: default,matcher,url-select,keyboard-select
+URxvt.perl-ext-common: default,matcher,clipboard,url-select,keyboard-select
 URxvt.keysym.M-Escape: perl:keyboard-select:activate
 URxvt.keysym.M-s: perl:keyboard-select:search
 URxvt.urlLauncher: /usr/bin/chromium

@@ -10,7 +10,7 @@ if [ $? -ne 0 ]; then
      mpdscribble &
  fi
 sh ~/.fehbg &
-redshift -l 36.8303:-119.6789 &
+xflux -z 93611 & 
 xsetroot -cursor_name left_ptr &
 xset +fp /usr/share/fonts/local/ &
 xrdb -merge ~/.Xresources &
