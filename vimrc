@@ -21,3 +21,4 @@ colorscheme molokai
 set number
 set hlsearch
 set smartcase
+set pastetoggle=<F5>
