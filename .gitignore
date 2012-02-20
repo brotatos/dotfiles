@@ -1,0 +1,11 @@
+*.swp
+mpd/mpd.db
+mpd/mpd.log
+mpd/mpd.pid
+mpd/mpdstate
+ncmpcpp/error.log
+xmonad/xmonad-x86_64-linux
+xmonad/xmonad.errors
+xmonad/xmonad.hi
+xmonad/xmonad.o
+
