@@ -14,8 +14,8 @@ xflux -z 93611 &
 xsetroot -cursor_name left_ptr &
 xset +fp /usr/share/fonts/local/ &
 xrdb -merge ~/.Xresources &
-unclutter -noevents &
-sleep 300s && dropboxd & 
+unclutter &
+sleep 300s && dropbox & 
 
 #exec ck-launch-session dbus-launch i3
 exec ck-launch-session xmonad

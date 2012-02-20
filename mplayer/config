@@ -1,3 +1,6 @@
 # Write your default config options here!
 ass=true
-
+ass-force-style="FontName=DejaVu Sans"
+sub-fuzziness=1
+ontop=yes
+fs=yes
