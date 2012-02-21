@@ -1,6 +1,8 @@
 #!/bin/sh
-if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
-  exec startx
-  # Could use xinit instead of startx
-  #exec xinit -- /usr/bin/X -nolisten tcp vt7
+if [[ -z $DISPLAY ]] && ! [[ -e /tmp/.X11-unix/X0 ]] && (( EUID )); then
+      exec startx
+fi
+
+if [ -n "$DISPLAY" ]; then
+         BROWSER=chromium
 fi
