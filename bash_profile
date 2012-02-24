@@ -1,6 +1,6 @@
 #!/bin/sh
-if [[ -z $DISPLAY ]] && ! [[ -e /tmp/.X11-unix/X0 ]] && (( EUID )); then
-      exec startx
+if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
+  exec startx
 fi
 
 if [ -n "$DISPLAY" ]; then
