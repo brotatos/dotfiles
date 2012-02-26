@@ -6,7 +6,6 @@
 #
 sh ~/.fehbg &
 xset +fp /usr/share/fonts/local/ &
-exec i3
 
 unclutter &
 #mpd &
@@ -19,6 +18,8 @@ xsetroot -cursor_name left_ptr &
 xrdb -merge ~/.Xresources &
 sleep 300s && dropbox & 
 
+exec ck-launch-session xmonad
+#exec i3
 #exec ck-launch-session dbus-launch i3
 #exec ck-launch-session dbus-launch awesome
 
