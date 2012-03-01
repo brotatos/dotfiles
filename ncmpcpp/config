@@ -1,7 +1,7 @@
 colors_enabled = "yes"
 empty_tag_color = "red"
 header_window_color = "green"
-volume_color = "blue"
+volume_color = "cyan"
 state_line_color = "cyan"
 state_flags_color = "green"
 main_window_color = "cyan"

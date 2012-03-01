@@ -3,6 +3,7 @@
 
 PS1='[\u@\h \W]\$ '
 
+alias diff="colordiff"
 alias ls='ls --color=auto'
 
 alias shut="sudo shutdown -h now"
