@@ -1,0 +1,10 @@
+[beets]
+directory: /home/robin/music
+library: /home/robin/beetsmusic.blb
+plugins: mpdupdate bpd
+import_resume: yes
+import_incremental: yes
+import_copy: yes
+import_write: yes
+import_delete: yes
+threaded: yes
