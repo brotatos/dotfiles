@@ -19,5 +19,5 @@ xrdb -merge ~/.Xresources &
 sleep 300s && dropbox & 
 
 #exec ck-launch-session dbus-launch dwm
-exec ck-launch-session dbus-launch xmonad
-#exec ck-launch-session dbus-launch i3
+#exec ck-launch-session dbus-launch xmonad
+exec ck-launch-session dbus-launch i3
