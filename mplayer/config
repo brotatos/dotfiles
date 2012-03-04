@@ -1,9 +1,8 @@
-# Write your default config options here!
 ass=true
 ass-force-style="FontName=DejaVu Sans"
 nolirc=yes
 sub-fuzziness=1
 ontop=yes
 fs=yes
-#vo=vdpau
-#vc=ffmpeg12vdpau,ffwmv3vdpau,ffvlcvdpau,ffh264vdpau,ffoxidvxdpau
+vo=vdpau
+vc=ffmpeg12vdpau,ffwmv3vdpau,ffvlcvdpau,ffh264vdpau,ffoxidvxdpau
