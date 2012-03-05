@@ -4,6 +4,7 @@
 #
 # Executed by startx (run your window manager from here)
 #
+
 sh ~/.fehbg &
 xset +fp /usr/share/fonts/local/ &
 
@@ -16,8 +17,6 @@ if [ $? -ne 0 ]; then
 xflux -z 93611 &
 xsetroot -cursor_name left_ptr &
 xrdb -merge ~/.Xresources &
-sleep 300s && dropbox & 
+sleep 300s && dropboxd & 
 
-#exec ck-launch-session dbus-launch dwm
-#exec ck-launch-session dbus-launch xmonad
 exec ck-launch-session dbus-launch i3
