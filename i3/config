@@ -124,6 +124,8 @@ bindsym $mod+F1 exec mpc prev
 bindsym $mod+F2 exec mpc toggle
 bindsym $mod+F3 exec mpc next
 
+# programs
+bindsym $mod+z exec chromium
 # mouse
 focus_follows_mouse no
 
