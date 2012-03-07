@@ -127,6 +127,8 @@ bindsym $mod+F3 exec mpc next
 # mouse
 focus_follows_mouse no
 
+# programs
+bindsym $mod+z exec chromium
 # resize window (you can also use the mouse for that)
 
 mode "resize" {
