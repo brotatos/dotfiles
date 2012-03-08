@@ -5,6 +5,7 @@
 # Executed by startx (run your window manager from here)
 #
 
+xflux -z 93611 &
 sh ~/.fehbg &
 xset +fp /usr/share/fonts/local/ &
 
@@ -14,7 +15,6 @@ pidof mpdscribble >& /dev/null
 if [ $? -ne 0 ]; then
      mpdscribble &
  fi
-xflux -z 93611 &
 xsetroot -cursor_name left_ptr &
 xrdb -merge ~/.Xresources &
 sleep 200s && dropboxd & 
