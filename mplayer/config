@@ -1,5 +1,6 @@
-# Write your default config options here!
-
+## Write your default config options here!
+#
+vf=screenshot
 ao=alsa
 ass=yes
 ass-force-style="FontName=Dejavu Sans"
