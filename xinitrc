@@ -5,6 +5,7 @@
 # Executed by startx (run your window manager from here)
 #
 
+urxvtd -q -o -f &
 sleep 200s && dropboxd & 
 xflux -z 93611 &
 sh ~/.fehbg &
