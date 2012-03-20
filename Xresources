@@ -1,6 +1,15 @@
 URxvt*font:-*-terminus-*-*-*-*-*-*-*-*-*-*-*-*
 URxvt*boldFont:-*-terminus-bold-*-*-*-*-*-*-*-*-*-*-*
 URxvt.scrollstyle:plain
+URxvt.perl-ext-common: default,matcher,clipboard,url-select,keyboard-select
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-s: perl:keyboard-select:search
+URxvt.urlLauncher: /usr/bin/chromium
+URxvt.matcher.button: 1
+URxvt.keysym.M-u: perl:url-select:select_next
+Urxvt.urlLauncher: chromium
+Urxvt.underlineURLS: true
+
 *background:  #222222
 *foreground:  #aaaaaa
 ! Black
@@ -27,11 +36,3 @@ URxvt.scrollstyle:plain
 ! White
 *color7:      #cccccc
 *color15:     #ffffff
-URxvt.perl-ext-common: default,matcher,clipboard,url-select,keyboard-select
-URxvt.keysym.M-Escape: perl:keyboard-select:activate
-URxvt.keysym.M-s: perl:keyboard-select:search
-URxvt.urlLauncher: /usr/bin/chromium
-URxvt.matcher.button: 1
-URxvt.keysym.M-u: perl:url-select:select_next
-Urxvt.urlLauncher: chromium
-Urxvt.underlineURLS: true
