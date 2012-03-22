@@ -127,7 +127,8 @@ bindsym $mod+F3 exec ncmpcpp next
 # mouse
 focus_follows_mouse no
 
-# floating windows
+# window preferences
+new_window 1pixel
 for_window [class="mplayer"] floating enable
 for_window [class="gimp"] floating enable
 
