@@ -136,8 +136,8 @@ for_window [class="gimp"] floating enable
 bindsym $mod+z exec chromium
 bindsym $mod+Shift+z exec chromium --incognito
 bindsym $mod+b exec gyazo
-bindsym $mod+n exec urxvt -e ncmpcpp
-bindsym $mod+m exec urxvt -e htop
+bindsym $mod+n exec urxvtc -e ncmpcpp
+bindsym $mod+m exec urxvtc -e htop
 
 # resize window (you can also use the mouse for that)
 
