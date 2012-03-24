@@ -1,1 +1,1 @@
-player=mplayer
+player=mplayer -softvol -cache 8192  
