@@ -5,6 +5,7 @@ PS1='[\u@\h \W]\$ '
 
 export EDITOR=vim
 
+alias weechat="weechat-curses"
 alias diff="colordiff"
 alias ls='ls --color=auto'
 
