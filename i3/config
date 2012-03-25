@@ -12,13 +12,14 @@
 set $mod Mod4
 
 # font for window titles. ISO 10646 = Unicode
-font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+#font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+font -*-terminus-medium-r-normal-*-12-120-72-72-c-60-iso10646-1
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvtc
+bindsym $mod+Return exec --no-startup-id urxvtc
 
 # kill focused window
 bindsym $mod+Shift+Q kill
@@ -127,10 +128,14 @@ bindsym $mod+F3 exec ncmpcpp next
 # mouse
 focus_follows_mouse no
 
-# window preferences
+# Window rules
 new_window 1pixel
-for_window [class="mplayer"] floating enable
-for_window [class="gimp"] floating enable
+for_window [class="Wine"] floating enable; border 1pixel
+for_window [class="Gimp"] floating enable; border 1pixel
+for_window [class="mplayer"] floating enable; border 1pixel
+for_window [class="mumble"] floating enable; border 1pixel
+#for_window [class="gimp"] floating enable
+#for_window [class="urxvt"] floating enable
 
 # programs
 bindsym $mod+z exec chromium
@@ -138,6 +143,9 @@ bindsym $mod+Shift+z exec chromium --incognito
 bindsym $mod+b exec gyazo
 bindsym $mod+n exec urxvtc -e ncmpcpp
 bindsym $mod+m exec urxvtc -e htop
+
+# Assignments
+assign [class="Wine"] 9
 
 # resize window (you can also use the mouse for that)
 
@@ -185,3 +193,19 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
+# color definition
+set $fBORDER 6A9ACC
+set $fBG 638FBE
+set $fTXT FFFFFF
+set $fiBG 5D80A6
+set $fiTXT D4D4D4
+set $fuBG 34485D
+set $fuTXT BFBFBF
+set $urgentBG FEA63C
+set $urgentTXT 000000
+
+# colors                    border      background  text
+client.focused              #$fBORDER   #$fBG       #$fTXT
+client.focused_inactive     #$fBORDER   #$fiBG      #$fiTXT
+client.unfocused            #$fiBG      #$fuBG      #$fuTXT
+client.urgent               #$urgentBG  #$urgentBG  #$urgentTXT

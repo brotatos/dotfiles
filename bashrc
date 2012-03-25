@@ -18,4 +18,3 @@ alias update="sudo pacman -Syu"
 alias updatef="sudo pacman -Syyuu"
 alias updatee="sudo pacman -Syu; pacaur -Syua"
 
-
