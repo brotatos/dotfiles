@@ -6,7 +6,7 @@
 #
 
 urxvtd -q -o -f &
-sleep 100s && dropboxd & 
+sleep 200s && dropboxd & 
 xflux -z 93611 &
 sh ~/.fehbg &
 xset +fp /usr/share/fonts/local/ &

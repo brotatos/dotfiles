@@ -193,19 +193,4 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
-# color definition
-set $fBORDER 6A9ACC
-set $fBG 638FBE
-set $fTXT FFFFFF
-set $fiBG 5D80A6
-set $fiTXT D4D4D4
-set $fuBG 34485D
-set $fuTXT BFBFBF
-set $urgentBG FEA63C
-set $urgentTXT 000000
 
-# colors                    border      background  text
-client.focused              #$fBORDER   #$fBG       #$fTXT
-client.focused_inactive     #$fBORDER   #$fiBG      #$fiTXT
-client.unfocused            #$fiBG      #$fuBG      #$fuTXT
-client.urgent               #$urgentBG  #$urgentBG  #$urgentTXT
