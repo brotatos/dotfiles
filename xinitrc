@@ -7,7 +7,7 @@
 
 urxvtd -q -o -f &
 sleep 200s && dropboxd & 
-xflux -z 93611 &
+redshift -m vidmode -l 36.8252:-119.7029 &
 sh ~/.fehbg &
 xset +fp /usr/share/fonts/local/ &
 
