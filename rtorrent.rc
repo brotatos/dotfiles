@@ -47,7 +47,7 @@ schedule = watch_directory,5,5,"load_start=/home/robin/torrents/*.torrent"
 #port_range = 6890-6999
 
 # Start opening ports at a random position within the port range.
-#port_random = no
+#port_random = yes
 
 # Check hash for finished torrents. Might be usefull until the bug is
 # fixed that causes lack of diskspace not to be properly reported.
