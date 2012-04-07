@@ -5,7 +5,6 @@
 # Executed by startx (run your window manager from here)
 #
 
-export VDPAU_NVIDIA_NO_OVERLAY=1
 urxvtd -q -o -f &
 sleep 200s && dropboxd & 
 redshift -m vidmode -l 36.8252:-119.7029 &

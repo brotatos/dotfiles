@@ -134,6 +134,7 @@ for_window [class="Wine"] floating enable; border 1pixel
 for_window [class="Gimp"] floating enable; border 1pixel
 for_window [class="mplayer"] floating enable; border 1pixel
 for_window [class="mumble"] floating enable; border 1pixel
+for_window [class="vapor-steamclient"] floating enable; border 1pixel
 #for_window [class="gimp"] floating enable
 #for_window [class="urxvt"] floating enable
 
