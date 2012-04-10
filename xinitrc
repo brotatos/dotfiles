@@ -6,11 +6,10 @@
 #
 
 urxvtd -q -o -f &
-sleep 200s && dropboxd & 
+sleep 100s && dropboxd & 
 redshift -m vidmode -l 36.8252:-119.7029 &
 sh ~/.fehbg &
 xset +fp /usr/share/fonts/local/ &
-
 unclutter &
 mpd &
 pidof mpdscribble >& /dev/null
