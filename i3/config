@@ -137,8 +137,8 @@ for_window [class="mumble"] floating enable; border 1pixel
 for_window [class="Vapor"] floating enable; border 1pixel
 
 # programs
-bindsym $mod+z exec chromium
-bindsym $mod+Shift+z exec chromium --incognito
+bindsym $mod+z exec chromium-browser
+bindsym $mod+Shift+z exec chromium-browser --incognito
 bindsym $mod+b exec gyazo
 bindsym $mod+n exec urxvtc -e ncmpcpp
 bindsym $mod+m exec urxvtc -e htop
