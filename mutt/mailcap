@@ -1,0 +1,7 @@
+text/html; chromium %s; test=test -n "$DISPLAY"; nametemplate=%s.html
+text/html; lynx -display_charset=utf-8 -dump %s; nametemplate=%s.html; copiousoutput
+image/*; feh -Z %s;
+application/pdf; zathura %s;
+application/vnd.openxm; lowriter %s;
+application/docx; lowriter %s;
+application/vnd.ms-exc; localc %s;

@@ -1,0 +1,57 @@
+set imap_user=xrobinc@gmail.com
+set my_user=xrobinc@gmail.com
+set smtp_url=smtps://xrobinc@smtp.gmail.com
+set ssl_force_tls = yes
+
+#set folder=imaps://robin@192.168.1.74:48001/home/robin/mail
+set folder=imaps://imap.gmail.com/
+set spoolfile=+INBOX
+
+mailboxes =INBOX
+
+set imap_check_subscribed
+
+set mail_check = 120
+set imap_keepalive = 300
+unset imap_passive
+
+set header_cache=~/.mutt/cache/headers
+set message_cachedir=~/.mutt/cache/bodies
+set mailcap_path= ~/.mutt/mailcap
+
+set postponed = +[Gmail]/Drafts
+
+# Archive Messages (A) and some other nifty commands
+#bind editor  noop #fix for spaces in names of folders
+macro index,pager A "unset trash\n " "Gmail archive message"
+macro index,pager gi "=INBOX" "Go to inbox"
+macro index,pager ga "=[Gmail]/All Mail" "Go to all mail"
+macro index,pager gs "=[Gmail]/Sent Mail" "Go to starred messages"
+macro index,pager gd "=[Gmail]/Drafts" "Go to drafts"
+
+# Auto display html
+auto_view text/html
+
+# Thread Sort (top = newest messages)
+set sort = threads
+set sort_aux = 'reverse-last-date-received'
+
+# Palette for use with the Linux console.  Black background.
+color hdrdefault blue black
+color quoted blue black
+color signature blue black
+color attachment red black
+color message brightred black
+color error brightred black
+color indicator black red
+color status brightgreen blue
+color tree white black
+color normal white black
+color markers red black
+color search white black
+color tilde brightmagenta black
+color index blue black ~F
+color index red black "~N|~O"
+
+# color body brightwhite black '\*+[^*]+\*+'
+# color body brightwhite black '_+[^_]+_+'
