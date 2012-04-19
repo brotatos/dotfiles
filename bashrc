@@ -20,3 +20,6 @@ alias updatef="sudo pacman -Syyuu"
 alias updatee="sudo pacman -Syu; pacaur -Syua"
 
 alias mplayer="mplayer -softvol"
+
+alias sprunge=" curl -F 'sprunge=<-' http://sprunge.us"
+
