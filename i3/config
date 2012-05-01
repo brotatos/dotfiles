@@ -129,6 +129,7 @@ bindsym $mod+F3 exec ncmpcpp next
 focus_follows_mouse no
 
 # Window rules
+bindsym $mod+Tab workspace back_and_forth
 new_window 1pixel
 for_window [class="Wine"] floating enable; border 1pixel
 for_window [class="Gimp"] floating enable; border 1pixel
