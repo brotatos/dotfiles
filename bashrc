@@ -9,8 +9,8 @@ export BROWSER="chromium"
 alias diff="colordiff"
 alias ls='ls --color=auto'
 
-alias shut="sudo systemctl poweroff" 
-alias reboot="sudo systemctl reboot"
+#alias shut="sudo systemctl poweroff" 
+#alias reboot="sudo systemctl reboot"
 
 alias reconnect="sudo netcfg -r potato" 
 

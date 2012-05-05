@@ -1,7 +1,6 @@
 set wrapscan
 filetype plugin on
 syntax on
-set mouse=a
 set background=dark
 set autoindent
 filetype plugin indent on
@@ -22,3 +21,7 @@ set number
 set hlsearch
 set smartcase
 set pastetoggle=<F5>
+" Enable mouse in terminals
+if has('mouse')
+    set mouse=a
+endif

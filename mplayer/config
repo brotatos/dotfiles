@@ -6,8 +6,8 @@ ass=yes
 ass-force-style="FontName=Dejavu Sans"
 nolirc=yes
 sub-fuzziness=1
-#fs=yes
-ontop=yes
+fs=yes
+#ontop=yes
 vo=vdpau
-#vc=ffmpeg12vdpau,ffwmv3vdpau,ffvc1vdpau,#ffh264vdpau, #ffodivxvdpau,
+vc=ffmpeg12vdpau,ffwmv3vdpau,ffvc1vdpau,#ffh264vdpau,#ffodivxvdpau,
 idx=yes
