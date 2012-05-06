@@ -6,6 +6,7 @@
 #
 
 urxvtd -q -o -f &
+python /home/bin/focus.py &
 sleep 100s && dropboxd & 
 redshift -m vidmode -l 36.8252:-119.7029 &
 sh ~/.fehbg &

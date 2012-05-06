@@ -1,5 +1,6 @@
 ## Write your default config options here!
 #
+softvol=yes
 vf=screenshot
 ao=alsa
 ass=yes
