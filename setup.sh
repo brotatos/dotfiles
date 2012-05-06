@@ -2,7 +2,7 @@
 # Sets up the appropriate symlinks for the config files located here
 #ln -s source_file link_name
 
-files=('bash_profile' 'bashrc' 'rtorrent.rc' 'vimrc' 'xinitrc' 'xmobarrc' 'xmonad' 'Xresources' 'mpd' 'mplayer' 'ncmpcpp' 'beetsconfig' 'mpdscribble' 'i3' 'livestreamerrc' 'mutt' 'tmux.conf')
+files=('bash_profile' 'bashrc' 'rtorrent.rc' 'vimrc' 'xinitrc' 'xmobarrc' 'xmonad' 'Xresources' 'mpd' 'mplayer' 'ncmpcpp' 'beetsconfig' 'mpdscribble' 'i3' 'livestreamerrc' 'mutt') 
 forced=true
 
 # itarate over all arguments
