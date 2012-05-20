@@ -11,6 +11,7 @@ sleep 100s && dropboxd &
 redshift -m vidmode -l 36.8252:-119.7029 &
 sh ~/.fehbg &
 xset +fp /usr/share/fonts/local/ &
+xset fp rehash
 unclutter &
 mpd &
 ps -C mpdscribble &>/dev/null || mpdscribble &

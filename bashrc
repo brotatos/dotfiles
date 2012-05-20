@@ -17,3 +17,5 @@ alias updatef="sudo pacman -Syyuu"
 alias updatee="sudo pacman -Syu; pacaur -Syua"
 
 alias sprunge=" curl -F 'sprunge=<-' http://sprunge.us"
+
+alias suspend="sudo pm-suspend"

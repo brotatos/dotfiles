@@ -138,6 +138,7 @@ for_window [class="mumble"] floating enable;
 for_window [class="Vapor"] floating enable; 
 
 # programs
+bindsym $mod+y exec scrot
 bindsym $mod+z exec chromium
 bindsym $mod+Shift+z exec chromium --incognito
 bindsym $mod+n exec urxvtc -e ncmpcpp
