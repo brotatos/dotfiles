@@ -1,4 +1,5 @@
 #!/bin/sh
+export VDPAU_NVIDIA_NO_OVERLAY=1
 [ -z "$PS1" ] && return
 
 PS1='[\u@\h \W]\$ '
