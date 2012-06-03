@@ -25,3 +25,5 @@ set pastetoggle=<F5>
 if has('mouse')
     set mouse=a
 endif
+
+set ft=xdefaults

@@ -3,6 +3,7 @@ mpd/mpd.db
 mpd/mpd.log
 mpd/mpd.pid
 mpd/mpdstate
+mpd/playlists
 ncmpcpp/error.log
 xmonad/xmonad-x86_64-linux
 xmonad/xmonad.errors

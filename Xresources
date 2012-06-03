@@ -1,7 +1,7 @@
 URxvt*font:-*-terminus-*-*-*-*-*-*-*-*-*-*-*-*
 URxvt*boldFont:-*-terminus-bold-*-*-*-*-*-*-*-*-*-*-*
 URxvt.scrollstyle:plain
-URxvt.perl-ext-common: default,matcher,clipboard,url-select,keyboard-select
+URxvt.perl-ext-common: default,matcher,url-select
 URxvt.keysym.M-Escape: perl:keyboard-select:activate
 URxvt.keysym.M-s: perl:keyboard-select:search
 URxvt.urlLauncher: /usr/bin/chromium
@@ -16,42 +16,16 @@ URxvt.transparent: 0
 URxvt*urgentOnBell: true
 !  teh transparency stuff
 URxvt*inheritPixmap: false
-!URxvt*tintColor: #080808
+URxvt*tintColor: #080808
 URxvt*shading: 0
+! Colors
+urxvt*cursorColor:        #919191
+urxvt*cursorColor2:       white
+urxvt*pointerColor:       #919191
 *background:  #222222
 *foreground:  #aaaaaa
 
-!!black
-! *color0:  #000000
-! *color8:  #3D3D3D
-!!red
-! *color1:  #8C4665
-! *color9:  #BF4D80
-!!green
-! *color2:  #287373
-! *color10: #53A6A6
-!!yellow
-! *color3:  #7C7C99
-! *color11: #9E9ECB
-!!blue
-! *color4:  #395573
-! *color12: #477AB3
-!!magenta
-! *color5:  #5E468C
-! *color13: #7E62B3
-!!cyan
-! *color6:  #31658C
-! *color14: #6096BF
-!!white
-! *color7:  #899CA1
-! *color15: #C0C0C0
- 
-!! Colors
-!urxvt*cursorColor:        #919191
-!urxvt*cursorColor2:       white
-!urxvt*pointerColor:       #919191
-!
-!! Tango colors {{{
+! Tango colors {{{
 URxvt.color0: #2E3436
 URxvt.color1: #CC0000
 URxvt.color2: #4E9A06
@@ -68,25 +42,4 @@ URxvt.color12: #729FCF
 URxvt.color13: #AD7FA8
 URxvt.color14: #34E2E2
 URxvt.color15: #EEEEEC
-!}}}
-
-!!Theme Fifteen
-!*background: rgb:1d/2b/3a
-!*foreground: rgb:be/be/be
-!*color0:     rgb:00/00/00
-!*color1:     rgb:d3/62/65
-!*color2:     rgb:ae/ce/91
-!*color3:     rgb:e7/e1/8c
-!*color4:     rgb:7a/7a/b0
-!*color5:     rgb:96/3c/59
-!*color6:     rgb:41/81/79
-!*color7:     rgb:be/be/be
-!*color8:     rgb:66/66/66
-!*color9:     rgb:ef/81/71
-!*color10:    rgb:e5/f7/79
-!*color11:    rgb:ff/f7/99
-!*color12:    rgb:41/86/be
-!*color13:    rgb:ef/9e/be
-!*color14:    rgb:71/be/be
-!*color15:    rgb:ff/ff/ff
-
+! }}}
