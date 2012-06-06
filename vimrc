@@ -27,3 +27,4 @@ if has('mouse')
 endif
 
 set ft=xdefaults
+au BufRead /tmp/mutt-* set tw=72
