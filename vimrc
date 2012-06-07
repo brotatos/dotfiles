@@ -1,5 +1,4 @@
 set wrapscan
-filetype plugin on
 syntax on
 set background=dark
 set autoindent
