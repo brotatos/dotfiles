@@ -14,8 +14,8 @@ max_peers_seed = 50
 max_uploads = 15
 
 # Global upload and download rate in KiB. "0" for unlimited.
-download_rate = 151
-upload_rate = 31
+download_rate = 263
+upload_rate = 44
 
 # Default directory to save the downloaded torrents.
 directory = /home/robin/torrents

@@ -8,6 +8,7 @@ set folder=imaps://imap.gmail.com/
 set spoolfile=+INBOX
 
 mailboxes =INBOX
+mailboxes =IMPORTANT
 
 set imap_check_subscribed
 
@@ -53,5 +54,5 @@ color tilde brightmagenta black
 color index blue black ~F
 color index red black "~N|~O"
 
-# color body brightwhite black '\*+[^*]+\*+'
+ color body brightwhite black '\*+[^*]+\*+'
 # color body brightwhite black '_+[^_]+_+'
