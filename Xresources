@@ -21,6 +21,7 @@ URxvt*shading: 0
 ! Colors
 URxvt*cursorColor:  #cf6a4c
 URxvt*background:   #151515
+!URxvt*background:   #000000
 URxvt*foreground:   #d7d7d7
 URxvt*color11:   #ffb96c
 URxvt*color6:    #8fbfdc

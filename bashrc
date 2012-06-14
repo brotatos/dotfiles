@@ -9,7 +9,7 @@ export BROWSER="chromium"
 alias diff="colordiff"
 alias ls='ls --color=auto'
 
-alias reconnect="sudo netcfg -r potato" 
+alias reconnect="sudo netcfg -r home" 
 alias shutdown="sudo shutdown -h now"
 alias reboot="sudo shutdown -r now"
 

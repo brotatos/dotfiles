@@ -15,7 +15,7 @@ set visualbell
 set ruler
 set wrap
 "set colorcolumn=85
-colorscheme jellybeans
+"colorscheme molokai
 set number
 set hlsearch
 set smartcase

@@ -12,3 +12,5 @@ xmonad/xmonad.o
 mpdscribble/mpdscribble.log
 mpdscribble/lastfm.journal
 mutt/cache/*
+weechat/logs
+weechat/irc.conf
