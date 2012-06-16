@@ -16,7 +16,7 @@ set showcmd
 set visualbell
 set ruler
 set wrap
-"colorscheme molokai
+colorscheme jellybeans
 set number
 set hlsearch
 set smartcase
