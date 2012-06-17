@@ -37,22 +37,23 @@ auto_view text/html
 set sort = threads
 set sort_aux = 'reverse-last-date-received'
 
-# Palette for use with the Linux console.  Black background.
-color hdrdefault red black
+
+#colors
+color hdrdefault white black
 color quoted blue black
 color signature blue black
 color attachment red black
-color message white black
+color message brightred black
 color error brightred black
 color indicator black red
-color status brightgreen blue
-color tree white black
-color normal white black
+color status brightwhite black 
+color tree blue black
+color normal blue black
 color markers red black
 color search white black
 color tilde brightmagenta black
-color index white black ~F
+color index blue black ~F
 color index red black "~N|~O"
 
-# color body brightwhite black '\*+[^*]+\*+'
-# color body brightwhite black '_+[^_]+_+'
+color body brightwhite black '\*+[^*]+\*+'
+color body brightwhite black '_+[^_]+_+'

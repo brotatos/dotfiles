@@ -23,9 +23,9 @@ URxvt*cursorColor:  #cf6a4c
 URxvt*background:   #151515
 !URxvt*background:   #000000
 URxvt*foreground:   #d7d7d7
+! Black
 URxvt*color11:   #ffb96c
 URxvt*color6:    #8fbfdc
-URxvt*color0:    #151515
 URxvt*color2:    #799d6a
 URxvt*color10:   #799d6a
 URxvt*color9:    #cf6a4c
@@ -38,3 +38,4 @@ URxvt*color15:   #eeeeec
 URxvt*color3:    #ffb964
 URxvt*color5:    #eeeeec
 URxvt*color14:   #8fbfdc
+URxvt*color8:      #555753
