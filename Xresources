@@ -10,20 +10,15 @@ URxvt.keysym.M-u: perl:url-select:select_next
 Urxvt.urlLauncher: chromium
 Urxvt.underlineURLS: true
 URxvt*borderLess: false
-!URxvt.cursorColor: #5E468C
 URxvt.buffered: true
 URxvt.transparent: 0
 URxvt*urgentOnBell: true
-!  teh transparency stuff
-URxvt*inheritPixmap: false
-URxvt*tintColor: #080808
-URxvt*shading: 0
+
 ! Colors
+!URxvt.cursorColor: #5E468C
 URxvt*cursorColor:  #cf6a4c
 URxvt*background:   #151515
-!URxvt*background:   #000000
 URxvt*foreground:   #d7d7d7
-! Black
 URxvt*color11:   #ffb96c
 URxvt*color6:    #8fbfdc
 URxvt*color2:    #799d6a
