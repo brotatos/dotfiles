@@ -7,7 +7,7 @@
 
 urxvtd -q -o -f &
 sleep 100s && dropbox start & 
-redshift -l 36.8252:-119.7029 &
+redshift -m vidmode -l 36.8252:-119.7029 &
 sh ~/.fehbg &
 xset +fp /usr/share/fonts/local/ &
 xset fp rehash
