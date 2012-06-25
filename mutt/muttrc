@@ -1,59 +1,60 @@
-set imap_user=xrobinc@gmail.com
-set my_user=xrobinc@gmail.com
-set smtp_url=smtps://xrobinc@smtp.gmail.com
+#name
+macro pager \cb <pipe-entry>'urlview'<enter> 'Follow links with urlview'
+set realname = "Robin Choudhury"
+
+source ~/.mutt/muttrc.mailboxes
+source ~/.mutt/colors
+source ~/.mutt/folders
 set ssl_force_tls = yes
 
-#set folder=imaps://robin@192.168.1.74:48001/home/robin/mail
 set folder=imaps://imap.gmail.com/
-set spoolfile=+INBOX
+set spoolfile=+xrobinc/[Gmail].INBOX
+set use_from
+folder-hook +xrobinc/.* "source ~/.mutt/xrobinc"
+source ~/.mutt/colors
 
-mailboxes =INBOX
-mailboxes =IMPORTANT
-
+set sendmail = /usr/bin/msmtp
+set beep_new
 set imap_check_subscribed
 
-set mail_check = 120
+set sendmail = /usr/bin/msmtp
+set mail_check = 60
 set imap_keepalive = 300
+
+#allow mutt to open new imap connection automatically
 unset imap_passive
+# don't add + signs if message wraps
+unset markers
 
-set header_cache=~/.mutt/cache/headers
-set message_cachedir=~/.mutt/cache/bodies
+set envelope_from
+set mail_check = 0
+unset move
+set delete
+unset confirmappend
+set quit
+unset mark_old
 set mailcap_path= ~/.mutt/mailcap
-
-set postponed = +[Gmail]/Drafts
-
-# Archive Messages (A) and some other nifty commands
-#bind editor  noop #fix for spaces in names of folders
-macro index,pager A "unset trash\n " "Gmail archive message"
-macro index,pager gi "=INBOX" "Go to inbox"
-macro index,pager ga "=[Gmail]/All Mail" "Go to all mail"
-macro index,pager gs "=[Gmail]/Sent Mail" "Go to starred messages"
-macro index,pager gd "=[Gmail]/Drafts" "Go to drafts"
 
 # Auto display html
 auto_view text/html
 
-# Thread Sort (top = newest messages)
+# Index options
 set sort = threads
 set sort_aux = 'reverse-last-date-received'
+set sort_re
 
+#composing mail
+set fcc_attach
+unset mime_forward
+set forward_format = "Fwd: %s"
+set include
+set forward_quote
 
-#colors
-color hdrdefault white black
-color quoted blue black
-color signature blue black
-color attachment red black
-color message brightred black
-color error brightred black
-color indicator black red
-color status brightwhite black 
-color tree blue black
-color normal blue black
-color markers red black
-color search white black
-color tilde brightmagenta black
-color index blue black ~F
-color index red black "~N|~O"
+#headers to show
+hdr_order from: to: cc: date: subject:
 
-color body brightwhite black '\*+[^*]+\*+'
-color body brightwhite black '_+[^_]+_+'
+# Don't request to move messages
+set move = no
+
+# Auto include copy of original message when you reply
+set include = yes
