@@ -1,4 +1,7 @@
-#!/bin/bash
+#!/bin/sh
+export EDITOR="vim"
+export BROWSER="chromium"
+
 alias diff="colordiff"
 alias ls='ls --color=auto'
 
