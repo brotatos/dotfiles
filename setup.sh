@@ -23,5 +23,5 @@ forced=true
 for i in "${files[@]}"
 do
     rm -r ~/.$i
-    ln -s ~/.dotfiles/$i ~/.$i
+    ln -s ~/github/dotfiles/$i ~/.$i
 done
