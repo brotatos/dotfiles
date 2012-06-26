@@ -8,7 +8,7 @@ source ~/.mutt/folders
 set ssl_force_tls = yes
 
 set folder=imaps://imap.gmail.com/
-set spoolfile=+xrobinc/[Gmail].INBOX
+set spoolfile=+xrobinc/[Gmail].Inbox
 set use_from
 folder-hook +xrobinc/.* "source ~/.mutt/xrobinc"
 source ~/.mutt/colors
