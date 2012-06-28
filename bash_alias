@@ -1,7 +1,4 @@
 #!/bin/sh
-export EDITOR="vim"
-export BROWSER="chromium"
-
 alias diff="colordiff"
 alias ls='ls --color=auto'
 
@@ -14,6 +11,6 @@ alias update="sudo pacman -Syu"
 alias updatef="sudo pacman -Syyuu"
 alias updatee="sudo pacman -Syu; cower -udd"
 
-alias sprunge=" curl -F 'sprunge=<-' http://sprunge.us"
+alias sprunge="curl -F 'sprunge=<-' http://sprunge.us"
 
 alias suspend="sudo pm-suspend"

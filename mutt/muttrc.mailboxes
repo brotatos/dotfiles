@@ -1,1 +1,1 @@
-mailboxes "+xrobinc/[Gmail].All Mail" "+xrobinc/[Gmail].Drafts" "+xrobinc/[Gmail].Important" "+xrobinc/[Gmail].Sent" "+xrobinc/[Gmail].Sent Mail" "+xrobinc/[Gmail].Spam" "+xrobinc/[Gmail].Starred" "+xrobinc/[Gmail].Trash" "+xrobinc/INBOX"
+mailboxes "+gmail/bak.chats" "+gmail/bak.drafts" "+gmail/bak.flagged" "+gmail/bak.important" "+gmail/bak.sent" "+gmail/bak.spam" "+gmail/bak.trash" "+gmail/cs_club" "+gmail/gsa" "+gmail/inbox" "+gmail/math_team" "+gmail/robotics" "+gmail/sci._fair" "+gmail/sci._olympiad"

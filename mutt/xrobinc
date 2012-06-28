@@ -1,5 +1,5 @@
 set from="xrobinc@gmail.com"
 
-set postponed = "+gmali/[Gmail.Drafts/"
-set sendmail="/usr/bin/msmtp -a 
-set record = "+gmail/[Gmail.Sent\ mail/"
+set postponed = "+gmail/[Gmail].Drafts/"
+set sendmail="/usr/bin/msmtp -a gmail
+set record = "+gmail/[Gmail].Sent\ .mail/"
