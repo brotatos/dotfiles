@@ -3,8 +3,8 @@ alias diff="colordiff"
 alias ls='ls --color=auto'
 
 alias reconnect="sudo netcfg -r home" 
-alias shutdown="sudo shutdown -h now"
-alias reboot="sudo shutdown -r now"
+alias shutdown="sudo systemctl poweroff"
+alias reboot="sudo systemctl reboot"
 
 alias pinstall="sudo pacman -S"
 alias update="sudo pacman -Syu"
@@ -14,3 +14,7 @@ alias updatee="sudo pacman -Syu; cower -udd"
 alias sprunge="curl -F 'sprunge=<-' http://sprunge.us"
 
 alias suspend="sudo pm-suspend"
+
+alias steam='wine ~/.wine/drive_c/Program\ Files/Steam/Steam.exe >/dev/null 2>&1 &'
+
+alias omup="omup -s"

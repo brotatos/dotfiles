@@ -1,1 +1,1 @@
-mailboxes "+gmail/bak.chats" "+gmail/bak.drafts" "+gmail/bak.flagged" "+gmail/bak.important" "+gmail/bak.sent" "+gmail/bak.spam" "+gmail/bak.trash" "+gmail/cs_club" "+gmail/gsa" "+gmail/inbox" "+gmail/math_team" "+gmail/robotics" "+gmail/sci._fair" "+gmail/sci._olympiad"
+mailboxes "+gmail/bak.flagged" "+gmail/bak.drafts" "+gmail/bak.important" "+gmail/bak.sent" "+gmail/bak.spam" "+gmail/bak.trash" "+gmail/chats" "+gmail/cs_club" "+gmail/inbox" "+gmail/robotics" "+gmail/sci._fair" "+gmail/sci._olympiad" "+gmail/spam"

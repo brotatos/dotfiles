@@ -1,60 +1,63 @@
-#name
-macro pager \cb <pipe-entry>'urlview'<enter> 'Follow links with urlview'
-set realname = "Robin Choudhury"
-
 source ~/.mutt/muttrc.mailboxes
 source ~/.mutt/colors
 source ~/.mutt/folders
+
+set editor=vim
+set use_from
+folder-hook +xrobinc/.* "source ~/.mutt/xrobinc"
+set spoolfile=+gmail/inbox 
 set ssl_force_tls = yes
 set mbox_type=Maildir
 set folder=$HOME/.mail
 set spoolfile=+gmail/inbox
-set use_from
-folder-hook +xrobinc/.* "source ~/.mutt/xrobinc"
-source ~/.mutt/colors
 
 set sendmail = /usr/bin/msmtp
 set beep_new
 set imap_check_subscribed
 
-set sendmail = /usr/bin/msmtp
-set mail_check = 60
-set imap_keepalive = 300
+# options
+set mbox_type   = Maildir               # mailbox type
+set folder      = ~/.mail                # root folder
+set spoolfile   = +gmail/inbox              # inbox
+set mbox        = "+archive"            # [Gmail]/All Mail
+set postponed   = "+drafts"             # [Gmail]/Drafts
+unset record                            # required to prevent duplicates in Sent
 
-#allow mutt to open new imap connection automatically
-unset imap_passive
-# don't add + signs if message wraps
-unset markers
+# bindings
+macro index D "<save-message>+trash<enter>"   "move message to the trash"
+macro index S "<save-message>+spam<enter>"    "mark message as spam"
 
-set envelope_from
-set mail_check = 0
-unset move
-set delete
-unset confirmappend
-set quit
-unset mark_old
-set mailcap_path= ~/.mutt/mailcap
+# main options
+set envelope_from                                       # which from?
+set mail_check          = 0                             # check for mail always
+unset move                                              # gmail does that
+set delete                                              # don't ask, just do
+unset confirmappend                                     # don't ask, just do!
+set quit                                                # don't ask, just do!!
+unset mark_old                                          # read/new is good enough for me
 
-# Auto display html
-auto_view text/html
+# index options
+set sort                = threads                       # like gmail 
+set sort_aux            = reverse-last-date-received    # like gmail
+set sort_re                                             # thread based on reply_regexp
 
-# Index options
-set sort = threads
-set sort_aux = 'reverse-last-date-received'
-set sort_re
+# pager
+set pager_index_lines   = 8                             # show 8 messages when in pager
+set pager_context       = 5                             # show five lines when skipping in pager
+set pager_stop                                          # don't go to next message automatically
+set menu_scroll                                         # scroll in menus 
+set smart_wrap                                          # don't split words
+set tilde                                               # show tildes like in vim
+unset markers                                           # no ugly plus signs
 
-#composing mail
-set fcc_attach
-unset mime_forward
-set forward_format = "Fwd: %s"
-set include
-set forward_quote
+# composing mail
+set fcc_attach                                          # save attachments with the body
+unset mime_forward                                      # forward attachments as part of body
+set forward_format      = "Fwd: %s"                     # format for subject when forwarding
+set include                                             # include message in replies
+set forward_quote                                       # include message in forwards
 
-#headers to show
-hdr_order from: to: cc: date: subject:
-
-# Don't request to move messages
-set move = no
-
-# Auto include copy of original message when you reply
-set include = yes
+# headers to show
+ignore *                                                # ignore all headers
+unignore from: to: cc: date: subject:                   # show only these
+hdr_order from: to: cc: date: subject:                  # and in this order
