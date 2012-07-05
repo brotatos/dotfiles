@@ -11,7 +11,7 @@ redshift -m vidmode -l 36.8252:-119.7029 &
 sh ~/.fehbg &
 xset +fp /usr/share/fonts/local/ 
 xset fp rehash
-unclutter &
+unclutter & > /dev/null
 mpd &
 ps -C mpdscribble &>/dev/null || mpdscribble &
 xsetroot -cursor_name left_ptr &
