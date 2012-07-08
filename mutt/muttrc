@@ -7,7 +7,6 @@ set use_from
 folder-hook +xrobinc/.* "source ~/.mutt/xrobinc"
 set spoolfile=+gmail/inbox 
 set ssl_force_tls = yes
-set mbox_type=Maildir
 set folder=$HOME/.mail
 set spoolfile=+gmail/inbox
 
@@ -17,15 +16,8 @@ set imap_check_subscribed
 
 # options
 set mbox_type   = Maildir               # mailbox type
-set folder      = ~/.mail                # root folder
-set spoolfile   = +gmail/inbox              # inbox
-set mbox        = "+archive"            # [Gmail]/All Mail
 set postponed   = "+drafts"             # [Gmail]/Drafts
 unset record                            # required to prevent duplicates in Sent
-
-# bindings
-macro index D "<save-message>+trash<enter>"   "move message to the trash"
-macro index S "<save-message>+spam<enter>"    "mark message as spam"
 
 # main options
 set envelope_from                                       # which from?

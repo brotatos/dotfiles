@@ -2,7 +2,7 @@
 bind editor <space> noop #fix for spaces in names of folders
 macro index,pager A "<enter-command>unset trash\n <delete-message>" "Gmail archive message"
 #macro index,pager gi "<enter-command>sync-mail<return>;<change-folder>=gmail/INBOX<enter>" "Go to inbox"
-macro index,pager gm "<enter-command>sync-mail<return><change-folder>=gtmanfred/INBOX<enter>" "Go to all mail"
+macro index,pager gm "<enter-command>sync-mail<return><change-folder>=gmail/inbox<enter>" "Go to all mail"
 macro index,pager gs "<change-folder>=gmail/\[Gmail\].Sent Mail<enter>" "Go to starred messages"
 macro index,pager gd "<change-folder>=gmail/\[Gmail\].Drafts<enter>" "Go to drafts"
 
