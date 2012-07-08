@@ -7,14 +7,14 @@
 
 urxvtd -q -o -f 
 sleep 100s && dropbox start & 
-redshift -m vidmode -l 36.8252:-119.7029 &
-sh ~/.fehbg &
+redshift -m vidmode -l 36.8252:-119.7029&
+sh ~/.fehbg 
 xset +fp /usr/share/fonts/local/ 
 xset fp rehash
 unclutter & > /dev/null
-mpd &
+mpd 
 ps -C mpdscribble &>/dev/null || mpdscribble &
-xsetroot -cursor_name left_ptr &
-xrdb -merge ~/.Xresources &
+xsetroot -cursor_name left_ptr 
+xrdb -merge ~/.Xresources 
 
 exec dbus-launch i3

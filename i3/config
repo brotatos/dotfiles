@@ -138,8 +138,8 @@ for_window [class="Vapor"] floating enable;
 
 # programs
 bindsym $mod+z exec firefox
-bindsym $mod+n exec ~/github/scripts/clipyt
-bindsym $mod+y exec scrot
+bindsym $mod+y exec ~/github/scripts/clipyt
+bindsym $mod+n exec scrot
 
 # Assignments
 assign [class="Wine"] 9

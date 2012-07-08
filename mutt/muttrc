@@ -4,13 +4,11 @@ source ~/.mutt/folders
 source ~/.mutt/goobook
 
 set editor= "vim +:silent+?^$"
-set use_from
-set spoolfile=+gmail/inbox 
-folder-hook xrobinc/.* "source ~/.mutt/xrobinc"
+set spoolfile=~/.mail/gmail/INBOX
 set ssl_force_tls = yes
-set folder=$HOME/.mail
-set spoolfile=+gmail/inbox
-
+set folder=$HOME/.mail/
+set mbox = $HOME/.mail/
+folder-hook +xrobinc/.* "source ~/.mutt/xrobinc"
 set sendmail = /usr/bin/msmtp
 set beep_new
 set imap_check_subscribed
@@ -28,6 +26,7 @@ set delete                                              # don't ask, just do
 unset confirmappend                                     # don't ask, just do!
 set quit                                                # don't ask, just do!!
 unset mark_old                                          # read/new is good enough for me
+set use_from
 
 # index options
 set sort                = threads                       # like gmail 
