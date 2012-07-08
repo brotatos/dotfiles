@@ -1,11 +1,12 @@
 source ~/.mutt/muttrc.mailboxes
 source ~/.mutt/colors
 source ~/.mutt/folders
+source ~/.mutt/goobook
 
-set editor=vim
+set editor= "vim +:silent+?^$"
 set use_from
-folder-hook +xrobinc/.* "source ~/.mutt/xrobinc"
 set spoolfile=+gmail/inbox 
+folder-hook xrobinc/.* "source ~/.mutt/xrobinc"
 set ssl_force_tls = yes
 set folder=$HOME/.mail
 set spoolfile=+gmail/inbox
@@ -32,6 +33,7 @@ unset mark_old                                          # read/new is good enoug
 set sort                = threads                       # like gmail 
 set sort_aux            = reverse-last-date-received    # like gmail
 set sort_re                                             # thread based on reply_regexp
+set smart_wrap                                          # don't split words
 
 # pager
 set pager_index_lines   = 8                             # show 8 messages when in pager

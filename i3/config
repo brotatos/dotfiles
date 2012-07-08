@@ -138,8 +138,7 @@ for_window [class="Vapor"] floating enable;
 
 # programs
 bindsym $mod+z exec firefox
-bindsym $mod+n exec urxvtc -e ncmpcpp
-bindsym $mod+m exec urxvtc -e htop
+bindsym $mod+n exec ~/github/scripts/clipyt
 bindsym $mod+y exec scrot
 
 # Assignments
