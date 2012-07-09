@@ -1,6 +1,7 @@
 #!/bin/sh
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
-  exec startx
+  startx
+  logout
 fi
 
 if [ -n "$DISPLAY" ]; then
