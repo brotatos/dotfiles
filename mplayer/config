@@ -9,6 +9,4 @@ nolirc=yes
 sub-fuzziness=1
 fs=yes
 #ontop=yes
-vo=vdpau
-vc=ffmpeg12vdpau,ffwmv3vdpau,ffvc1vdpau,#ffh264vdpau,#ffodivxvdpau,
 idx=yes
