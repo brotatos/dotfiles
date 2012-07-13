@@ -8,3 +8,4 @@ import_copy: yes
 import_write: yes
 import_delete: yes
 threaded: yes
+color: yes

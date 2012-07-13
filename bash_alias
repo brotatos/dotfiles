@@ -2,6 +2,8 @@
 alias diff="colordiff"
 alias ls='ls --color=auto'
 
+alias gc="ping -c 3 google.com"
+
 alias reconnect="sudo netcfg -r home" 
 alias shutdown="sudo systemctl poweroff"
 alias reboot="sudo systemctl reboot"
@@ -20,3 +22,4 @@ alias omup="omup -s"
 
 #~/github/bin/
 alias screenshot="~/github/scripts/screenshot"
+alias imgur="~/github/scripts/imgur"
