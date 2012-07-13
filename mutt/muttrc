@@ -18,8 +18,8 @@ unset record                            # required to prevent duplicates in Sent
 set sendmail    = /usr/bin/msmtp        # use msmtp 'default' account
 
 # bindings
-macro index D "<save-message>+trash<enter>"   "move message to the trash"
-macro index S "<save-message>+spam<enter>"    "mark message as spam"
+macro index d "<save-message>+gmail/[Gmail].Trash<enter>"   "move message to the trash"
+macro index S "<save-message>+gmail/[Gmail].Spam<enter>"    "mark message as spam"
 
 # main options
 set envelope_from                                       # which from?
