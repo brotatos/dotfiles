@@ -18,6 +18,7 @@ alias sprunge="curl -F 'sprunge=<-' http://sprunge.us"
 
 alias starcraft="wine /home/robin/.wine/drive_c/Program\ Files/StarCraft\ II/StarCraft\ II.exe>/dev/null 2>&1 &"
 alias steam="wine /home/robin/.wine/drive_c/Program\ Files/Steam/Steam.exe>/dev/null 2>&1 &"
+alias borderlands="wine /home/robin/.wine/drive_c/Program Files/Steam/steamapps/common/borderlands/Binaries/Borderlands.exe>/dev/null 2>&1 &"
 
 alias omup="omup -s"
 
