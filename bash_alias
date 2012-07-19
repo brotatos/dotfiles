@@ -12,7 +12,7 @@ alias suspend="sudo pm-suspend"
 alias pinstall="sudo pacman -S"
 alias update="sudo pacman -Syu"
 alias updatef="sudo pacman -Syyuu"
-alias updatee="sudo pacman -Syu; cower -udd"
+alias updatee="sudo pacman -Syu; cower -uv"
 
 alias sprunge="curl -F 'sprunge=<-' http://sprunge.us"
 
