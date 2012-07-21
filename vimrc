@@ -1,29 +1,40 @@
+" generic
 set nocompatible
 set wrapscan
-filetype plugin on
-syntax on
 set mouse=a
-set background=dark
 set autoindent
 filetype plugin indent on
+set wrap
 set modelines=0
+
+" tabs
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
-set expandtab
+
+" show
 set showmode
 set showcmd
 set ignorecase
 set title
 set wildmenu
 set visualbell
-set ruler
-set wrap
+
+" line-numbering
 set number
+set ruler
+
+" smart case search
 set hlsearch
 set smartcase
-set pastetoggle=<F5>
-colorscheme jellybeans
 
-"mutt
+" copy pasta
+set pastetoggle=<F5>
+
+" colors
+colorscheme jellybeans
+syntax enable
+set background=dark
+
+" mutt
 au BufRead /tmp/mutt-* set tw=72
