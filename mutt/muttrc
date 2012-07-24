@@ -7,7 +7,7 @@ folder-hook 'xrobinc' source ~/.mutt/xrobinc
 
 auto_view text/html
 # external
-set editor = "vim -c ':normal O'"     # use vim and skip to last blank line
+set editor = "vim -c ':normal 2O'"     # use vim and skip to last blank line
 
 # options
 set mbox_type   = Maildir               # mailbox type
