@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 #
 # ~/.xinitrc
 #
@@ -15,6 +15,6 @@ unclutter & > /dev/null
 mpd 
 ps -C mpdscribble &>/dev/null || mpdscribble
 xsetroot -cursor_name left_ptr 
-xrdb -merge ~/.Xresources 
+#xrdb -merge ~/.Xresources 
 
-exec dbus-launch i3
+exec /usr/bin/i3

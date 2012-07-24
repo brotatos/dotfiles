@@ -2,7 +2,6 @@
 set nocompatible
 set wrapscan
 set mouse=a
-set autoindent
 filetype plugin indent on
 set wrap
 set modelines=0
