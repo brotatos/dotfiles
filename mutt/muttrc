@@ -5,9 +5,10 @@ source ~/.mutt/mailboxes
 source ~/.mutt/xrobinc
 folder-hook 'xrobinc' source ~/.mutt/xrobinc
 
+
 auto_view text/html
 # external
-set editor = "vim -c ':normal 2O'"     # use vim and skip to last blank line
+set editor = "vim -c ':normal O'"     # use vim and skip to last blank line
 
 # options
 set mbox_type   = Maildir               # mailbox type
@@ -16,6 +17,7 @@ set spoolfile   = "+gmail/INBOX"        # inbox
 set mbox        = "+gmail/INBOX"        # [Gmail]/All Mail
 unset record                            # required to prevent duplicates in Sent
 set sendmail    = /usr/bin/msmtp        # use msmtp 'default' account
+set mailcap_path = ~/.mutt/mailcap
 
 # bindings
 macro index D "<save-message>+trash<enter>"   "move message to the trash"
