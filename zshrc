@@ -1,7 +1,7 @@
 source ~/.zalias
 export EDITOR=vim
 export VISUAL=vim
-export BROWSER=vim
+export BROWSER=firefox
 export GIT_EDITOR=$EDITOR
 export SUDO_EDITOR=$EDITOR
 
