@@ -1,5 +1,4 @@
 #!/bin/zsh
-alias diff="colordiff"
 alias ls='ls --color=auto'
 alias grep='grep --colour=auto'
 
