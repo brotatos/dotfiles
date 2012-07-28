@@ -18,7 +18,7 @@ font -*-terminus-medium-r-normal-*-12-120-72-72-c-60-iso10646-1
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id urxvtc
+bindsym $mod+Return exec --no-startup-id termite
 
 # kill focused window
 bindsym $mod+Shift+Q kill
