@@ -26,4 +26,3 @@ set pastetoggle=<F5>
 colorscheme jellybeans
 
 "mutt
-set tw=72

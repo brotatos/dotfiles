@@ -12,11 +12,9 @@ alias suspend="sudo pm-suspend"
 alias pinstall="sudo pacman -S"
 alias update="sudo pacman -Syu"
 alias updatef="sudo pacman -Syyuu"
-alias updatee="sudo pacman -Syu; cower -udd"
+alias updatee="sudo pacman -Syu; cower -uddv"
 
 alias sprunge="curl -F 'sprunge=<-' http://sprunge.us"
-
-alias starcraft="wine /home/robin/.wine/drive_c/Program\ Files/StarCraft\ II/StarCraft\ II.exe>/dev/null 2>&1 &"
 
 alias omup="omup -s"
 
