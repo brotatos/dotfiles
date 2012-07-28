@@ -138,6 +138,7 @@ for_window [class="Vapor"] floating enable;
 
 # programs
 bindsym $mod+z exec firefox
+bindsym $mod+c exec sh -c 'firefox $(xclip -out)'
 bindsym $mod+y exec ~/github/scripts/yt
 bindsym $mod+i exec ~/github/scripts/imgur
 bindsym $mod+n exec scrot
