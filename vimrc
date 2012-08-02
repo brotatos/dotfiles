@@ -33,7 +33,8 @@ set pastetoggle=<F5>
 " colors
 colorscheme jellybeans
 syntax enable
-set background=dark
+set background=light
 
 " mutt
 au BufRead /tmp/mutt-* set tw=72
+au BufRead /tmp/mutt-* set nohlsearch
