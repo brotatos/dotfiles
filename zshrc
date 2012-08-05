@@ -43,4 +43,3 @@ bindkey "\e[Z" reverse-menu-complete # Shift+Tab
 
 #aur
 source /usr/share/zsh/plugins/zsh-syntax-highlight/zsh-syntax-highlighting.zsh
-

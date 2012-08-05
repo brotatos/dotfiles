@@ -2,7 +2,7 @@
 #
 softvol=yes
 vf=screenshot
-ao=alsa
+ao=pulse
 ass=yes
 ass-force-style="FontName=Dejavu Sans"
 nolirc=yes

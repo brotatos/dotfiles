@@ -1,13 +1,12 @@
-#!/bin/sh
-alias diff="colordiff"
+#!/bin/zsh
 alias ls='ls --color=auto'
+alias grep='grep --colour=auto'
 
 alias gc="ping -c 3 google.com"
 
 alias reconnect="sudo netcfg -r home" 
 alias shutdown="sudo systemctl poweroff"
 alias reboot="sudo systemctl reboot"
-alias suspend="sudo pm-suspend"
 
 alias pinstall="sudo pacman -S"
 alias update="sudo pacman -Syu"
@@ -22,6 +21,5 @@ alias steam="wine /home/robin/.wine-steam/drive_c/Program\ Files/Steam/Steam.exe
 alias omup="omup -s"
 
 #~/github/bin/
-
 alias screenshot="~/github/scripts/screenshot"
 alias imgur="~/github/scripts/imgur"

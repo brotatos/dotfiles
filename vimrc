@@ -1,3 +1,6 @@
+" encoding
+set encoding=utf-8
+
 " generic
 set nocompatible
 set wrapscan
@@ -14,7 +17,6 @@ set softtabstop=4
 " show
 set showmode
 set showcmd
-set ignorecase
 set title
 set wildmenu
 set visualbell
@@ -24,6 +26,7 @@ set number
 set ruler
 
 " smart case search
+set ignorecase
 set hlsearch
 set smartcase
 
