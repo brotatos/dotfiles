@@ -13,12 +13,14 @@ alias update="sudo pacman -Syu"
 alias updatef="sudo pacman -Syyuu"
 alias updatee="sudo pacman -Syu; cower -uv"
 
-alias sprunge="curl -F 'sprunge=<-' http://sprunge.us"
+alias sprunge=" curl -F 'sprunge=<-' http://sprunge.us"
 
 alias starcraft="wine /home/robin/.wine/drive_c/Program\ Files/StarCraft\ II/StarCraft\ II.exe>/dev/null 2>&1 &"
 alias steam="wine /home/robin/.wine-steam/drive_c/Program\ Files/Steam/Steam.exe>/dev/null 2>&1 &"
 
 alias omup="omup -s"
+
+alias moonlightsucks="sudo qemu-kvm -hda ~/kvm/windows -m 6144 -smp 2 -vga std"
 
 #~/github/bin/
 alias screenshot="~/github/scripts/screenshot"
