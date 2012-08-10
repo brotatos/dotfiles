@@ -15,6 +15,7 @@ unclutter & > /dev/null
 mpd 
 ps -C mpdscribble &>/dev/null || mpdscribble
 xsetroot -cursor_name left_ptr 
+pulseaudio --start
 #xrdb -merge ~/.Xresources 
 
 exec /usr/bin/i3
