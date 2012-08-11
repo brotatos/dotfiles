@@ -4,7 +4,7 @@ library: /home/robin/.beetsmusic.blb
 plugins: bpd
 import_resume: yes
 import_incremental: yes
-import_copy: yes
+import_move : yes
 import_write: yes
 import_delete: yes
 threaded: yes
