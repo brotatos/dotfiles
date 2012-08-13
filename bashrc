@@ -4,7 +4,7 @@
 PS1='[\u@\h \W ]\$ '
 
 export EDITOR="/usr/bin/vim"
-export BROWSER="/usr/bin/firefox"
+export BROWSER="/usr/bin/chromium"
 
 if [ -f ~/.bash_alias ]; then
     source ~/.bash_alias

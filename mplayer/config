@@ -4,7 +4,7 @@ softvol=yes
 vf=screenshot
 ao=pulse
 ass=yes
-ass-force-style="FontName=Dejavu Sans"
+#ass-force-style="FontName=Dejavu Sans"
 nolirc=yes
 sub-fuzziness=1
 fs=yes

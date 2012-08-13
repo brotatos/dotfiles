@@ -34,7 +34,7 @@ set smartcase
 set pastetoggle=<F5>
 
 " colors
-colorscheme hybrid
+colorscheme jellybeans
 syntax enable
 set background=light
 
