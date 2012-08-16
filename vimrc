@@ -33,9 +33,11 @@ set smartcase
 " copy pasta
 set pastetoggle=<F5>
 
+" syntax
+syntax enable
+
 " colors
 colorscheme jellybeans
-syntax enable
 set background=light
 
 " mutt
