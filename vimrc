@@ -1,4 +1,5 @@
 " encoding
+scriptencoding utf-8
 set encoding=utf-8
 
 " generic
@@ -14,14 +15,17 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 
+" trailings
+set list
+set listchars=trail:·,tab:▸\
+"set listchars=trail:·,precedes:«,extends:»,eol:↲,tab:▸\
+
 " show
 set showmode
 set showcmd
 set title
 set wildmenu
 set visualbell
-
-" line-numbering
 set number
 set ruler
 
