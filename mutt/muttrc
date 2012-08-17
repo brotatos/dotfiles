@@ -1,5 +1,6 @@
 # source
 source ~/.mutt/colors
+source ~/.mutt/notmuch
 source ~/.mutt/goobook
 source ~/.mutt/mailboxes
 source ~/.mutt/xrobinc
