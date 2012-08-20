@@ -6,7 +6,7 @@
 #
 
 #urxvtd -q -o -f 
-pulseaudio --start
+pulseaudio --start &
 sleep 100s && dropbox start & 
 redshift -m vidmode -l 36.8252:-119.7029&
 sh ~/.fehbg 
