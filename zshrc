@@ -1,4 +1,5 @@
 source ~/.zsh/zalias.zsh
+source ~/.zsh/wordcmds.zsh
 source ~/.zsh/zstyles.zsh
 
 export EDITOR=vim
