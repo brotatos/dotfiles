@@ -1,5 +1,3 @@
-# source
-source ~/.mutt/bindings
 source ~/.mutt/colors
 source ~/.mutt/notmuch
 source ~/.mutt/goobook
