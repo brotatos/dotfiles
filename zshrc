@@ -1,6 +1,6 @@
-source ~/.zsh/zalias.zsh
 source ~/.zsh/wordcmds.zsh
 source ~/.zsh/zstyles.zsh
+source ~/.zsh/zalias.zsh
 
 export EDITOR=vim
 export VISUAL=vim
@@ -17,9 +17,7 @@ HISTSIZE=10000
 SAVEHIST=10000
 setopt appendhistory autocd beep extendedglob nomatch notify
 
-bindkey -e
-
-#prompt
+# prompt
 autoload -U colors && colors
 autoload -Uz compinit
 compinit
@@ -27,11 +25,10 @@ autoload -U promptinit
 promptinit
 prompt redhat
 
-#bindings
+# bindings
+bindkey -e
 bindkey "\e[1~" beginning-of-line # Home
 bindkey "\e[4~" end-of-line # End
-#bindkey "\e[5~" beginning-of-history # PageUp
-#bindkey "\e[6~" end-of-history # PageDown
 bindkey "\e[2~" quoted-insert # Ins
 bindkey "\e[3~" delete-char # Del
 bindkey "\e[5C" forward-word
