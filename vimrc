@@ -11,6 +11,7 @@ set wrap
 set modelines=0
 
 " tabs
+set et
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4

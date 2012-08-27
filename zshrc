@@ -1,6 +1,6 @@
-source ~/.zsh/wordcmds.zsh
-source ~/.zsh/zstyles.zsh
-source ~/.zsh/zalias.zsh
+for f in $HOME/.zsh/*.zsh(on); do
+    . $f
+done
 
 export EDITOR=vim
 export VISUAL=vim
@@ -25,19 +25,5 @@ autoload -U promptinit
 promptinit
 prompt redhat
 
-# bindings
-bindkey -e
-bindkey "\e[1~" beginning-of-line # Home
-bindkey "\e[4~" end-of-line # End
-bindkey "\e[2~" quoted-insert # Ins
-bindkey "\e[3~" delete-char # Del
-bindkey "\e[5C" forward-word
-bindkey "\eOc" emacs-forward-word
-bindkey "\e[5D" backward-word
-bindkey "\eOd" emacs-backward-word
-bindkey "\e\e[C" forward-word
-bindkey "\e\e[D" backward-word
-bindkey "\e[Z" reverse-menu-complete # Shift+Tab
-
-#aur
+# aur
 source /usr/share/zsh/plugins/zsh-syntax-highlight/zsh-syntax-highlighting.zsh

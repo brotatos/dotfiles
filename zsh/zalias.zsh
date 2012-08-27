@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 # general
-alias ls='ls --color=auto'
+alias ls='ls --group-directories-first --color=auto'
 alias grep='grep --colour=auto'
 
 alias shutdown="sudo systemctl poweroff"
@@ -13,6 +13,14 @@ alias omup="omup -s"
 # arch
 alias update="sudo pacman -Syu; meat -u"
 alias sprunge="curl -F 'sprunge=<-' http://sprunge.us"
+alias sickbeard="sudo systemctl start sickbeard.service"
+alias sickbeards="sudo systemctl stop sickbeard.service"
+
+# mounts
+alias mmedia="sudo mount -L media"
+alias mgeneral="sudo mount -L general"
+alias ummedia="sudo umount /mnt/media"
+alias umgeneral="sudo umount /mnt/general"
 
 # ~/github/bin/
 alias screenshot="~/github/scripts/screenshot"
@@ -20,12 +28,13 @@ alias imgur="~/github/scripts/imgur"
 alias garbage="~/github/scripts/garbage"
 
 # latex
-alias ct="rm *.{aux,dvi,pdf}"
+alias ct="rm *.{aux,pdf}"
+alias clap="pdflatex *.tex; zathura *.pdf; rm *.{aux,pdf}"
 
 # steam
-alias starcraft="wine /mnt/media/robin/.wine/drive_c/Program\ Files/StarCraft\ II/StarCraft\ II.exe>/dev/null 2>&1 &"
-#alias steam="wine /home/robin/.wine-steam/drive_c/Program\ Files/Steam/Steam.exe >/dev/null 2>&1 &"
-alias steam="wine /mnt/media/robin/.wine-steam/drive_c/Program\ Files/Steam/Steam.exe -no-dwrite>/dev/null 2>&1 &"
+alias starcraft="wine /mnt/general/general/wine-starcraft/drive_c/Program\ Files\ \(x86\)/StarCraft\ II/StarCraft\ II.exe>/dev/null 2>&1 &"
+#alias steam="wine /mnt/general/general/wine/drive_c/Program\ Files/Steam/Steam.exe >/dev/null 2>&1 &"
+alias steam="wine /mnt/general/general/wine/drive_c/Program\ Files/Steam/Steam.exe -no-dwrite>/dev/null 2>&1 &"
 
 # kvm
-alias moonlightsucks="sudo qemu-kvm -hda ~/kvm/windows -m 6144 -smp 2 -vga std"
+alias moonlightsucks="sudo qemu-kvm -hda /mnt/general/general/kvm/windows -m 6144 -smp 2 -vga std"

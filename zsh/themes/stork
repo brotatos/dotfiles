@@ -1,0 +1,8 @@
+#!/bin/zsh
+
+prompt_storksetup() {
+    setopt prompt_subst
+    autoload -U colors && colors
+    autoload -Uz add-zsh-hook vcs_info
+    PROMPT='%B%F{green}%n%f%b at %F{yellow}%m%f in %B%F{green}%~%f%b ${vcs_info_msg_0_}%{$reset_color%}$prompt_newline$(prompt_char)%f'
+}

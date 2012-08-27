@@ -133,8 +133,9 @@ for_window [class="Wine"] floating enable;
 for_window [class="Gimp"] floating enable;
 
 # programs
-bindsym $mod+z exec --no-startup-id chromium
-bindsym $mod+shift+Z exec --no-startup-id chromium --incognito
+bindsym $mod+z exec --no-startup-id aurora
+#bindsym $mod+z exec --no-startup-id chromium
+#bindsym $mod+shift+Z exec --no-startup-id chromium --incognito
 bindsym $mod+m exec sh -c 'chromium $(xclip -out)'
 bindsym $mod+shift+M exec sh -c 'chromium --incognito $(xclip -out)'
 #bindsym $mod+z exec --no-startup-id firefox
