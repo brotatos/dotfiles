@@ -1,6 +1,7 @@
 "3.5 (created: 2012/08/04 00:41:20)
 
 highlight Hint font-family: monospace; font-size: 10px; font-weight: bold; text-transform: uppercase; color: white; background-color: red; border-color: ButtonShadow; border-width: 0px; border-style: solid; padding: 0px 1px 0px 1px; font-family: monospace; font-size: 10px; font-weight: bold; text-transform: uppercase; color: white; background-color: black; border-color: ButtonShadow; border-width: 0px; border-style: solid; padding: 0px 1px 0px 1px; font-family: monospace; font-size: 11px; font-weight: bold; text-transform: uppercase; color: white; background-color: black; border-color: ButtonShadow; border-width: 0px; border-style: solid; padding: 0px 1px 0px 1px; font-family: monospace; font-size: 10px; font-weight: bold; text-transform: uppercase; color: white; background-color: black; border-color: ButtonShadow; border-width: 0px; border-style: solid; padding: 0px 1px 0px 1px; font-family: monospace; font-size: 10px; font-weight: bold; text-transform: uppercase; color: white; background-color: black; border-color: gray; border-width: 0px; border-style: solid; padding: 0px 1px 0px 1px; font-family: monospace; font-size: 10px; font-weight: bold; text-transform: uppercase; color: white; background-color: black; border-color: gray; border-width: 0px; border-style: solid; padding: 0px 1px 0px 1px; 
+map <C-z> <S-Esc>
 set hintchars=abcdefghijklmnopqrstuvwxyz
 source! a.local
 

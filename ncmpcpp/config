@@ -14,7 +14,7 @@ active_column_color = "green"
 window_border_color = "red"
 active_window_border = "yellow"
 
-mpd_music_dir = "/home/robin/music/"
+mpd_music_dir = "/mnt/media/media/music/"
 user_interface = "alternative"
 
 playlist_display_mode= "columns"
