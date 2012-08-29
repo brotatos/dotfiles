@@ -34,3 +34,8 @@ URxvt*color3: #ffb964
 URxvt*color5: #eeeeec
 URxvt*color14: #8fbfdc
 URxvt*color8: #555753
+
+!dzen2
+dzen2.font:-*-terminus-*-*-*-*-*-*-*-*-*-*-*-*
+dzen2.foreground: white
+dzen2.background: black

@@ -27,3 +27,6 @@ mouse_support = "yes"
 
 allow_physical_files_deletion = "no"
 allow_physical_directories_deletion = "no"
+
+mpd_host "127.0.0.1"
+mpd_port "6600"

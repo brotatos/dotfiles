@@ -1,5 +1,5 @@
 [beets]
-directory: /home/robin/music
+directory: /mnt/media/media/music
 library: /home/robin/.beetsmusic.blb
 plugins: bpd
 import_resume: yes

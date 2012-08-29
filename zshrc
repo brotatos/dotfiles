@@ -11,6 +11,7 @@ export SUDO_EDITOR=$EDITOR
 autoload -Uz compinit
 compinit
 setopt completealiases
+setopt correct hash_list_all
 
 HISTFILE=~/.histfile
 HISTSIZE=10000

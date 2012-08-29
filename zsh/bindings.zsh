@@ -1,5 +1,6 @@
 #!/bin/zsh
 
+zmodload zsh/complist
 bindkey -e
 bindkey "\e[1~" beginning-of-line # Home
 bindkey "\e[4~" end-of-line # End
@@ -12,4 +13,5 @@ bindkey "\eOd" emacs-backward-word
 bindkey "\e\e[C" forward-word
 bindkey "\e\e[D" backward-word
 bindkey "\e[Z" reverse-menu-complete # Shift+Tab
+bindkey -M menuselect h up-line-or-history j down-line-or-history k backward-char l forward-char
 
