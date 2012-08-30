@@ -1,15 +1,3 @@
-#zstyle ':completion:*' auto-description '%d'
-#zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
-#zstyle ':completion:*' expand prefix suffix
-#zstyle ':completion:*' format '%d'
-#zstyle ':completion:*' group-name ''
-#zstyle ':completion:*' list-colors ''
-#zstyle ':completion:*' list-prompt '%SAt %p: Hit TAB for more, or the character to insert%s'
-#zstyle ':completion:*' list-suffixes true
-#zstyle ':completion:*' max-errors 6 numeric
-#zstyle ':completion:*' menu select=3
-#zstyle ':completion:*' select-prompt '%SScrolling active: current selection at %p%s'
-
 unsetopt menu_complete   # do not autoselect the first completion entry
 unsetopt flowcontrol
 
@@ -24,8 +12,6 @@ _force_rehash() {
 
 zstyle ':completion::complete:*'               use-cache on
 
-# Group matches and describe.
-zstyle ':completion:*:*:*:*:*'                 menu yes select
 zstyle ':completion:*:matches'                 group 'yes'
 zstyle ':completion:*:options'                 description 'yes'
 zstyle ':completion:*:options'                 auto-description '%d'
@@ -37,46 +23,35 @@ zstyle ':completion:*:default'                 list-prompt '%B%S%M matches%s%b'
 zstyle ':completion:*'                         format '%B%F{cyan}>> %d%f%b'
 zstyle ':completion:*'                         group-name ''
 zstyle ':completion:*'                         verbose yes
+zstyle ':completion:*' completer _oldlist _complete _correct
+zstyle ':completion:*' accept-exact-dirs 'yes'
+zstyle ':completion:*' file-sort name
+zstyle ':completion:*' ignore-parents pwd
+zstyle ':completion:*' insert-tab empty
+zstyle ':completion:*' list-colors ${${(s.:.)LS_COLORS}%ec=*}
+zstyle ':completion:*:*:-command-:*' list-colors ''
+#zstyle ':completion:*:(directories|other-files|files|local-directories|bookmarks|executables|suffix-aliases)' list-colors ${${(s.:.)LS_COLORS}%ec=*}
+#zstyle ':completion:*' file-list dirprop=user.notes
+#zstyle ':completion:*' dirinfo-format '%f '${(%):-%F{11}}%i${(%):-%f}
+zstyle ':completion:*' list-prompt "%SAt %p: Hit TAB for more, or the character to insert%s"
+#zstyle ':completion:*' max-errors 3
+zstyle -e ':completion:*' max-errors 'local i; reply=( $(( i=($#PREFIX + $#SUFFIX) / 3, i > 4 ? 4 : i )) )'
+zstyle ':completion:*' prompt 'errors: %e'
+zstyle :compinstall filename ~/.zshrc
 
-zstyle ':completion:*'                         matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
-zstyle ':completion:*'                         list-colors ''
-zstyle ':completion:*'                         completer _oldlist _expand _force_rehash _complete _match _approximate
-zstyle ':completion:*'                         menu select=2
+autoload -U compinit
+compinit -C
+zstyle ':completion:*' special-dirs ..
+#needs hack
+zstyle ':completion:*:path-directories' special-dirs none
+zstyle ':completion:*' group-name ''
+zstyle ':completion:*' list-dirs-first true
+#zstyle ':completion:*:functions' ignored-patterns '_*'
+zstyle ':completion:*:functions' prefix-needed true
+zstyle ':completion:*:*:*:*:processes' menu yes select
+zstyle ':completion:*:*:*:*:processes' force-list always
+zstyle ':completion:*:*:-subscript-:*' tag-order indexes parameters
+[[ -f ~/.ssh/config && -f ~/.ssh/known_hosts ]] &&
+  zstyle ':completion:*' hosts ${${${(M)${(f)"$(<~/.ssh/config)"}##Host *}#Host }#\*} ${${${${(f)"$(<$HOME/.ssh/known_hosts)"}:#[0-9]*}%%\ *}%%,*}
 
-zstyle ':completion:*:functions'               ignored-patterns '_*'
-zstyle ':completion:*:match:*'                 original only
-zstyle ':completion:*:approximate:*'           max-errors 1 numeric
 
-zstyle ':completion:*:*:*:users'               ignored-patterns \
-                                                   bin daemon mail ftp http nobody dbus avahi named git bitlbee mpd \
-                                                   rtkit ntp usbmux gdm
-
-# COMMANDS {{{1
-zstyle ':completion:*'                         list-colors "${(s.:.)LS_COLORS}"
-zstyle ':completion:*:*:cd:*'                  tag-order local-directories directory-stack path-directories
-zstyle ':completion:*:-tilde-:*'               group-order 'named-directories' 'path-directories' 'users' 'expand'
-zstyle ':completion:*'                         squeeze-slashes true
-
-# vim zstyle {{{2
-zstyle ':completion:*:*:(vim|gvim):*:*files'   ignored-patterns '*~|*.(old|bak|o|hi)'
-zstyle ':completion:*:*:(vim|gvim):*:*files'   file-sort modification
-zstyle ':completion:*:*:(vim|gvim):*'          file-sort modification
-zstyle ':completion:*:*:(vim|gvim):*'          tag-order files
-
-# kill zstyle {{{2
-zstyle ':completion:*:*:kill:*'                command 'ps -e -o pid,%cpu,tty,cputime,cmd'
-zstyle ':completion:*:*:kill:*:processes'      list-colors '=(#b) #([0-9]#) ([0-9a-z-]#)*=01;34=0=01'
-zstyle ':completion:*:*:kill:*'                insert-ids single
-
-# man {{{2
-zstyle ':completion:*:manuals'                 separate-sections true
-zstyle ':completion:*:manuals.(^1*)'           insert-sections true
-
-# ssh/scp/rsync {{{2
-zstyle ':completion:*:(scp|rsync):*'                  tag-order 'hosts:-host hosts:-domain:domain hosts:-ipaddr:ip\ address *'
-zstyle ':completion:*:(scp|rsync):*'                  group-order files all-files hosts-domain hosts-host hosts-ipaddr
-zstyle ':completion:*:ssh:*'                          tag-order 'hosts:-host hosts:-domain:domain hosts:-ipaddr:ip\ address *'
-zstyle ':completion:*:ssh:*'                          group-order hosts-domain hosts-host users hosts-ipaddr
-zstyle ':completion:*:(ssh|scp|rsync):*:hosts-host'   ignored-patterns '*.*' loopback localhost
-zstyle ':completion:*:(ssh|scp|rsync):*:hosts-domain' ignored-patterns '<->.<->.<->.<->' '^*.*' '*@*'
-zstyle ':completion:*:(ssh|scp|rsync):*:hosts-ipaddr' ignored-patterns '^<->.<->.<->.<->' '127.0.0.<->'
