@@ -8,7 +8,7 @@
 #urxvtd -q -o -f
 pulseaudio --start &
 sleep 100s && dropbox start &
-redshift -m vidmode -l 36.8252:-119.7029&
+redshift -m vidmode -l 35.2828:-120.6596 
 sh ~/.fehbg 
 xset +fp /usr/share/fonts/local/
 xset fp rehash
