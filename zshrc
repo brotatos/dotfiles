@@ -1,42 +1,33 @@
-source ~/.zsh/zstyles.zsh
-source ~/.zsh/zalias.zsh
+for f in $HOME/.zsh/*.zsh(on); do
+    . $f
+done
 
 export EDITOR=vim
 export VISUAL=vim
-export BROWSER=firefox
+export BROWSER=aurora
 export GIT_EDITOR=$EDITOR
 export SUDO_EDITOR=$EDITOR
 
-# The following lines were added by compinstall
-
-#zstyle ':completion:*' auto-description '%d'
-#zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
-#zstyle ':completion:*' expand prefix suffix
-#zstyle ':completion:*' format '%d'
-#zstyle ':completion:*' group-name ''
-#zstyle ':completion:*' list-colors ''
-#zstyle ':completion:*' list-prompt '%SAt %p: Hit TAB for more, or the character to insert%s'
-#zstyle ':completion:*' list-suffixes true
-#zstyle ':completion:*' max-errors 6 numeric
-#zstyle ':completion:*' menu select=3
-#zstyle ':completion:*' select-prompt '%SScrolling active: current selection at %p%s'
-zstyle :compinstall filename '/home/robin/.zshrc'
+# modules
+zmodload zsh/complist
+zmodload zsh/complete
 
 autoload -Uz compinit
 compinit
+setopt autocd
+setopt pathdirs
+setopt notify
 setopt completealiases
+setopt correct hash_list_all
+unsetopt braceccl
+setopt extendedglob
 
-# End of lines added by compinstall
-# Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=10000
 SAVEHIST=10000
 setopt appendhistory autocd beep extendedglob nomatch notify
-# End of lines configured by zsh-newuser-install
 
-bindkey -e
-
-#prompt
+# prompt
 autoload -U colors && colors
 autoload -Uz compinit
 compinit
@@ -44,21 +35,55 @@ autoload -U promptinit
 promptinit
 prompt redhat
 
-#bindings
-bindkey "\e[1~" beginning-of-line # Home
-bindkey "\e[4~" end-of-line # End
-bindkey "\e[5~" beginning-of-history # PageUp
-bindkey "\e[6~" end-of-history # PageDown
-bindkey "\e[2~" quoted-insert # Ins
-bindkey "\e[3~" delete-char # Del
-bindkey "\e[5C" forward-word
-bindkey "\eOc" emacs-forward-word
-bindkey "\e[5D" backward-word
-bindkey "\eOd" emacs-backward-word
-bindkey "\e\e[C" forward-word
-bindkey "\e\e[D" backward-word
-bindkey "\e[Z" reverse-menu-complete # Shift+Tab
-
-#aur
+# aur
 source /usr/share/zsh/plugins/zsh-syntax-highlight/zsh-syntax-highlighting.zsh
 
+## {{{ set prompt
+#  #precmd () { setopt promptsubst; [[ -o interactive ]] && jobs -l;
+#  precmd () {
+#      RPROMPT="%(?..:()% ${SCREENTITLE}"
+#  }
+#
+#  preexec () {
+#  # set screen window title if running in a screen
+#  # get the name of the program currently running
+#      if [[ "$TERM" == screen* ]]; then
+#          local CMD=${1[(wr)^(*=*|sudo|ssh|-*)]}
+#          echo -ne "\ek$CMD\e\\"
+#      fi
+#  # set the screen title to "zsh" when sitting at a command prompt:
+#      if [[ "$TERM" == screen* ]]; then
+#           SCREENTITLE=$'%{\ekzsh\e\\%}'
+#      else
+#           SCREENTITLE=''
+#      fi
+#  }
+#
+#  EXITCODE="%(?..%?%1v )"
+#  local BLUE=%F{blue}
+#  local RED=$fg[red]
+#  local GREEN=$fg[green]
+#  local CYAN=$fg[cyan]
+##  local BLUE="%{[1;34m%}"
+##  local RED="%{[1;31m%}"
+##  local GREEN="%{[1;32m%}"
+##  local CYAN="%{[1;36m%}"
+##  local NO_COLOUR="%{[0m%}"
+#  PS2='`%_> '       # secondary prompt, printed when the shell needs more information to complete a command.
+#  PS3='?# '         # selection prompt used within a select loop.
+#  PS4='+%N:%i:%_> ' # the execution trace prompt (setopt xtrace). default: '+%N:%i>'
+#
+## only if $GRMLPROMPT is set (e.g. via GRMLPROMPT='1') use the extended prompt
+#  if ! [[ -z "$GRMLPROMPT" ]]; then
+#    PROMPT="${RED}${EXITCODE}${CYAN}[%j running job(s)] ${GREEN}{history#%!} ${RED}%(3L.+.) ${BLUE}%* %D
+#${BLUE}%n${NO_COLOUR}@%m %40<...<%B%~%b%<< %# "
+#  else
+#    if (( EUID != 0 )); then
+#      PROMPT="${RED}${EXITCODE}${BLUE}%n${NO_COLOUR}@%m %40<...<%B%~%b%<< %# " # primary prompt string
+#    else
+#      PROMPT="${BLUE}${EXITCODE}${RED}%n${NO_COLOUR}@%m %40<...<%B%~%b%<< %# " # primary prompt string
+#    fi
+#  fi
+## }}}
+#
+#

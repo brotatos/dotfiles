@@ -23,6 +23,17 @@ zstyle ':completion:*:default'                 list-prompt '%B%S%M matches%s%b'
 zstyle ':completion:*'                         format '%B%F{cyan}>> %d%f%b'
 zstyle ':completion:*'                         group-name ''
 zstyle ':completion:*'                         verbose yes
+
+zstyle ':completion:*'                         matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+zstyle ':completion:*'                         list-colors ''
+zstyle ':completion:*'                         menu select=2
+
+# COMMANDS {{{1
+zstyle ':completion:*'                         list-colors "${(s.:.)LS_COLORS}"
+zstyle ':completion:*:*:cd:*'                  tag-order local-directories directory-stack path-directories
+zstyle ':completion:*:-tilde-:*'               group-order 'named-directories' 'path-directories' 'users' 'expand'
+zstyle ':completion:*'                         squeeze-slashes true
+
 zstyle ':completion:*' completer _oldlist _complete _correct
 zstyle ':completion:*' accept-exact-dirs 'yes'
 zstyle ':completion:*' file-sort name
@@ -53,4 +64,5 @@ zstyle ':completion:*:*:*:*:processes' force-list always
 zstyle ':completion:*:*:-subscript-:*' tag-order indexes parameters
 [[ -f ~/.ssh/config && -f ~/.ssh/known_hosts ]] &&
   zstyle ':completion:*' hosts ${${${(M)${(f)"$(<~/.ssh/config)"}##Host *}#Host }#\*} ${${${${(f)"$(<$HOME/.ssh/known_hosts)"}:#[0-9]*}%%\ *}%%,*}
+
 
