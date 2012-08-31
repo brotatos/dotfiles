@@ -1,7 +1,7 @@
-URxvt*font:-*-terminus-*-*-*-*-14-*-*-*-*-*-*-*
-URxvt*boldfont:-*-terminus-bold-*-*-*-14-*-*-*-*-*-*-*
-!URxvt*font:-*-terminus-*-*-*-*-*-*-*-*-*-*-*-*
-!URxvt*boldFont:-*-terminus-bold-*-*-*-*-*-*-*-*-*-*-*
+!URxvt*font:-*-terminus-*-*-*-*-14-*-*-*-*-*-*-*
+!URxvt*boldfont:-*-terminus-bold-*-*-*-14-*-*-*-*-*-*-*
+URxvt*font:-*-terminus-*-*-*-*-*-*-*-*-*-*-*-*
+URxvt*boldFont:-*-terminus-bold-*-*-*-*-*-*-*-*-*-*-*
 URxvt.scrollstyle:rxvt
 URxvt.scrollBar: false
 URxvt.perl-ext-common: default,matcher,url-select

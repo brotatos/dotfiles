@@ -54,4 +54,3 @@ zstyle ':completion:*:*:-subscript-:*' tag-order indexes parameters
 [[ -f ~/.ssh/config && -f ~/.ssh/known_hosts ]] &&
   zstyle ':completion:*' hosts ${${${(M)${(f)"$(<~/.ssh/config)"}##Host *}#Host }#\*} ${${${${(f)"$(<$HOME/.ssh/known_hosts)"}:#[0-9]*}%%\ *}%%,*}
 
-
