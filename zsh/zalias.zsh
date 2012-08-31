@@ -22,11 +22,6 @@ alias mgeneral="sudo mount -L general"
 alias ummedia="sudo umount /mnt/media"
 alias umgeneral="sudo umount /mnt/general"
 
-# ~/github/bin/
-#alias screenshot="~/github/scripts/screenshot"
-#alias imgur="~/github/scripts/imgur"
-#alias garbage="~/github/scripts/garbage"
-
 # latex
 alias ct="rm *.{aux,pdf}"
 alias clap="pdflatex *.tex; zathura *.pdf; rm *.{aux,pdf}"
