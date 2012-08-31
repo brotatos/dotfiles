@@ -45,9 +45,9 @@ syntax enable
 colorscheme jellybeans
 set background=light
 
-" plugins
-let g:tabular_loaded = 1
-
 " mutt
 au BufRead /tmp/mutt-* set tw=72
 au BufRead /tmp/mutt-* set nohlsearch
+
+" latex
+autocmd FileType tex setlocal spell spelllang=en_us
