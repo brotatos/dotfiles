@@ -3,6 +3,7 @@ scriptencoding utf-8
 set encoding=utf-8
 
 " generic
+set title
 set nocompatible
 set wrapscan
 set mouse=a
@@ -12,7 +13,6 @@ set modelines=0
 
 " tabs
 set et
-set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 
@@ -44,9 +44,6 @@ syntax enable
 " colors
 colorscheme jellybeans
 set background=light
-
-" plugins
-let g:tabular_loaded = 1
 
 " mutt
 au BufRead /tmp/mutt-* set tw=72
