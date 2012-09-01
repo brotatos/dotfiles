@@ -33,10 +33,52 @@ autoload -Uz compinit
 compinit
 autoload -U promptinit
 promptinit
-prompt redhat
+#PROMPT="%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg[yellow]%}%1~ %{$reset_color%}%#"
+#RPROMPT="[%{$fg[yellow]%}%?%{$reset_color%}]"
 
 # aur
 source /usr/share/zsh/plugins/zsh-syntax-highlight/zsh-syntax-highlighting.zsh
+
+function zrcautoload() {
+    emulate -L zsh
+    setopt extended_glob
+    local fdir ffile
+    local -i ffound
+
+    ffile=$1
+    (( found = 0 ))
+    for fdir in ${fpath} ; do
+        [[ -e ${fdir}/${ffile} ]] && (( ffound = 1 ))
+    done
+
+    (( ffound == 0 )) && return 1
+    if [[ $ZSH_VERSION == 3.1.<6-> || $ZSH_VERSION == <4->* ]] ; then
+        autoload -U ${ffile} || return 1
+    else
+        autoload ${ffile} || return 1
+    fi
+    return 0
+}
+
+if zrcautoload colors && colors 2>/dev/null ; then
+BLUE="%{${fg[blue]}%}"
+    RED="%{${fg_bold[red]}%}"
+    GREEN="%{${fg[green]}%}"
+    CYAN="%{${fg[cyan]}%}"
+    MAGENTA="%{${fg[magenta]}%}"
+    YELLOW="%{${fg[yellow]}%}"
+    WHITE="%{${fg[white]}%}"
+    NO_COLOUR="%{${reset_color}%}"
+else
+BLUE=$'%{\e[1;34m%}'
+    RED=$'%{\e[1;31m%}'
+    GREEN=$'%{\e[1;32m%}'
+    CYAN=$'%{\e[1;36m%}'
+    WHITE=$'%{\e[1;37m%}'
+    MAGENTA=$'%{\e[1;35m%}'
+    YELLOW=$'%{\e[1;33m%}'
+    NO_COLOUR=$'%{\e[0m%}'
+fi
 
 ## {{{ set prompt
 #  #precmd () { setopt promptsubst; [[ -o interactive ]] && jobs -l;
@@ -87,3 +129,36 @@ source /usr/share/zsh/plugins/zsh-syntax-highlight/zsh-syntax-highlighting.zsh
 ## }}}
 #
 #
+
+setprompt () {
+# load some modules
+autoload -U colors zsh/terminfo # Used in the colour alias below
+colors
+setopt prompt_subst
+
+# make some aliases for the colours: (coud use normal escap.seq's too)
+for color in RED GREEN YELLOW BLUE MAGENTA CYAN WHITE; do
+eval PR_$color='%{$fg[${(L)color}]%}'
+done
+PR_NO_COLOR="%{$terminfo[sgr0]%}"
+
+# Check the UID
+if [[ $UID -ge 1000 ]]; then # normal user
+eval PR_USER='${PR_GREEN}%n${PR_NO_COLOR}'
+eval PR_USER_OP='${PR_GREEN}%#${PR_NO_COLOR}'
+elif [[ $UID -eq 0 ]]; then # root
+eval PR_USER='${PR_RED}%n${PR_NO_COLOR}'
+eval PR_USER_OP='${PR_RED}%#${PR_NO_COLOR}'
+fi      
+
+# Check if we are on SSH or not
+if [[ -n "$SSH_CLIENT" || -n "$SSH2_CLIENT" ]]; then
+eval PR_HOST='${PR_YELLOW}%M${PR_NO_COLOR}' #SSH
+else
+eval PR_HOST='${PR_GREEN}%M${PR_NO_COLOR}' # no SSH
+fi
+# set the prompt
+PS1=$'${PR_CYAN}[${PR_USER}${PR_CYAN}@${PR_HOST}${PR_CYAN}][${PR_BLUE}%~${PR_CYAN}]${PR_USER_OP} '
+PS2=$'%_>'
+}
+setprompt
