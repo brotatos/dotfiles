@@ -48,3 +48,6 @@ set background=light
 " mutt
 au BufRead /tmp/mutt-* set tw=72
 au BufRead /tmp/mutt-* set nohlsearch
+
+" latex
+autocmd FileType tex setlocal spell spelllang=en_us
