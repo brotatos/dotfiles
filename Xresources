@@ -1,21 +1,26 @@
+! General
+
 URxvt*font:-*-terminus-*-*-*-*-*-*-*-*-*-*-*-*
 URxvt*boldFont:-*-terminus-bold-*-*-*-*-*-*-*-*-*-*-*
+URxvt*urgentOnBell: true
+URxvt*termname:screen-256color
 URxvt.scrollstyle:rxvt
 URxvt.scrollBar: false
-URxvt.perl-ext-common: default,matcher,url-select
+
+! Extras
+
+URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select
+URxvt.url-select.launcher: aurora
+URxvt.keysym.M-u:   perl:url-select:select_next
 URxvt.keysym.M-Escape: perl:keyboard-select:activate
 URxvt.keysym.M-s: perl:keyboard-select:search
-URxvt.urlLauncher: /usr/bin/aurora
-URxvt.matcher.button: 1
-URxvt.keysym.M-u: perl:url-select:select_next
-Urxvt.urlLauncher: aurora
+URxvt.urlLauncher: /usr/bin/aurora -new-tab
 Urxvt.underlineURLS: true
-URxvt*borderLess: false
+URxvt.borderLess: false
 URxvt.buffered: true
-URxvt.transparent: 0
-URxvt*urgentOnBell: true
 
 ! Colors
+
 URxvt*cursorColor: #cf6a4c
 URxvt*background: #151515
 URxvt*foreground: #d7d7d7

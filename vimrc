@@ -11,10 +11,6 @@ filetype plugin indent on
 set wrap
 set modelines=0
 
-" bindings
-map <m-l> :bn<cr>
-map <m-h> :bp<cr>
-
 " tabs
 set et
 set shiftwidth=4
