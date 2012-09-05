@@ -18,18 +18,6 @@ alias mpd="mpd; mpdscribble"
 alias sickbeard="sudo systemctl start sickbeard.service"
 alias sickbeards="sudo systemctl stop sickbeard.service"
 
-
-# mounts
-alias mmedia="sudo mount -L media"
-alias mgeneral="sudo mount -L general"
-alias ummedia="sudo umount /mnt/media"
-alias umgeneral="sudo umount /mnt/general"
-
-# ~/github/bin/
-#alias screenshot="~/github/scripts/screenshot"
-#alias imgur="~/github/scripts/imgur"
-#alias garbage="~/github/scripts/garbage"
-
 # latex
 alias ct="rm *.{aux,pdf}"
 

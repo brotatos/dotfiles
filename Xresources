@@ -10,7 +10,7 @@ URxvt.matcher.button: 1
 URxvt.keysym.M-u: perl:url-select:select_next
 Urxvt.urlLauncher: aurora
 Urxvt.underlineURLS: true
-URxvt*borderLess: true
+URxvt*borderLess: false
 URxvt.buffered: true
 URxvt.transparent: 0
 URxvt*urgentOnBell: true
