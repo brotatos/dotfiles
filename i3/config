@@ -18,7 +18,7 @@ font -*-terminus-medium-r-normal-*-12-120-72-72-c-60-iso10646-1
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec termite
+bindsym $mod+Return exec urxvtc
 
 # kill focused window
 bindsym $mod+Shift+Q kill
@@ -128,7 +128,9 @@ focus_follows_mouse no
 
 # Window rules
 bindsym $mod+Tab workspace back_and_forth
-new_window normal
+new_window 1pixel
+for_window [class="Vimperator"] border normal;
+for_window [class="Aurora"] border normal;
 for_window [class="Wine"] floating enable;
 for_window [class="Gimp"] floating enable;
 

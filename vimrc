@@ -11,6 +11,10 @@ filetype plugin indent on
 set wrap
 set modelines=0
 
+" bindings
+map <m-l> :bn<cr>
+map <m-h> :bp<cr>
+
 " tabs
 set et
 set shiftwidth=4
@@ -48,6 +52,7 @@ set background=light
 " mutt
 au BufRead /tmp/mutt-* set tw=72
 au BufRead /tmp/mutt-* set nohlsearch
+au BufRead /tmp/mutt-* setlocal spell spelllang=en_us
 
 " latex
 autocmd FileType tex setlocal spell spelllang=en_us

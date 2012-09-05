@@ -5,12 +5,12 @@ URxvt.scrollBar: false
 URxvt.perl-ext-common: default,matcher,url-select
 URxvt.keysym.M-Escape: perl:keyboard-select:activate
 URxvt.keysym.M-s: perl:keyboard-select:search
-URxvt.urlLauncher: /usr/bin/firefox
+URxvt.urlLauncher: /usr/bin/aurora
 URxvt.matcher.button: 1
 URxvt.keysym.M-u: perl:url-select:select_next
-Urxvt.urlLauncher: firefox
+Urxvt.urlLauncher: aurora
 Urxvt.underlineURLS: true
-URxvt*borderLess: false
+URxvt*borderLess: true
 URxvt.buffered: true
 URxvt.transparent: 0
 URxvt*urgentOnBell: true
@@ -35,7 +35,3 @@ URxvt*color5: #eeeeec
 URxvt*color14: #8fbfdc
 URxvt*color8: #555753
 
-!dzen2
-dzen2.font:-*-terminus-*-*-*-*-*-*-*-*-*-*-*-*
-dzen2.foreground: white
-dzen2.background: black
