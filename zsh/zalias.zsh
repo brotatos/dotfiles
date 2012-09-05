@@ -14,8 +14,10 @@ alias omup="omup -s"
 # arch
 alias update="sudo pacman -Syu; meat -u"
 alias sprunge="curl -F 'sprunge=<-' http://sprunge.us"
+alias mpd="mpd; mpdscribble"
 alias sickbeard="sudo systemctl start sickbeard.service"
 alias sickbeards="sudo systemctl stop sickbeard.service"
+
 
 # mounts
 alias mmedia="sudo mount -L media"

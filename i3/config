@@ -128,18 +128,15 @@ focus_follows_mouse no
 
 # Window rules
 bindsym $mod+Tab workspace back_and_forth
-new_window 1pixel
+new_window normal
 for_window [class="Wine"] floating enable;
 for_window [class="Gimp"] floating enable;
 
 # programs
-bindsym $mod+z exec --no-startup-id aurora
-#bindsym $mod+shift+Z exec --no-startup-id chromium --incognito
+bindsym $mod+z exec aurora
 bindsym $mod+c exec sh -c 'aurora $(xclip -out)'
-#bindsym $mod+c exec sh -c 'chromium $(xclip -out)'
-#bindsym $mod+m exec sh -c 'chromium --incognito $(xclip -out)'
-bindsym $mod+y exec ~/github/scripts/yt
-bindsym $mod+i exec ~/github/scripts/imgur
+bindsym $mod+y exec yt
+bindsym $mod+i exec imgur
 bindsym $mod+n exec scrot
 
 # Assignments
@@ -148,40 +145,40 @@ assign [class="Wine"] 9
 # resize window (you can also use the mouse for that)
 
 mode "resize" {
-        # These bindings trigger as soon as you enter the resize mode
+    # These bindings trigger as soon as you enter the resize mode
 
-        # They resize the border in the direction you pressed, e.g.
-        # when pressing left, the window is resized so that it has
-        # more space on its left
+    # They resize the border in the direction you pressed, e.g.
+    # when pressing left, the window is resized so that it has
+    # more space on its left
 
-bindsym h resize shrink left 10 px or 10 ppt
-bindsym Shift+H resize grow   left 10 px or 10 ppt
+    bindsym h resize shrink left 10 px or 10 ppt
+    bindsym Shift+H resize grow   left 10 px or 10 ppt
 
-bindsym j resize shrink down 10 px or 10 ppt
-bindsym Shift+J resize grow   down 10 px or 10 ppt
+    bindsym j resize shrink down 10 px or 10 ppt
+    bindsym Shift+J resize grow   down 10 px or 10 ppt
 
-bindsym k resize shrink up 10 px or 10 ppt
-bindsym Shift+K resize grow   up 10 px or 10 ppt
+    bindsym k resize shrink up 10 px or 10 ppt
+    bindsym Shift+K resize grow   up 10 px or 10 ppt
 
-bindsym l resize shrink right 10 px or 10 ppt
-bindsym Shift+L resize grow   right 10 px or 10 ppt
+    bindsym l resize shrink right 10 px or 10 ppt
+    bindsym Shift+L resize grow   right 10 px or 10 ppt
 
-        # same bindings, but for the arrow keys
-bindsym Left resize shrink left 10 px or 10 ppt
-bindsym Shift+Left resize grow   left 10 px or 10 ppt
+            # same bindings, but for the arrow keys
+    bindsym Left resize shrink left 10 px or 10 ppt
+    bindsym Shift+Left resize grow   left 10 px or 10 ppt
 
-bindsym Down resize shrink down 10 px or 10 ppt
-bindsym Shift+Down resize grow   down 10 px or 10 ppt
+    bindsym Down resize shrink down 10 px or 10 ppt
+    bindsym Shift+Down resize grow   down 10 px or 10 ppt
 
-bindsym Up resize shrink up 10 px or 10 ppt
-bindsym Shift+Up resize grow   up 10 px or 10 ppt
+    bindsym Up resize shrink up 10 px or 10 ppt
+    bindsym Shift+Up resize grow   up 10 px or 10 ppt
 
-bindsym Right resize shrink right 10 px or 10 ppt
-bindsym Shift+Right resize grow   right 10 px or 10 ppt
+    bindsym Right resize shrink right 10 px or 10 ppt
+    bindsym Shift+Right resize grow   right 10 px or 10 ppt
 
-        # back to normal: Enter or Escape
-bindsym Return mode "default"
-bindsym Escape mode "default"
+    # back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
 }
 
 bindsym $mod+r mode "resize"
