@@ -1,17 +1,17 @@
 ! General
 
-URxvt*font:-*-terminus-*-*-*-*-*-*-*-*-*-*-*-*
-URxvt*boldFont:-*-terminus-bold-*-*-*-*-*-*-*-*-*-*-*
+URxvt*font: -*-terminus-*-*-*-*-*-*-*-*-*-*-*-*
+URxvt*boldFont: -*-terminus-bold-*-*-*-*-*-*-*-*-*-*-*
 URxvt*urgentOnBell: true
-URxvt*termname:screen-256color
-URxvt.scrollstyle:rxvt
+URxvt*termname: screen-256color
+URxvt.scrollstyle: rxvt
 URxvt.scrollBar: false
 
 ! Extras
 
 URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select
 URxvt.url-select.launcher: aurora
-URxvt.keysym.M-u:   perl:url-select:select_next
+URxvt.keysym.M-u: perl:url-select:select_next
 URxvt.keysym.M-Escape: perl:keyboard-select:activate
 URxvt.keysym.M-s: perl:keyboard-select:search
 URxvt.urlLauncher: /usr/bin/aurora -new-tab
