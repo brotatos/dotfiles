@@ -6,7 +6,7 @@ alias grep='grep --colour=auto'
 
 alias shutdown="sudo systemctl poweroff"
 alias reboot="sudo systemctl reboot"
-alias suspend="sudo swapon /dev/sdb2; sudo systemctl suspend"
+alias suspend="sudo systemctl suspend"
 
 alias webcam="mplayer tv:// -tv driver=v4l2:width=640:height=480:device=/dev/video0 -fps 30 -vf screenshot"
 alias omup="omup -s"
