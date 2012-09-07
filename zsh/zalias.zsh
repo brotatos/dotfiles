@@ -22,7 +22,7 @@ alias sickbeards="sudo systemctl stop sickbeard.service"
 alias ct="rm *.{aux,pdf}"
 
 # wine
-alias starcraft="wine /mnt/general/general/wine-starcraft/drive_c/Program\ Files\ \(x86\)/StarCraft\ II/StarCraft\ II.exe>/dev/null 2>&1 &"
+alias starcraft="wine /mnt/general/general/wine-starcraft/drive_c/Program\ Files/StarCraft\ II/StarCraft\ II.exe>/dev/null 2>&1 &"
 #alias steam="wine /mnt/general/general/wine/drive_c/Program\ Files/Steam/Steam.exe >/dev/null 2>&1 &"
 alias steam="wine /mnt/general/general/wine/drive_c/Program\ Files/Steam/Steam.exe -no-dwrite>/dev/null 2>&1 &"
 
