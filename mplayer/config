@@ -1,12 +1,23 @@
-## Write your default config options here!
-#
-softvol=yes
+[default]
+nojoystick=1
+quiet=1
+lirc=0
 vf=screenshot
-ao=pulse
-ass=yes
-#ass-force-style="FontName=Dejavu Sans"
-nolirc=yes
-sub-fuzziness=1
-fs=yes
-#ontop=yes
 idx=yes
+
+# video
+vo=vdpau
+vc=ffmpeg12vdpau,ffwmv3vdpau,ffvc1vdpau,#ffh264vdpau,#ffodivxvdpau,
+fs=yes
+
+# audio
+ao=pulse
+softvol=yes
+channels=2
+softvol=1
+volstep=1
+
+# subtitles
+font="DejaVu Sans"
+slang=English,eng,en
+sub-fuzziness=1
