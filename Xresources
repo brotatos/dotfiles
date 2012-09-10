@@ -1,20 +1,20 @@
 ! General
 
-URxvt*font: xft:Dejavu Sans Mono:pixelsize=11,xft:Symbola:pixelsize=10
-URxvt.boldFont: xft:DejaVuSansMono:pixelsize=11:bold,xft:Symbola:pixelsize=6:bold
-!URxvt*font: -*-terminus-*-*-*-*-*-*-*-*-*-*-*-*
-!URxvt*boldFont: -*-terminus-bold-*-*-*-*-*-*-*-*-*-*-*
-URxvt*urgentOnBell: true
-URxvt*termname: screen-256color
-URxvt.scrollstyle: rxvt
-URxvt.scrollBar: false
-URxvt.saveLines:5000
-URxvt.internalborder: 0
-URxvt.iso14755: false
-URxvt.iso14755_52: false
-URxvt.scrollWithBuffer: true
-URxvt.scrollTtyOutput: false
-URxvt.scrollTtyKeypress: true
+URxvt*font:                xft:DejavuSansMono:pixelsize=11,xft:Symbola:pixelsize=10
+URxvt.boldFont:            xft:DejaVuSansMono:pixelsize=11:bold,xft:Symbola:pixelsize=6:bold
+!URxvt*font:               -*-terminus-*-*-*-*-*-*-*-*-*-*-*-*
+!URxvt*boldFont:           -*-terminus-bold-*-*-*-*-*-*-*-*-*-*-*
+URxvt*urgentOnBell:        true
+URxvt*termname:            screen-256color
+URxvt.scrollstyle:         rxvt
+URxvt.scrollBar:           false
+URxvt.saveLines:           5000
+URxvt.internalborder:      0
+URxvt.iso14755:            false
+URxvt.iso14755_52:         false
+URxvt.scrollWithBuffer:    true
+URxvt.scrollTtyOutput:     false
+URxvt.scrollTtyKeypress:   true
 
 ! URL
 
