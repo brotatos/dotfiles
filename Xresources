@@ -1,38 +1,48 @@
 ! General
 
-URxvt*font: -*-terminus-*-*-*-*-*-*-*-*-*-*-*-*
-URxvt*boldFont: -*-terminus-bold-*-*-*-*-*-*-*-*-*-*-*
+URxvt*font: xft:Dejavu Sans Mono:pixelsize=11,xft:Symbola:pixelsize=10
+URxvt.boldFont: xft:DejaVuSansMono:pixelsize=11:bold,xft:Symbola:pixelsize=6:bold
+!URxvt*font: -*-terminus-*-*-*-*-*-*-*-*-*-*-*-*
+!URxvt*boldFont: -*-terminus-bold-*-*-*-*-*-*-*-*-*-*-*
 URxvt*urgentOnBell: true
 URxvt*termname: screen-256color
 URxvt.scrollstyle: rxvt
 URxvt.scrollBar: false
+URxvt.saveLines:5000
+URxvt.internalborder: 0
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+URxvt.scrollWithBuffer: true
+URxvt.scrollTtyOutput: false
+URxvt.scrollTtyKeypress: true
 
-! Extras
+! URL
 
-URxvt.perl-ext-common: default,url-select
-URxvt.matcher.button: 1
-URxvt.keysym.M-u: perl:url-select:select_next
-URxvt.url-select.launcher: /usr/bin/aurora -new-tab
-URxvt.url-select.underline: true
+URxvt.perl-ext-common:        default,url-select,keyboard-select
+URxvt.matcher.button:         1
+URxvt.keysym.M-u:             perl:url-select:select_next
+URxvt.url-select.launcher:    /usr/bin/aurora -new-tab
+URxvt.url-select.underline:   true
+URxvt.keysym.M-Escape:        perl:keyboard-select:activate
+URxvt.keysym.M-s:             perl:keyboard-select:search
 
 ! Colors
 
-URxvt*cursorColor: #cf6a4c
-URxvt*background: #151515
-URxvt*foreground: #d7d7d7
-URxvt*color11: #ffb96c
-URxvt*color6: #8fbfdc
-URxvt*color2: #799d6a
-URxvt*color10: #799d6a
-URxvt*color9: #cf6a4c
-URxvt*color7: #303030
-URxvt*color12: #8197bf
-URxvt*color1: #cf6a4c
-URxvt*color4: #8197bf
-URxvt*color13: #ff3b77
-URxvt*color15: #eeeeec
-URxvt*color3: #ffb964
-URxvt*color5: #eeeeec
-URxvt*color14: #8fbfdc
-URxvt*color8: #555753
-
+URxvt*cursorColor:   #cf6a4c
+URxvt*background:    #151515
+URxvt*foreground:    #d7d7d7
+URxvt*color11:       #ffb96c
+URxvt*color6:        #8fbfdc
+URxvt*color2:        #799d6a
+URxvt*color10:       #799d6a
+URxvt*color9:        #cf6a4c
+URxvt*color7:        #303030
+URxvt*color12:       #8197bf
+URxvt*color1:        #cf6a4c
+URxvt*color4:        #8197bf
+URxvt*color13:       #ff3b77
+URxvt*color15:       #eeeeec
+URxvt*color3:        #ffb964
+URxvt*color5:        #eeeeec
+URxvt*color14:       #8fbfdc
+URxvt*color8:        #555753

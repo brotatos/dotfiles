@@ -19,7 +19,7 @@ alias sickbeard="sudo systemctl start sickbeard.service"
 alias sickbeards="sudo systemctl stop sickbeard.service"
 
 # latex
-alias ct="rm *.{aux,pdf}"
+alias ct="rm -f *.{aux,dvi,pdf,log}"
 
 # wine
 alias starcraft="wine /mnt/general/general/wine-starcraft/drive_c/Program\ Files/StarCraft\ II/StarCraft\ II.exe>/dev/null 2>&1 &"
