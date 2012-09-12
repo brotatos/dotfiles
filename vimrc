@@ -11,15 +11,21 @@ filetype plugin indent on
 set wrap
 set modelines=0
 
-" tabs
-set et
+" display
+set linebreak
+set cursorline
+
+" indentation
+set autoindent
+set smartindent
+set smarttab
 set shiftwidth=4
 set softtabstop=4
+set expandtab
 
 " trailings
 set list
 set listchars=trail:·,tab:▸\
-"set listchars=trail:·,precedes:«,extends:»,eol:↲,tab:▸\
 
 " show
 set showmode
