@@ -22,10 +22,6 @@ setopt correct hash_list_all
 unsetopt braceccl
 setopt extendedglob
 
-HISTFILE=~/.histfile
-HISTSIZE=10000
-SAVEHIST=10000
-setopt appendhistory autocd beep extendedglob nomatch notify
 
 # prompt
 autoload -U colors && colors
