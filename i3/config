@@ -200,10 +200,3 @@ bar {
                 urgent_workspace #ffffff #900000
         }
 }
-
-# Colors
-# class border backgr. text
-#client.focused #525252 #1E1E1E #F5DEB3
-#client.focused_inactive #333333 #0F0F0F #E3CCA1
-#client.unfocused #333333 #010101 #85753A
-#client.urgent #856E23 #900000 #F5DEB3

@@ -59,3 +59,4 @@ au BufRead /tmp/mutt-* setlocal spell spelllang=en_us
 
 " latex
 autocmd FileType tex setlocal spell spelllang=en_us
+autocmd FileType tex setlocal tw=72
