@@ -18,6 +18,3 @@ alias sprunge="curl -F 'sprunge=<-' http://sprunge.us"
 
 alias omup="omup -s"
 
-#~/github/bin/
-alias screenshot="~/github/scripts/screenshot"
-alias imgur="~/github/scripts/imgur"

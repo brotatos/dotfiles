@@ -16,15 +16,8 @@ alias sprunge="curl -F 'sprunge=<-' http://sprunge.us"
 alias sickbeard="sudo systemctl start sickbeard.service"
 alias sickbeards="sudo systemctl stop sickbeard.service"
 
-# mounts
-alias mmedia="sudo mount -L media"
-alias mgeneral="sudo mount -L general"
-alias ummedia="sudo umount /mnt/media"
-alias umgeneral="sudo umount /mnt/general"
-
 # latex
 alias ct="rm *.{aux,pdf}"
-alias clap="pdflatex *.tex; zathura *.pdf; rm *.{aux,pdf}"
 
 # steam
 alias starcraft="wine /mnt/general/general/wine-starcraft/drive_c/Program\ Files\ \(x86\)/StarCraft\ II/StarCraft\ II.exe>/dev/null 2>&1 &"
