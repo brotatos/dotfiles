@@ -1,6 +1,7 @@
 #!/bin/zsh
 
 # general
+alias l='ls --group-directories-first --color=auto -lh'
 alias ls='ls --group-directories-first --color=auto'
 alias grep='grep --colour=auto'
 
