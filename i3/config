@@ -136,7 +136,7 @@ for_window [class="Gimp"] floating enable;
 
 # programs
 bindsym $mod+z exec aurora
-bindsym $mod+c exec sh -c 'aurora $(xclip -out)'
+#bindsym $mod+c exec sh -c 'aurora $(xclip -out)'
 bindsym $mod+y exec yt
 bindsym $mod+i exec imgur
 bindsym $mod+n exec scrot
@@ -191,7 +191,7 @@ bar {
         status_command i3status
 
         colors {
-                background #0F0F0F
+                background #151515
                 statusline #F5DEB3
 
                 focused_workspace #F5DEB3 #666666
