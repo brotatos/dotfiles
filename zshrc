@@ -33,3 +33,6 @@ promptinit
 # aur
 source /usr/share/zsh/plugins/zsh-syntax-highlight/zsh-syntax-highlighting.zsh
 
+
+#new prompt
+
