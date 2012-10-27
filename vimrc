@@ -10,6 +10,7 @@ set mouse=a
 filetype plugin indent on
 set wrap
 set modelines=0
+set vb
 
 " display
 set linebreak
