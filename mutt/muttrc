@@ -16,8 +16,8 @@ set folder      = ~/.mail/              # root folder
 set spoolfile   = "+gmail/INBOX"        # inbox
 set mbox        = "+gmail/INBOX"        # [Gmail]/All Mail
 unset record                            # required to prevent duplicates in Sent
-set sendmail    = /usr/bin/msmtp        # use msmtp 'default' account
-set mailcap_path = ~/.mutt/mailcap		# i keep forgetting this silly option :( 
+#set sendmail    = /usr/bin/msmtp        # use msmtp 'default' account
+set mailcap_path = ~/.mutt/mailcap	# i keep forgetting this silly option :(
 
 # main options
 set envelope_from                                       # which from?
@@ -59,6 +59,8 @@ unignore from  : to : cc : date : subject : # show only these
 hdr_order from : to : cc : date : subject : # and in this order
 
 # bindings
+macro generic "<esc>1" ":set from=xrobinc@gmail.com"
+macro generic "<esc>2" ":set from=rchoudhu@calpoly.edu"
 macro index D "<save-message>+trash<enter>"   "move message to the trash"
 macro index S "<save-message>+spam<enter>"    "mark message as spam"
 bind   pager                         i        exit

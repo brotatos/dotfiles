@@ -1,7 +1,8 @@
-set from=xrobinc@gmail.com
+set sendmail="/usr/bin/msmtp"
+set from= xrobinc@gmail.com
+set envelope_from = yes
 
-set mbox = "+gmail/inbox"
+set mbox = "+gmail/INBOX"
 
 set postponed = "~/.mail/gmail/[Gmail].Drafts/"
 set record = "~/.mail/gmail/[Gmail].Sent/"
-set sendmail="/usr/bin/msmtp -a gmail"
