@@ -1,5 +1,7 @@
 ! General
 
+!URxvt*font: xft:DejaVuSansMono:pixelsize=10,xft:Symbola:pixelsize=10
+!URxvt.boldFont: xft:DejaVuSansMono:pixelsize=10:bold,xft:Symbola:pixelsize=6:bold
 URxvt*font:           -*-terminus-*-*-*-*-*-*-*-*-*-*-*-*
 URxvt*boldFont:       -*-terminus-bold-*-*-*-*-*-*-*-*-*-*-*
 URxvt*urgentOnBell:   true
