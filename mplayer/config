@@ -21,3 +21,4 @@ volstep=1
 font="DejaVu Sans"
 slang=English,eng,en
 sub-fuzziness=1
+ass=true
