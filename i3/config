@@ -134,7 +134,7 @@ for_window [class="Wine"] floating enable;
 for_window [class="Gimp"] floating enable; 
 for_window [class="mplayer"] floating enable;
 for_window [class="mumble"] floating enable; 
-for_window [class="Vapor"] floating enable; 
+for_window [class="Steam"] floating enable; 
 
 # programs
 bindsym $mod+z exec aurora

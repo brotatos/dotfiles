@@ -51,3 +51,4 @@ au BufRead /tmp/mutt-* set nohlsearch
 
 " latex
 autocmd FileType tex setlocal spell spelllang=en_us
+autocmd FileType tex setlocal tw=72
