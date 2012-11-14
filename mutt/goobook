@@ -1,5 +1,5 @@
 # Goobook query (google contacts)
-set query_command="goobook query '%s'" 
+set query_command="goobook query '%s'"
 bind editor \t complete-query
 
 # Add contacts to google
