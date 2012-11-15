@@ -35,3 +35,6 @@ alias excel="wine /mnt/general/general/wine-office/drive_c/Program\ Files/Micros
 
 # kvm
 alias moonlightsucks="sudo qemu-kvm -hda /mnt/general/general/kvm/windows -m 6144 -smp 2 -vga std"
+
+# etc
+alias steamhack="/usr/bin/steam steam://open/games"
