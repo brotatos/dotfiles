@@ -20,10 +20,8 @@ alias sickbeards="sudo systemctl stop sickbeard.service"
 # latex
 alias ct="rm *.{aux,pdf}"
 
-# steam
-alias starcraft="wine /mnt/general/general/wine-starcraft/drive_c/Program\ Files\ \(x86\)/StarCraft\ II/StarCraft\ II.exe>/dev/null 2>&1 &"
-#alias steam="wine /mnt/general/general/wine/drive_c/Program\ Files/Steam/Steam.exe >/dev/null 2>&1 &"
-alias steam="wine /mnt/general/general/wine/drive_c/Program\ Files/Steam/Steam.exe -no-dwrite>/dev/null 2>&1 &"
+# wine
+alias word="wine /home/robin/.wine/drive_c/Program\ Files/Microsoft\ Office/Office12/WINWORD.exe >/dev/null 2>&1 &"
+alias excel="wine /home/robin/.wine/drive_c/Program\ Files/Microsoft\ Office/Office12/EXCEL.exe >/dev/null 2>&1 &"
+alias powerpoint="wine /home/robin/.wine/drive_c/Program\ Files/Microsoft\ Office/Office12/POWERPNT.EXE >/dev/null 2>&1 &"
 
-# kvm
-alias moonlightsucks="sudo qemu-kvm -hda /mnt/general/general/kvm/windows -m 6144 -smp 2 -vga std"
