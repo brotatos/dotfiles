@@ -27,7 +27,7 @@ alias ct="rm -f *.{aux,dvi,pdf,log}"
 # wine
 alias starcraft="wine /mnt/general/general/wine-starcraft/drive_c/Program\ Files/StarCraft\ II/StarCraft\ II.exe>/dev/null 2>&1 &"
 #alias steam="wine /mnt/general/general/wine/drive_c/Program\ Files/Steam/Steam.exe >/dev/null 2>&1 &"
-alias steam="wine /mnt/general/general/wine/drive_c/Program\ Files/Steam/Steam.exe -no-dwrite>/dev/null 2>&1 &"
+#alias steam="wine /mnt/general/general/wine/drive_c/Program\ Files/Steam/Steam.exe -no-dwrite>/dev/null 2>&1 &"
 
 alias word="WINEPREFIX=/mnt/general/general/wine-office wine /mnt/general/general/wine-office/drive_c/Program\ Files/Microsoft\ Office/Office12/WINWORD.EXE>/dev/null 2>&1 &"
 alias powerpoint="WWINEPREFIX=/mnt/general/general/wine-office wine /mnt/general/general/wine-office/drive_c/Program\ Files/Microsoft\ Office/Office12/POWERPNT.EXE>/dev/null 2>&1 &"
