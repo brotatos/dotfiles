@@ -1,1 +1,1 @@
-mailboxes "+gmail/[Gmail].Spam" "+gmail/drafts" "+gmail/flagged" "+gmail/INBOX" "+gmail/sent"
+mailboxes "+gmail/inbox"
