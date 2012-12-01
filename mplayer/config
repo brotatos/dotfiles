@@ -7,7 +7,6 @@ idx=yes
 
 # video
 vo=vdpau
-vc=ffmpeg12vdpau,ffwmv3vdpau,ffvc1vdpau
 fs=yes
 
 # audio
