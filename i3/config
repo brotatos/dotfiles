@@ -130,11 +130,12 @@ focus_follows_mouse no
 # Window rules
 bindsym $mod+Tab workspace back_and_forth
 new_window 1pixel
-for_window [class="Wine"] floating enable; 
-for_window [class="Gimp"] floating enable; 
+for_window [class="Aurora"] border normal;
+for_window [class="Wine"] floating enable;
+for_window [class="Gimp"] floating enable;
 for_window [class="mplayer"] floating enable;
-for_window [class="mumble"] floating enable; 
-for_window [class="Steam"] floating enable; 
+for_window [class="mumble"] floating enable;
+for_window [class="Steam"] floating enable;
 
 # programs
 bindsym $mod+z exec aurora
