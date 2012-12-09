@@ -25,3 +25,4 @@ alias word="wine /home/robin/.wine/drive_c/Program\ Files/Microsoft\ Office/Offi
 alias excel="wine /home/robin/.wine/drive_c/Program\ Files/Microsoft\ Office/Office12/EXCEL.exe >/dev/null 2>&1 &"
 alias powerpoint="wine /home/robin/.wine/drive_c/Program\ Files/Microsoft\ Office/Office12/POWERPNT.EXE >/dev/null 2>&1 &"
 
+alias steam="/usr/bin/steam steam://open/games"
