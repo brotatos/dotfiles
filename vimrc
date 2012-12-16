@@ -56,3 +56,6 @@ au BufRead /tmp/mutt-* set nohlsearch
 " latex
 autocmd FileType tex setlocal spell spelllang=en_us
 autocmd FileType tex setlocal tw=72
+
+" python
+autocmd FileType python set shiftwidth=4 ts=4
