@@ -11,8 +11,6 @@ set wrap
 set modelines=0
 set backupcopy=yes
 set backupdir=$HOME/.vim/backup
-set backupskip=/tmp/*
-set directory=~/.vim/swap
 
 " tabs
 set et
