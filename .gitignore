@@ -1,6 +1,8 @@
 #vim
 *.swp
 vim/.netrwhist
+vim/backup/*
+vim/swap/*
 
 #mpd
 mpd/mpd.db
