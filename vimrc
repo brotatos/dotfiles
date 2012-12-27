@@ -3,6 +3,7 @@ scriptencoding utf-8
 set encoding=utf-8
 
 " generic
+set autoread
 set title
 set nocompatible
 set wrapscan
@@ -11,6 +12,10 @@ filetype plugin indent on
 set wrap
 set modelines=0
 set vb
+
+" backup
+set backupcopy=yes
+set backupdir=$HOME/.vim/backup
 
 " display
 set linebreak
@@ -61,3 +66,6 @@ au BufRead /tmp/mutt-* setlocal spell spelllang=en_us
 " latex
 autocmd FileType tex setlocal spell spelllang=en_us
 autocmd FileType tex setlocal tw=72
+
+" python
+autocmd FileType python set shiftwidth=4 tabstop=4 tw=72
