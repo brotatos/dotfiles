@@ -17,7 +17,7 @@ alias connecte="sudo netcfg -r home"
 
 # arch
 alias update="sudo pacman -Syu; meat -u"
-alias ix="curl -F 'f:1=<-' ix.io"
+alias sprunge="curl -F 'sprunge=<-' http://sprunge.us"
 alias mpd="mpd; mpdscribble"
 alias sickbeard="sudo systemctl start sickbeard.service"
 alias sickbeards="sudo systemctl stop sickbeard.service"
