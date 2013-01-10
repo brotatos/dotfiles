@@ -69,3 +69,4 @@ autocmd FileType tex setlocal tw=72
 
 " python
 autocmd FileType python set shiftwidth=4 tabstop=4 tw=72
+autocmd FileType c      set shiftwidth=3 tabstop=3 softtabstop=3 tw=72 
