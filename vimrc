@@ -3,6 +3,8 @@ scriptencoding utf-8
 set encoding=utf-8
 
 " generic
+"set gdefault
+" s/asf/asdf/g by default
 set nocompatible
 set wrapscan
 set mouse=a
