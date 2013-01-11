@@ -57,3 +57,6 @@ autocmd FileType tex setlocal tw=72
 
 " python
 autocmd FileType python set shiftwidth=4 ts=4 tw=72
+autocmd FileType c      set shiftwidth=3 ts=3 softabstop=3 tw=100
+autocmd FileType cpp    set shiftwidth=3 ts=3 softabstop=3 tw=100
+
