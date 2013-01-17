@@ -53,12 +53,10 @@ set background=light
 au BufRead /tmp/mutt-* set tw=72
 au BufRead /tmp/mutt-* set nohlsearch
 
-" latex
+" language specific
 autocmd FileType tex setlocal spell spelllang=en_us
 autocmd FileType tex setlocal tw=72
-
-" python
 autocmd FileType python set shiftwidth=4 ts=4 tw=72
-autocmd FileType c      set shiftwidth=3 ts=3 softabstop=3 tw=100
-autocmd FileType cpp    set shiftwidth=3 ts=3 softabstop=3 tw=100
+autocmd FileType c      set shiftwidth=3 ts=3 softtabstop=3 tw=100
+autocmd FileType cpp    set shiftwidth=3 ts=3 softtabstop=3 tw=100
 

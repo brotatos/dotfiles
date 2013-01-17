@@ -19,3 +19,8 @@ alias update="sudo pacman -Syu; meat -u"
 alias sprunge="curl -F 'sprunge=<-' http://sprunge.us"
 alias sickbeard="sudo systemctl start sickbeard.service"
 alias sickbeards="sudo systemctl stop sickbeard.service"
+
+# school
+alias secure="sudo netcfg wlan0-SecureMustangWireless"
+alias regular="sudo netcfg wlan0-GuestMustangWireless"
+alias home="sudo netcfg wlan0-ATT544"
