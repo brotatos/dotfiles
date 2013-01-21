@@ -12,6 +12,7 @@ filetype plugin indent on
 set wrap
 set modelines=0
 set vb
+set scrolloff=5
 
 " backup
 set backupcopy=yes
@@ -69,4 +70,4 @@ autocmd FileType tex setlocal tw=72
 
 " python
 autocmd FileType python set shiftwidth=4 tabstop=4 tw=72
-autocmd FileType c      set shiftwidth=3 tabstop=3 softtabstop=3 tw=72 
+autocmd FileType c      set shiftwidth=3 tabstop=3 softtabstop=3 tw=72

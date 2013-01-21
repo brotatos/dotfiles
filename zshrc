@@ -22,7 +22,6 @@ setopt correct hash_list_all
 unsetopt braceccl
 setopt extendedglob
 
-
 # prompt
 autoload -U colors && colors
 autoload -Uz compinit
