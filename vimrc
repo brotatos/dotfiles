@@ -13,6 +13,7 @@ set wrap
 set modelines=0
 set backupcopy=yes
 set backupdir=$HOME/.vim/backup
+set scrolloff=5
 
 " tabs
 set et
