@@ -13,8 +13,26 @@ statusbar_color = "green"
 active_column_color = "green"
 window_border_color = "red"
 active_window_border = "yellow"
-mpd_music_dir = "/home/robin/music/"
+
+mpd_crossfade_time = "5"
+mpd_music_dir = "/home/robin/music"
 user_interface = "alternative"
+
+playlist_display_mode= "columns"
+playlist_separate_albums = "yes"
+
+browser_display_mode = "columns"
+playlist_editor_display_mode = "columns"
+
 mouse_support = "yes"
+
 allow_physical_files_deletion = "no"
 allow_physical_directories_deletion = "no"
+
+mpd_host "127.0.0.1"
+mpd_port "6600"
+
+# Bars {{{1
+song_status_format = "{%a - }{%t - }{%b}"
+progressbar_look = "─╼╶"
+header_visibility = "no"
