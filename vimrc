@@ -64,10 +64,11 @@ au BufRead /tmp/mutt-* set tw=72
 au BufRead /tmp/mutt-* set nohlsearch
 au BufRead /tmp/mutt-* setlocal spell spelllang=en_us
 
-" latex
+" language specific
+autocmd FileType python set shiftwidth=4 tabstop=4 tw=72
+autocmd FileType c      set shiftwidth=3 tabstop=3 softtabstop=3 tw=72
 autocmd FileType tex setlocal spell spelllang=en_us
 autocmd FileType tex setlocal tw=72
 
-" python
-autocmd FileType python set shiftwidth=4 tabstop=4 tw=72
-autocmd FileType c      set shiftwidth=3 tabstop=3 softtabstop=3 tw=72
+" commands
+nmap <silent> <F2> g<C-g> 
