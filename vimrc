@@ -56,7 +56,6 @@ syntax enable
 
 " colors
 colorscheme jellybeans
-"let g:zenburn_high_Contrast = 1
 set background=light
 
 " mutt

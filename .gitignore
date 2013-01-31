@@ -3,6 +3,7 @@
 vim/.netrwhist
 vim/backup/*
 vim/swap/*
+vim/view/*
 
 #mpd
 mpd/mpd.db
