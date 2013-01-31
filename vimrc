@@ -56,7 +56,6 @@ syntax enable
 
 " colors
 colorscheme jellybeans
-"let g:zenburn_high_Contrast = 1
 set background=light
 
 " mutt
@@ -66,9 +65,17 @@ au BufRead /tmp/mutt-* setlocal spell spelllang=en_us
 
 " language specific
 autocmd FileType python set shiftwidth=4 tabstop=4 tw=72
-autocmd FileType c      set shiftwidth=3 tabstop=3 softtabstop=3 tw=72
+autocmd FileType c      set shiftwidth=3 tabstop=3 softtabstop=3 tw=100
 autocmd FileType tex setlocal spell spelllang=en_us
 autocmd FileType tex setlocal tw=72
 
+" folding
+if has ('folding')
+  set foldenable
+  set foldmethod=marker
+  set foldmarker={{{,}}}
+  set foldcolumn=0
+endif
+
 " commands
-nmap <silent> <F2> g<C-g> 
+nmap <silent> <F2> g<C-g>
