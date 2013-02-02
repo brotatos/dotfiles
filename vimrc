@@ -13,6 +13,7 @@ set wrap
 set modelines=0
 set vb
 set scrolloff=5
+setlocal spell spelllang=en_us
 
 " backup
 set backupcopy=yes
