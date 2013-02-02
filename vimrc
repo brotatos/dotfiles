@@ -14,6 +14,7 @@ set modeline
 set tw=72
 set vb
 set scrolloff=5
+setlocal spell spelllang=en_us
 
 " backup
 set backupcopy=yes
