@@ -68,7 +68,7 @@ au BufRead /tmp/mutt-* setlocal spell spelllang=en_us
 autocmd FileType python set shiftwidth=4 tabstop=4 tw=72
 autocmd FileType c      set shiftwidth=3 tabstop=3 softtabstop=3 tw=72
 autocmd FileType tex setlocal spell spelllang=en_us
-autocmd FileType tex setlocal tw=72
+autocmd FileType tex setlocal tw=100
 
 " commands
-nmap <silent> <F2> g<C-g> 
+nmap <silent> <F2> g<C-g>
