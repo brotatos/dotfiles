@@ -2,7 +2,7 @@
 
 # general
 alias la='ls --group-directories-first --color=auto -lha'
-alias l='ls --group-directories-first --color=auto -lh'
+alias l='ls -cthlr'
 alias ls='ls --group-directories-first --color=auto'
 alias grep='grep --colour=auto'
 

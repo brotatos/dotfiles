@@ -69,6 +69,8 @@ autocmd FileType python set shiftwidth=4 tabstop=4 tw=72
 autocmd FileType c      set shiftwidth=3 tabstop=3 softtabstop=3 tw=100
 autocmd FileType tex setlocal spell spelllang=en_us
 autocmd FileType tex setlocal tw=100
+autocmd FileType make set noexpandtab
+
 
 " folding
 if has ('folding')
@@ -79,4 +81,8 @@ if has ('folding')
 endif
 
 " commands
+" word count
 nmap <silent> <F2> g<C-g>
+
+au BufEnter ?akefile* set noet
+au BufLeave ?akefile* set et
