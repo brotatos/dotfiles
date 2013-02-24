@@ -2,8 +2,10 @@
 
 !URxvt*font:                xft:DejaVuSansMono:pixelsize=11,xft:Symbola:pixelsize=10
 !URxvt.boldFont:            xft:DejaVuSansMono:pixelsize=11:bold,xft:Symbola:pixelsize=6:bold
-!URxvt*font:                xft:Envy Code R:pixelsize=11,xft:Symbola:pixelsize=10
-!URxvt.boldFont:            xft:Envy Code R:pixelsize=11:bold,xft:Symbola:pixelsize=6:bold
+!URxvt*font:               xft:Envy Code R:pixelsize=11,xft:Symbola:pixelsize=10
+!URxvt.boldFont:           xft:Envy Code R:pixelsize=11:bold,xft:Symbola:pixelsize=6:bold
+!URxvt*font:               xft:Roboto-Thin
+!URxvt*boldFont:           xft:Roboto-Regular:bold
 URxvt*font:               -*-terminus-*-*-*-*-*-*-*-*-*-*-*-*
 URxvt*boldFont:           -*-terminus-bold-*-*-*-*-*-*-*-*-*-*-*
 URxvt*urgentOnBell:        true
