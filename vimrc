@@ -10,6 +10,7 @@ set wrapscan
 set mouse=a
 filetype plugin indent on
 set wrap
+set tw=72
 set modelines=0
 set vb
 set scrolloff=5
