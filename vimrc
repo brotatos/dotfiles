@@ -1,4 +1,4 @@
-" encoding
+"encoding
 scriptencoding utf-8
 set encoding=utf-8
 
@@ -56,7 +56,7 @@ set pastetoggle=<F5>
 syntax enable
 
 " colors
-colorscheme jellybeans
+"colorscheme jellybeans
 set background=dark
 
 " mutt
