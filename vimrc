@@ -13,7 +13,7 @@ set wrap
 set modeline
 set tw=72
 set vb
-set scrolloff=5
+set scrolloff=3
 
 " backup
 set backupcopy=yes
@@ -56,8 +56,8 @@ set pastetoggle=<F5>
 syntax enable
 
 " colors
-"colorscheme jellybeans
-set background=dark
+colorscheme jellybeans
+"set background=dark
 
 " mutt
 au BufRead /tmp/mutt-* set tw=72
