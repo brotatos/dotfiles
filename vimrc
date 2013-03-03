@@ -58,7 +58,7 @@ syntax enable
 
 " colors
 colorscheme jellybeans
-set background=light
+"set background=dark
 
 " mutt
 au BufRead /tmp/mutt-* set tw=72
