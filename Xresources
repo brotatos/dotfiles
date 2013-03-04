@@ -14,7 +14,7 @@ URxvt.scrollBar:      false
 URxvt.perl-ext-common:  default,url-select,keyboard-select
 URxvt.matcher.button:   1
 URxvt.keysym.M-u:   perl:url-select:select_next
-URxvt.url-select.launcher:  /usr/bin/firefox -new-tab
+URxvt.url-select.launcher:  /usr/bin/chromium
 URxvt.url-select.underline:true
 URxvt.keysym.M-Escape:  perl:keyboard-select:activate
 URxvt.keysym.M-s:   perl:keyboard-select:search
