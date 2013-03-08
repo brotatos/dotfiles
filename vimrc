@@ -1,4 +1,4 @@
-"encoding
+" encoding
 scriptencoding utf-8
 set encoding=utf-8
 
@@ -10,10 +10,11 @@ set wrapscan
 set mouse=a
 filetype plugin indent on
 set wrap
-set modeline
 set tw=72
+set modelines=0
 set vb
-set scrolloff=3
+set scrolloff=5
+"setlocal spell spelllang=en_us
 
 " backup
 set backupcopy=yes
@@ -64,6 +65,10 @@ au BufRead /tmp/mutt-* set tw=72
 au BufRead /tmp/mutt-* set nohlsearch
 au BufRead /tmp/mutt-* setlocal spell spelllang=en_us
 
+" language specific
+autocmd FileType make set noexpandtab
+
+
 " folding
 if has ('folding')
   set foldenable
@@ -73,5 +78,8 @@ if has ('folding')
 endif
 
 " commands
+" word count
 nmap <silent> <F2> g<C-g>
-nnoremap <silent> <C-l> :noh<CR><C-l>
+
+au BufEnter ?akefile* set noet
+au BufLeave ?akefile* set et
