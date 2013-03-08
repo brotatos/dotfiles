@@ -74,3 +74,4 @@ endif
 
 " commands
 nmap <silent> <F2> g<C-g>
+nnoremap <silent> <C-l> :noh<CR><C-l>
