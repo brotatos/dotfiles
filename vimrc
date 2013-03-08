@@ -80,6 +80,7 @@ endif
 " commands
 " word count
 nmap <silent> <F2> g<C-g>
+nnoremap <silent> <C-l> :noh<CR><C-l>
 
 au BufEnter ?akefile* set noet
 au BufLeave ?akefile* set et
