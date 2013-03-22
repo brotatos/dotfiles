@@ -13,7 +13,7 @@ set wrap
 set tw=72
 set modelines=0
 set vb
-set scrolloff=5
+"set scrolloff=5
 "setlocal spell spelllang=en_us
 
 " backup
@@ -57,8 +57,9 @@ set pastetoggle=<F5>
 syntax enable
 
 " colors
+"colorscheme xoria256
 colorscheme jellybeans
-"set background=dark
+set background=light
 
 " mutt
 au BufRead /tmp/mutt-* set tw=72
