@@ -57,9 +57,9 @@ set pastetoggle=<F5>
 syntax enable
 
 " colors
-"colorscheme xoria256
-colorscheme jellybeans
-set background=light
+colorscheme xoria256
+"colorscheme jellybeans
+"set background=LIGHT
 
 " mutt
 au BufRead /tmp/mutt-* set tw=72
