@@ -25,78 +25,28 @@ URxvt.scrollTtyKeypress:   true
 URxvt.perl-ext-common:        default,url-select,keyboard-select
 URxvt.matcher.button:         1
 URxvt.keysym.M-u:             perl:url-select:select_next
-URxvt.url-select.launcher:    /usr/bin/firefox -new-tab
+URxvt.url-select.launcher:    /usr/bin/chromium
 URxvt.url-select.underline:   true
 URxvt.keysym.M-Escape:        perl:keyboard-select:activate
 URxvt.keysym.M-s:             perl:keyboard-select:search
 
 ! Colors
 
-!URxvt*cursorColor:   #cf6a4c
-!URxvt*background:    #151515
-!URxvt*foreground:    #d7d7d7
-!URxvt*color11:       #ffb96c
-!URxvt*color6:        #8fbfdc
-!URxvt*color2:        #799d6a
-!URxvt*color10:       #799d6a
-!URxvt*color9:        #cf6a4c
-!URxvt*color7:        #303030
-!URxvt*color12:       #8197bf
-!URxvt*color1:        #cf6a4c
-!URxvt*color4:        #8197bf
-!URxvt*color13:       #ff3b77
-!URxvt*color15:       #eeeeec
-!URxvt*color3:        #ffb964
-!URxvt*color5:        #eeeeec
-!URxvt*color14:       #8fbfdc
-!URxvt*color8:        #555753
-*background: #0d1926
-*foreground: #d9e6f2
-! black
-*color0: #000000
-
-! bright_black
-*color8: #262626
-
-! red
-*color1: #b87a7a
-
-! bright_red
-*color9: #dbbdbd
-
-! green
-*color2: #7ab87a
-
-! bright_green
-*color10: #bddbbd
-
-! yellow
-*color3: #b8b87a
-
-! bright_yellow
-*color11: #dbdbbd
-
-! blue
-*color4: #7a7ab8
-
-! bright_blue
-*color12: #bdbddb
-
-! magenta
-*color5: #b87ab8
-
-! bright_magenta
-*color13: #dbbddb
-
-! cyan
-*color6: #7ab8b8
-
-! bright_cyan
-*color14: #bddbdb
-
-! white
-*color7: #d9d9d9
-
-! bright_white
-*color15: #ffffff
-
+URxvt*cursorColor:   #cf6a4c
+URxvt*background:    #151515
+URxvt*foreground:    #d7d7d7
+URxvt*color11:       #ffb96c
+URxvt*color6:        #8fbfdc
+URxvt*color2:        #799d6a
+URxvt*color10:       #799d6a
+URxvt*color9:        #cf6a4c
+URxvt*color7:        #303030
+URxvt*color12:       #8197bf
+URxvt*color1:        #cf6a4c
+URxvt*color4:        #8197bf
+URxvt*color13:       #ff3b77
+URxvt*color15:       #eeeeec
+URxvt*color3:        #ffb964
+URxvt*color5:        #eeeeec
+URxvt*color14:       #8fbfdc
+URxvt*color8:        #555753
