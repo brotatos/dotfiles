@@ -2,6 +2,9 @@ for f in $HOME/.zsh/*.zsh(on); do
     . $f
 done
 
+#tmux
+[ -n "$TMUX" ] && export TERM=screen-256color
+
 export EDITOR=vim
 export VISUAL=vim
 export BROWSER=aurora
