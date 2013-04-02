@@ -8,7 +8,7 @@ alias ...='cd ..'
 
 alias shutdown="systemctl poweroff"
 alias reboot="systemctl reboot"
-alias suspend="sysmtectl suspend"
+alias suspend="systemctl suspend"
 
 alias webcam="mplayer tv:// -tv driver=v4l2:width=640:height=480:device=/dev/video0 -fps 30 -vf screenshot"
 alias omup="omup -s"
@@ -22,6 +22,6 @@ alias sickbeard="sudo systemctl start sickbeard.service"
 alias sickbeards="sudo systemctl stop sickbeard.service"
 
 # school
-alias mw="sudo netcfg wlan0-SecureMustangWireless"
-alias home="sudo netcfg wlan0-ATT544"
+alias home="sudo netcfg home"
+alias smw="sudo netcfg smw"
 alias cplan="sudo netcfg cplan"
