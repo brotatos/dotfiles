@@ -1,5 +1,8 @@
 #!/bin/zsh
 
+#thinkpad
+alias tg="/usr/bin/touchpadtoggle"
+
 # general
 alias l='ls --group-directories-first --color=auto -lh'
 alias ls='ls --group-directories-first --color=auto'
