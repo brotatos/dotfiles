@@ -6,6 +6,7 @@
 #
 
 sleep 100s && dropbox start &
+pulseaudio --start
 xflux -z 93405 &
 sh ~/.fehbg
 xset +fp /usr/share/fonts/local/
