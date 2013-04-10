@@ -13,8 +13,8 @@ set editor = "vim -c ':normal O'"     # use vim and skip to last blank line
 # options
 set mbox_type   = Maildir               # mailbox type
 set folder      = ~/.mail/              # root folder
-set spoolfile   = "+gmail/inbox"        # inbox
-set mbox        = "+gmail/inbox"        # [Gmail]/All Mail
+set spoolfile   = "+work/INBOX"        # inbox
+set mbox        = "+work/INBOX"        # [Gmail]/All Mail
 unset record                            # required to prevent duplicates in Sent
 #set sendmail    = /usr/bin/msmtp        # use msmtp 'default' account
 set mailcap_path = ~/.mutt/mailcap	# i keep forgetting this silly option :(
@@ -65,6 +65,7 @@ macro index o "<shell-escape>offlineimap -qf INBOX<enter>" "run offlineimap to s
 # bindings
 macro generic "<esc>1" ":set from=xrobinc@gmail.com"
 macro generic "<esc>2" ":set from=rchoudhu@calpoly.edu"
+macro generic "<esc>3" ":set from=robin@ifixit.com"
 macro index D "<save-message>+trash<enter>"   "move message to the trash"
 macro index S "<save-message>+spam<enter>"    "mark message as spam"
 bind   pager                         i        exit
