@@ -37,7 +37,7 @@ set sort_re                                             # thread based on reply_
 set pager_index_lines   = 8                             # show 8 messages when in pager
 set pager_context       = 5                             # show five lines when skipping in pager
 set pager_stop                                          # don't go to next message automatically
-set menu_scroll                                         # scroll in menus 
+set menu_scroll                                         # scroll in menus
 set smart_wrap                                          # don't split words
 set tilde                                               # show tildes like in vim
 unset markers                                           # no ugly plus signs
