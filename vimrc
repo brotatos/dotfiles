@@ -60,7 +60,7 @@ syntax enable
 " colors
 "colorscheme xoria256
 colorscheme jellybeans2
-"set background=light
+set background=light
 
 " mutt
 au BufRead /tmp/mutt-* set tw=72
