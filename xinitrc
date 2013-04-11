@@ -16,5 +16,6 @@ ps -C mpdscribble &>/dev/null || mpdscribble
 xsetroot -cursor_name left_ptr
 xrdb -merge ~/.Xresources
 pulseaudio --start &
+/usr/bin/touchpadtoggle
 
 exec /usr/bin/i3
