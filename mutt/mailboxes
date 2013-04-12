@@ -1,1 +1,1 @@
-mailboxes "+work/INBOX" "+work/INBOX.Deleted Messages" "+work/INBOX.Drafts" "+work/INBOX.Sent" "+work/INBOX.Sent Messages" "+work/INBOX.spam" "+work/INBOX.Trash" "+gmail/[Gmail].Spam" "+gmail/drafts" "+gmail/flagged" "+gmail/inbox" "+gmail/sent" "+gmail/trash"
+mailboxes "+work/drafts" "+work/inbox" "+work/INBOX.Deleted Messages" "+work/INBOX.Sent" "+work/INBOX.Sent Messages" "+work/spam" "+work/trash" "+gmail/[Gmail].Spam" "+gmail/drafts" "+gmail/flagged" "+gmail/inbox" "+gmail/sent" "+gmail/trash"
