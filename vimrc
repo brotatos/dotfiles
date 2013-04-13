@@ -57,7 +57,7 @@ set pastetoggle=<F5>
 syntax enable
 
 " colors
-colorscheme jellybeans2
+colorscheme jellybeans
 "set background=dark
 
 " mutt
