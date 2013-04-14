@@ -59,7 +59,7 @@ syntax enable
 
 " colors
 "colorscheme xoria256
-colorscheme jellybeans2
+colorscheme jellybeans
 set background=light
 
 " mutt
