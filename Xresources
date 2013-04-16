@@ -1,7 +1,7 @@
 ! General
 
-!URxvt*font:                xft:DejaVuSansMono:pixelsize=15,xft:Symbola:pixelsize=10
-!URxvt.boldFont:            xft:DejaVuSansMono:pixelsize=15:bold,xft:Symbola:pixelsize=6:bold
+!URxvt*font:                xft:DejaVuSansMono:pixelsize=14,xft:Symbola:pixelsize=14
+!URxvt.boldFont:            xft:DejaVuSansMono:pixelsize=14:bold,xft:Symbola:pixelsize=14:bold
 !URxvt*font:               xft:Envy Code R:pixelsize=11,xft:Symbola:pixelsize=10
 !URxvt.boldFont:           xft:Envy Code R:pixelsize=11:bold,xft:Symbola:pixelsize=6:bold
 !URxvt*font:               xft:Roboto-Thin
@@ -25,7 +25,7 @@ URxvt.scrollTtyKeypress:   true
 URxvt.perl-ext-common:        default,url-select,keyboard-select
 URxvt.matcher.button:         1
 URxvt.keysym.M-u:             perl:url-select:select_next
-URxvt.url-select.launcher:    /usr/bin/firefox
+URxvt.url-select.launcher:    /usr/bin/google-chrome
 URxvt.url-select.underline:   true
 URxvt.keysym.M-Escape:        perl:keyboard-select:activate
 URxvt.keysym.M-s:             perl:keyboard-select:search

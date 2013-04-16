@@ -14,7 +14,7 @@ set tw=72
 set modeline
 set modelines=5
 set vb
-"set scrolloff=5
+set scrolloff=3
 "setlocal spell spelllang=en_us
 
 " backup
@@ -58,7 +58,6 @@ set pastetoggle=<F5>
 syntax enable
 
 " colors
-"colorscheme xoria256
 colorscheme jellybeans
 set background=light
 
@@ -82,6 +81,7 @@ endif
 " commands
 " word count
 nmap <silent> <F2> g<C-g>
+nnoremap <silent> <C-l> :noh<CR><C-l>
 
 au BufEnter ?akefile* set noet
 au BufLeave ?akefile* set et
