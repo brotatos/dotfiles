@@ -9,6 +9,7 @@ alias ls='ls --group-directories-first --color=auto'
 alias more='/usr/bin/less'
 alias grep='grep --colour=auto'
 alias ...='cd ..'
+alias fixr='xrandr --output LVDS --mode 1600x900'
 
 alias shutdown="systemctl poweroff"
 alias reboot="systemctl reboot"
@@ -30,3 +31,4 @@ alias sickbeards="sudo systemctl stop sickbeard.service"
 alias home="sudo netcfg home"
 alias smw="sudo netcfg smw"
 alias cplan="sudo netcfg cplan"
+
