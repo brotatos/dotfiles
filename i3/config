@@ -110,8 +110,7 @@ bindsym $mod+Shift+E exit
 # automatic back-and-forth when switching to the current workspace
 workspace_auto_back_and_forth yes
 
-#audio 
-
+#audio
 bindsym XF86_AudioRaiseVolume exec amixer -q set Master 5%+
 bindsym XF86_AudioLowerVolume exec amixer -q set Master 5%-
 bindsym XF86_AudioMute exec amixer -q set Master toggle
