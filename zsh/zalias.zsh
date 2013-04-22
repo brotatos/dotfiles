@@ -21,6 +21,7 @@ alias sprunge="curl -F 'sprunge=<-' http://sprunge.us"
 alias mpd="mpd; mpdscribble"
 alias sickbeard="sudo systemctl start sickbeard.service"
 alias sickbeards="sudo systemctl stop sickbeard.service"
+alias search="pacman -Ss $1; meat -s $1"
 
 # latex
 alias ct="rm -f *.{aux,dvi,pdf,log}"
