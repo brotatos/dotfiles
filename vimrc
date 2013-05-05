@@ -80,7 +80,7 @@ endif
 nmap <silent> <F2> g<C-g>
 " turn off highlights and redraw screen
 nnoremap <silent> <C-l> :noh<CR><C-l>
-" switch a this_command to thisCommand
+" switch this_command to thisCommand
 " camelCase 4 lyfe
 nmap  <F3> :%s/_\([a-z]\)/\u\1/gc
 
