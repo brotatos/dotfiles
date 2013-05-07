@@ -84,3 +84,6 @@ nnoremap <silent> <C-l> :noh<CR><C-l>
 
 au BufEnter ?akefile* set noet
 au BufLeave ?akefile* set et
+
+" Notes to self
+" :retab - fix all old tabs/space errors

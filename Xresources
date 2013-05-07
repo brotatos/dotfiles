@@ -1,10 +1,10 @@
 ! General
 
-!URxvt*font: xft:DejaVuSansMono:pixelsize=12,xft:Symbola:pixelsize=10
-!URxvt*boldFont: xft:DejaVuSansMono:pixelsize=12:bold,xft:Symbola:pixelsize=6:bold
+URxvt*font: xft:DejaVuSansMono:pixelsize=12,xft:Symbola:pixelsize=10
+URxvt*boldFont: xft:DejaVuSansMono:pixelsize=12:bold,xft:Symbola:pixelsize=6:bold
+!URxvt*font:           -*-terminus-*-*-*-*-*-*-*-*-*-*-*-*
+!URxvt*boldFont:       -*-terminus-bold-*-*-*-*-*-*-*-*-*-*-*
 urxvt.italicFont: xft:Bitstream Vera Sans Mono:italic:autohint=true
-URxvt*font:           -*-terminus-*-*-*-*-*-*-*-*-*-*-*-*
-URxvt*boldFont:       -*-terminus-bold-*-*-*-*-*-*-*-*-*-*-*
 URxvt*urgentOnBell:   true
 URxvt*termname:       screen-256color
 URxvt.scrollstyle:    rxvt
