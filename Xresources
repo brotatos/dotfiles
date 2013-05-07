@@ -2,6 +2,7 @@
 
 !URxvt*font: xft:DejaVuSansMono:pixelsize=12,xft:Symbola:pixelsize=10
 !URxvt*boldFont: xft:DejaVuSansMono:pixelsize=12:bold,xft:Symbola:pixelsize=6:bold
+urxvt.italicFont: xft:Bitstream Vera Sans Mono:italic:autohint=true
 URxvt*font:           -*-terminus-*-*-*-*-*-*-*-*-*-*-*-*
 URxvt*boldFont:       -*-terminus-bold-*-*-*-*-*-*-*-*-*-*-*
 URxvt*urgentOnBell:   true

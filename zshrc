@@ -1,7 +1,6 @@
 for f in $HOME/.zsh/*.zsh(on); do
     . $f
 done
-
 export EDITOR=vim
 export VISUAL=vim
 export BROWSER=chromium
