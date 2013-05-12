@@ -57,8 +57,9 @@ set pastetoggle=<F5>
 syntax enable
 
 " colors
-colorscheme jellybeans
-"set background=dark
+colorscheme solarized
+set background=dark
+let g:solarized_termcolors=256
 
 " mutt
 au BufRead /tmp/mutt-* set tw=72
