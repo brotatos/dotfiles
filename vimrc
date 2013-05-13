@@ -11,11 +11,14 @@ set mouse=a
 filetype plugin indent on
 set wrap
 set tw=72
-set modeline
 set modelines=5
 set vb
-set scrolloff=3
+set scrolloff=5
 "setlocal spell spelllang=en_us
+
+" backup
+set backupcopy=yes
+set backupdir=$HOME/.vim/backup
 
 " display
 set linebreak
@@ -54,8 +57,9 @@ set pastetoggle=<F5>
 syntax enable
 
 " colors
-colorscheme jellybeans
-set background=light
+colorscheme solarized
+set background=dark
+let g:solarized_termcolors=256
 
 " mutt
 au BufRead /tmp/mutt-* set tw=72
@@ -75,14 +79,12 @@ if has ('folding')
 endif
 
 " commands
-
 " word count
 nmap <silent> <F2> g<C-g>
-" turn off highlights and redraw screen
 nnoremap <silent> <C-l> :noh<CR><C-l>
-" switch this_command to thisCommand
-" camelCase 4 lyfe
-nmap  <F3> :%s/_\([a-z]\)/\u\1/gc
 
 au BufEnter ?akefile* set noet
 au BufLeave ?akefile* set et
+
+" Notes to self
+" :retab - fix all old tabs/space errors
