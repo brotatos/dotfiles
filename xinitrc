@@ -5,7 +5,7 @@
 # Executed by startx (run your window manager from here)
 #
 
-urxvtd -q -o -f
+urxvtd -q -f -o
 sleep 100s && dropbox start &
 xflux -z 93405 &
 xset +fp /usr/share/fonts/local/
