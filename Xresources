@@ -1,47 +1,47 @@
 ! General
 
-URxvt*font: xft:DejaVuSansMono:pixelsize=12,xft:Symbola:pixelsize=10
-URxvt*boldFont: xft:DejaVuSansMono:pixelsize=12:bold,xft:Symbola:pixelsize=6:bold
-!URxvt*font:           -*-terminus-*-*-*-*-*-*-*-*-*-*-*-*
-!URxvt*boldFont:       -*-terminus-bold-*-*-*-*-*-*-*-*-*-*-*
-urxvt.italicFont: xft:Bitstream Vera Sans Mono:italic:autohint=true
-URxvt*urgentOnBell:   true
-URxvt*termname:       screen-256color
-URxvt.scrollstyle:    rxvt
-URxvt.scrollBar:      false
+URxvt*font         :  xft:DejaVuSansMono:pixelsize=12,xft:Symbola:pixelsize=10
+URxvt*boldFont     :  xft:DejaVuSansMono:pixelsize=12:bold,xft:Symbola:pixelsize=6:bold
+!URxvt*font        :  -*-terminus-*-*-*-*-*-*-*-*-*-*-*-*
+!URxvt*boldFont    :  -*-terminus-bold-*-*-*-*-*-*-*-*-*-*-*
+urxvt.italicFont   :  xft:Bitstream Vera Sans Mono:italic:autohint=true
+URxvt*urgentOnBell :  true
+URxvt*termname     :  screen-256color
+URxvt.scrollstyle  :  rxvt
+URxvt.scrollBar    :  false
 
 ! URL
 
-URxvt.perl-ext-common:  default,url-select,keyboard-select
-URxvt.matcher.button:   1
-URxvt.keysym.M-u:   perl:url-select:select_next
-URxvt.url-select.launcher:  /usr/bin/firefox
-URxvt.url-select.underline:true
-URxvt.keysym.M-Escape:  perl:keyboard-select:activate
-URxvt.keysym.M-s:   perl:keyboard-select:search
+URxvt.perl-ext-common           :  default,url-select,keyboard-select
+URxvt.matcher.button            :  1
+URxvt.keysym.M-u                :  perl:url-select:select_next
+URxvt.url-select.launcher       :  /usr/bin/firefox
+URxvt.url-select.underline      :   true
+URxvt.keysym.M-Escape           :  perl:keyboard-select:activate
+URxvt.keysym.M-s                :  perl:keyboard-select:search
 
 ! Effects
-*fading:                  40
-*fadeColor:               #0d0d0d
+*fading    :  20
+*fadeColor :  #0d0d0d
 
 ! Colors
 
-URxvt*cursorColor: #cf6a4c
-URxvt*background:  #151515
-URxvt*foreground:  #d7d7d7
-URxvt*color11:     #ffb96c
-URxvt*color6:      #8fbfdc
-URxvt*color2:      #799d6a
-URxvt*color10:     #799d6a
-URxvt*color9:      #cf6a4c
-URxvt*color7:      #303030
-URxvt*color12:     #8197bf
-URxvt*color1:      #cf6a4c
-URxvt*color4:      #8197bf
-URxvt*color13:     #ff3b77
-URxvt*color15:     #eeeeec
-URxvt*color3:      #ffb964
-URxvt*color5:      #eeeeec
-URxvt*color14:     #8fbfdc
-URxvt*color8:      #555753
+URxvt*cursorColor :  #cf6a4c
+URxvt*background  :  #151515
+URxvt*foreground  :  #d7d7d7
+URxvt*color11     :  #ffb96c
+URxvt*color6      :  #8fbfdc
+URxvt*color2      :  #799d6a
+URxvt*color10     :  #799d6a
+URxvt*color9      :  #cf6a4c
+URxvt*color7      :  #303030
+URxvt*color12     :  #8197bf
+URxvt*color1      :  #cf6a4c
+URxvt*color4      :  #8197bf
+URxvt*color13     :  #ff3b77
+URxvt*color15     :  #eeeeec
+URxvt*color3      :  #ffb964
+URxvt*color5      :  #eeeeec
+URxvt*color14     :  #8fbfdc
+URxvt*color8      :  #555753
 
