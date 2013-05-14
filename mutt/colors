@@ -1,64 +1,60 @@
-#solarized now
-#source /home/.mutt/mutt-colors-solarized/mutt-colors-solarized-light-256.muttrc
-source /home/.mutt/mutt-colors-solarized/mutt-colors-solarized-dark-256.muttrc
+# set default
+color normal blue black
 
-## set default
-#color normal blue black
-#
-## main colors
-#color status green black
-#color indicator brightwhite red
-#color tree blue black
-#color error brightred black
-#color message brightyellow black
-#
-##color index blue black ~F
-##color index red black "~N|~O"
-#
-## uncolor certain messages
-#uncolor index "~P"
-#uncolor index "~C @.com"
-#uncolor index "~N ~u"
-#uncolor index "~N !~u"
-#uncolor index "~T"
-#uncolor index "~D"
-#
-## and recolor them appropriately
-#color index brightblue default "~P"
-#color index green default "~C @.com"
-#color index brightcyan default "~N ~u" # new ML mail
-#color index brightyellow default "~N !~u" # new non-ML mail
-#color index brightgreen default "~T"
-#color index brightred default "~D"
-#
-## set up the headers
-#color header brightyellow default "^from:"
-#color header yellow default "^to:"
-#color header yellow default "^cc:"
-#color header blue default "^date:"
-#color header brightblue default "^subject:"
-#
-## message bodies
-#color attachment red black
-#color search red brightblack
-#color signature cyan default
-#color tilde blue default
-#
-## urls
-#color body brightblue default "(^|<| )mailto:[^ ]+@[^ ]( |>|$)"
-#color body brightblue default "(^|<| )(http|https|ftp|file|telnet|news|finger)://[^ ]+( |>|$)"
-#
-## *bold*, _underline_, and /italic/
-#color body brightcyan default "(^| )\\*[^ ]+\\*( |$)"
-#color body brightcyan default "(^| )_[^ ]+_( |$)"
-#color body brightcyan default "(^| )/[^ ]+/( |$)"
-#
-## quote blocks
-#color quoted magenta default
-#color quoted1 cyan default
-#color quoted2 green default
-#color quoted3 magenta default
-#color quoted4 cyan default
-#color quoted5 green default
-#color quoted6 magenta default
-#color quoted7 cyan default
+# main colors
+color status green black
+color indicator brightwhite red
+color tree blue black
+color error brightred black
+color message brightyellow black
+
+#color index blue black ~F
+#color index red black "~N|~O"
+
+# uncolor certain messages
+uncolor index "~P"
+uncolor index "~C @.com"
+uncolor index "~N ~u"
+uncolor index "~N !~u"
+uncolor index "~T"
+uncolor index "~D"
+
+# and recolor them appropriately
+color index brightblue default "~P"
+color index green default "~C @.com"
+color index brightcyan default "~N ~u" # new ML mail
+color index brightyellow default "~N !~u" # new non-ML mail
+color index brightgreen default "~T"
+color index brightred default "~D"
+
+# set up the headers
+color header brightyellow default "^from:"
+color header yellow default "^to:"
+color header yellow default "^cc:"
+color header blue default "^date:"
+color header brightblue default "^subject:"
+
+# message bodies
+color attachment red black
+color search red brightblack
+color signature cyan default
+color tilde blue default
+
+# urls
+color body brightblue default "(^|<| )mailto:[^ ]+@[^ ]( |>|$)"
+color body brightblue default "(^|<| )(http|https|ftp|file|telnet|news|finger)://[^ ]+( |>|$)"
+
+# *bold*, _underline_, and /italic/
+color body brightcyan default "(^| )\\*[^ ]+\\*( |$)"
+color body brightcyan default "(^| )_[^ ]+_( |$)"
+color body brightcyan default "(^| )/[^ ]+/( |$)"
+
+# quote blocks
+color quoted magenta default
+color quoted1 cyan default
+color quoted2 green default
+color quoted3 magenta default
+color quoted4 cyan default
+color quoted5 green default
+color quoted6 magenta default
+color quoted7 cyan default
