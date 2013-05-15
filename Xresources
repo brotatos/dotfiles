@@ -1,13 +1,26 @@
 ! General
 
-URxvt*font: xft:DejaVuSansMono:pixelsize=12,xft:Symbola:pixelsize=10
-URxvt*boldFont: xft:DejaVuSansMono:pixelsize=12:bold,xft:Symbola:pixelsize=6:bold
-!URxvt*boldFont: -*-terminus-bold-*-*-*-*-*-*-*-*-*-*-*
-urxvt.italicFont: xft:Bitstream Vera Sans Mono:italic:autohint=true
+URxvt*font: xft:DejaVuSansMono:pixelsize=13,xft:Symbola:pixelsize=12
+URxvt.boldFont: xft:DejaVuSansMono:pixelsize=13:bold,xft:Symbola:pixelsize=12:bold
+!URxvt*font: xft:DejaVuSansMono:pixelsize=14,xft:Symbola:pixelsize=14
+!URxvt.boldFont: xft:DejaVuSansMono:pixelsize=14:bold,xft:Symbola:pixelsize=14:bold
+!URxvt*font: xft:Envy Code R:pixelsize=11,xft:Symbola:pixelsize=10
+!URxvt.boldFont: xft:Envy Code R:pixelsize=11:bold,xft:Symbola:pixelsize=6:bold
+!URxvt*font: xft:Roboto-Thin
+!URxvt*boldFont: xft:Roboto-Regular:bold
+!URxvt*font: -*-terminus-*-*-*-*-14-*-*-*-*-*-*-*
+!URxvt*boldFont: -*-terminus-bold-*-*-*-14-*-*-*-*-*-*-*
 URxvt*urgentOnBell: true
 URxvt*termname: screen-256color
 URxvt.scrollstyle: rxvt
 URxvt.scrollBar: false
+URxvt.saveLines: 5000
+URxvt.internalborder: 0
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+URxvt.scrollWithBuffer: true
+URxvt.scrollTtyOutput: false
+URxvt.scrollTtyKeypress: true
 
 ! URL
 
@@ -15,79 +28,27 @@ URxvt.perl-ext-common: default,url-select,keyboard-select
 URxvt.matcher.button: 1
 URxvt.keysym.M-u: perl:url-select:select_next
 URxvt.url-select.launcher: /usr/bin/firefox
-URxvt.url-select.underline:true
+URxvt.url-select.underline: true
 URxvt.keysym.M-Escape: perl:keyboard-select:activate
 URxvt.keysym.M-s: perl:keyboard-select:search
 
 ! Colors
 
-! Solarized color scheme for the X Window System
-!
-! http://ethanschoonover.com/solarized
-
-
-! Common
-
-#define S_yellow #b58900
-#define S_orange #cb4b16
-#define S_red #dc322f
-#define S_magenta #d33682
-#define S_violet #6c71c4
-#define S_blue #268bd2
-#define S_cyan #2aa198
-#define S_green #859900
-
-
-! Dark
-
-#define S_base03 #002b36
-#define S_base02 #073642
-#define S_base01 #586e75
-#define S_base00 #657b83
-#define S_base0 #839496
-#define S_base1 #93a1a1
-#define S_base2 #eee8d5
-#define S_base3 #fdf6e3
-
-
-! Light
-
-! #define S_base03 #fdf6e3
-! #define S_base02 #eee8d5
-! #define S_base01 #93a1a1
-! #define S_base00 #839496
-! #define S_base0 #657b83
-! #define S_base1 #586e75
-! #define S_base2 #073642
-! #define S_base3 #002b36
-
-
-! To only apply colors to your terminal, for example, prefix
-! the color assignment statement with its name. Example:
-!
-URxvt*background: S_base03
-
-*background: S_base03
-*foreground: S_base0
-*fading: 40
-*fadeColor: S_base03
-*cursorColor: S_base1
-*pointerColorBackground: S_base01
-*pointerColorForeground: S_base1
-
-*color0: S_base02
-*color1: S_red
-*color2: S_green
-*color3: S_yellow
-*color4: S_blue
-*color5: S_magenta
-*color6: S_cyan
-*color7: S_base2
-*color9: S_orange
-*color8: S_base03
-*color10: S_base01
-*color11: S_base00
-*color12: S_base0
-*color13: S_violet
-*color14: S_base1
-*color15: S_base3
+URxvt*cursorColor: #cf6a4c
+URxvt*background: #151515
+URxvt*foreground: #d7d7d7
+URxvt*color11: #ffb96c
+URxvt*color6: #8fbfdc
+URxvt*color2: #799d6a
+URxvt*color10: #799d6a
+URxvt*color9: #cf6a4c
+URxvt*color7: #303030
+URxvt*color12: #8197bf
+URxvt*color1: #cf6a4c
+URxvt*color4: #8197bf
+URxvt*color13: #ff3b77
+URxvt*color15: #eeeeec
+URxvt*color3: #ffb964
+URxvt*color5: #eeeeec
+URxvt*color14: #8fbfdc
+URxvt*color8: #555753

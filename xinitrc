@@ -16,6 +16,6 @@ mpd
 ps -C mpdscribble &>/dev/null || mpdscribble
 xsetroot -cursor_name left_ptr
 xrdb -merge ~/.Xresources
-urxvtd -q -o -f
+urxvtd -q -f -o
 
 exec /usr/bin/i3
