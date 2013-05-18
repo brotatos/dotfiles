@@ -4,6 +4,7 @@
 alias tg="/usr/bin/touchpadtoggle"
 
 # general
+alias g="git"
 alias l='ls --group-directories-first --color=auto -lh'
 alias ls='ls --group-directories-first --color=auto'
 alias more='/usr/bin/less'

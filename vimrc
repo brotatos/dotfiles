@@ -81,9 +81,14 @@ endif
 " word count
 nmap <silent> <F2> g<C-g>
 nnoremap <silent> <C-l> :noh<CR><C-l>
+" switch a this_command to thisCommand
+" " camelCase 4 lyfe
+nmap  <F3> :%s/_\([a-z]\)/\u\1/gc
 
 au BufEnter ?akefile* set noet
 au BufLeave ?akefile* set et
+
+
 
 " Notes to self
 " :retab - fix all old tabs/space errors
