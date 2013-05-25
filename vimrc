@@ -72,8 +72,9 @@ autocmd FileType make set noexpandtab
 " folding
 if has ('folding')
   set foldenable
-  set foldmethod=marker
-  set foldmarker={{{,}}}
+  "set foldmethod=marker
+  set foldmethod=syntax
+  "set foldmarker={{{,}}}
   set foldcolumn=0
 endif
 
