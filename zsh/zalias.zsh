@@ -14,6 +14,10 @@ alias webcam="mplayer tv:// -tv driver=v4l2:width=640:height=480:device=/dev/vid
 alias omup="omup -s"
 
 alias gc="ping -c 3 google.com"
+alias record="ffmpeg -f alsa -i default -f x11grab -s 1920x1200 -r 30 -i :0.0 -qscale 0 filename.avi"
+
+# git
+alias g="git"
 
 # arch
 alias update="sudo pacman -Syu; meat -u"
@@ -27,10 +31,10 @@ alias search="pacman -Ss $1; meat -s $1"
 alias ct="rm -f *.{aux,dvi,pdf,log}"
 
 # wine
-alias starcraft="wine /mnt/general/general/wine-starcraft/drive_c/Program\ Files/StarCraft\ II/StarCraft\ II.exe>/dev/null 2>&1 &"
+alias starcraft="wine /mnt/general/wine-starcraft/drive_c/Program\ Files/StarCraft\ II/StarCraft\ II.exe>/dev/null 2>&1 &"
 #alias winesteam="wine /mnt/general/general/wine/drive_c/Program\ Files/Steam/Steam.exe >/dev/null 2>&1 &"
-alias winesteam="wine /mnt/general/general/wine/drive_c/Program\ Files/Steam/Steam.exe -no-dwrite>/dev/null 2>&1 &"
+alias winesteam="wine /mnt/general/wine/drive_c/Program\ Files/Steam/Steam.exe -no-dwrite>/dev/null 2>&1 &"
 
-alias word="WINEPREFIX=/mnt/general/general/wine-office wine /mnt/general/general/wine-office/drive_c/Program\ Files/Microsoft\ Office/Office12/WINWORD.EXE>/dev/null 2>&1 &"
+alias word="WINEPREFIX=/mnt/general/wine-office wine /mnt/general/general/wine-office/drive_c/Program\ Files/Microsoft\ Office/Office12/WINWORD.EXE>/dev/null 2>&1 &"
 alias powerpoint="WWINEPREFIX=/mnt/general/general/wine-office wine /mnt/general/general/wine-office/drive_c/Program\ Files/Microsoft\ Office/Office12/POWERPNT.EXE>/dev/null 2>&1 &"
-alias excel="wine /mnt/general/general/wine-office/drive_c/Program\ Files/Microsoft\ Office/Office12/EXCEL.EXE>/dev/null 2>&1 &"
+alias excel="wine /mnt/general/wine-office/drive_c/Program\ Files/Microsoft\ Office/Office12/EXCEL.EXE>/dev/null 2>&1 &"

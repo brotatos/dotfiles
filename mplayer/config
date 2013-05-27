@@ -6,8 +6,8 @@ vf=screenshot
 idx=yes
 
 # video
-vo=vdpau
-#vc=ffh264vdpau,ffmpeg12vdpau,ffodivxvdpau,#ffmv3vdpau,#ffvc1vdpau,
+vo=vdpau,
+#vc=ffh264vdpau,ffmpeg12vdpau,ffodivxvdpau,ffwmv3vdpau,ffvc1vdpau,
 fs=yes
 
 # audio

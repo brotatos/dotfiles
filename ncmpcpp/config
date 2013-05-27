@@ -15,7 +15,7 @@ window_border_color = "red"
 active_window_border = "yellow"
 
 mpd_crossfade_time = "5"
-mpd_music_dir = "/mnt/media/media/music/"
+mpd_music_dir = "/mnt/media/music/"
 user_interface = "alternative"
 
 playlist_display_mode= "columns"
