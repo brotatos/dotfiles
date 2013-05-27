@@ -20,6 +20,7 @@ unset record                            # required to prevent duplicates in Sent
 set mailcap_path = ~/.mutt/mailcap	# i keep forgetting this silly option :(
 
 # main options
+set header_cache = ~/.mutt/cache/headers
 set envelope_from                                       # which from?
 set mail_check          = 0                             # check for mail always
 unset move                                              # gmail does that
