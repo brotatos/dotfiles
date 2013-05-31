@@ -1,7 +1,7 @@
 ! General
 
-URxvt*font         :  xft:DejaVuSansMono:pixelsize=12,xft:Symbola:pixelsize=10
-URxvt*boldFont     :  xft:DejaVuSansMono:pixelsize=12:bold,xft:Symbola:pixelsize=6:bold
+URxvt*font         :  xft:DejaVuSansMono:pixelsize=14,xft:Symbola:pixelsize=10
+URxvt*boldFont     :  xft:DejaVuSansMono:pixelsize=14:bold,xft:Symbola:pixelsize=6:bold
 !URxvt*font        :  -*-terminus-*-*-*-*-*-*-*-*-*-*-*-*
 !URxvt*boldFont    :  -*-terminus-bold-*-*-*-*-*-*-*-*-*-*-*
 urxvt.italicFont   :  xft:Bitstream Vera Sans Mono:italic:autohint=true
@@ -15,7 +15,7 @@ URxvt.scrollBar    :  false
 URxvt.perl-ext-common           :  default,url-select,keyboard-select
 URxvt.matcher.button            :  1
 URxvt.keysym.M-u                :  perl:url-select:select_next
-URxvt.url-select.launcher       :  /usr/bin/google-chrome
+URxvt.url-select.launcher       :  /usr/bin/firefox
 URxvt.url-select.underline      :   true
 URxvt.keysym.M-Escape           :  perl:keyboard-select:activate
 URxvt.keysym.M-s                :  perl:keyboard-select:search

@@ -13,8 +13,8 @@ set editor = "vim -c ':normal O'"     # use vim and skip to last blank line
 # options
 set mbox_type   = Maildir               # mailbox type
 set folder      = ~/.mail/              # root folder
-set spoolfile   = "+work/inbox"        # inbox
-set mbox        = "+work/inbox"        # [Gmail]/All Mail
+set spoolfile   = "+gmail/inbox"        # inbox
+set mbox        = "+gmail/inbox"        # [Gmail]/All Mail
 unset record                            # required to prevent duplicates in Sent
 #set sendmail    = /usr/bin/msmtp        # use msmtp 'default' account
 set mailcap_path = ~/.mutt/mailcap      # i keep forgetting this silly option :(
