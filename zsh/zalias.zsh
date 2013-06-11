@@ -15,6 +15,7 @@ alias omup="omup -s"
 
 alias gc="ping -c 3 google.com"
 alias record="ffmpeg -f alsa -i default -f x11grab -s 1920x1200 -r 30 -i :0.0 -qscale 0 filename.avi"
+alias recordmydesktop="/usr/bin/recordmydesktop --device pulse"
 
 # git
 alias g="git"
