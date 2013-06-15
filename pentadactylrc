@@ -18,7 +18,7 @@ au fullscreen off set go+=s
 
 " Open the current URL as an argument to quvi
 nmap <S-q> -s -js commands.execute("!quvi '" + content.location.href + "' &> /dev/null &");
-              
+
 " Custom hint modes
 " Thanks to holomorph and John-Galt
 js <<EOF
