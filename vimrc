@@ -89,7 +89,5 @@ nmap  <F3> :%s/_\([a-z]\)/\u\1/gc
 au BufEnter ?akefile* set noet
 au BufLeave ?akefile* set et
 
-
-
 " Notes to self
 " :retab - fix all old tabs/space errors

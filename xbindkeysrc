@@ -1,0 +1,13 @@
+# Lock (Fn+F3)
+"i3lock -d -c 000000"
+   XF86ScreenSaver
+# I use banshee for my audio
+"ncmpcpp next"
+   XF86AudioNext
+"ncmpcpp prev"
+   XF86AudioPrev
+"ncmpcpp play"
+   XF86AudioPlay
+# Launcher (right of the Mic Mute)
+"action"
+   XF86Launch1
