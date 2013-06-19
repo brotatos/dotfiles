@@ -139,7 +139,7 @@ for_window [class="mumble"] floating enable
 for_window [class="Steam"] floating enable
 
 # programs
-#bindsym $mod+z exec google-chrome
+#bindsym $mod+z exec firefox
 bindsym $mod+z exec google-chrome
 bindsym $mod+y exec ~/github/scripts/yt
 bindsym $mod+i exec ~/github/scripts/imgur
