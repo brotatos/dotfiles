@@ -21,7 +21,7 @@ URxvt.keysym.M-Escape           :  perl:keyboard-select:activate
 URxvt.keysym.M-s                :  perl:keyboard-select:search
 
 ! Effects
-*fading    :  30
+*fading    :  40
 *fadeColor :  #0d0d0d
 
 ! Colors
