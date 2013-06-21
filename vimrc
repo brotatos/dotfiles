@@ -21,6 +21,7 @@ set backupcopy=yes
 set backupdir=$HOME/.vim/backup
 
 " display
+set colorcolumn=80
 set linebreak
 set cursorline
 
@@ -92,3 +93,6 @@ au BufLeave ?akefile* set et
 
 " Notes to self
 " :retab - fix all old tabs/space errors
+"
+" ^Y scroll buffer up
+" ^E scroll buffer down
