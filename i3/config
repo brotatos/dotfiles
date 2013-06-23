@@ -136,7 +136,6 @@ for_window [class="Steam"] floating enable;
 
 # programs
 bindsym $mod+z exec chromium
-#bindsym $mod+z exec google-chrome
 #bindsym $mod+z exec firefox
 #bindsym $mod+c exec sh -c 'firefox $(xclip -out)'
 bindsym $mod+y exec yt
