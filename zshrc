@@ -40,6 +40,6 @@ function work () {
    # Turn off laptop monitor and just use external.
    xrandr --output HDMI1 --auto --right-of LVDS1
    xrandr --output LVDS1 --off
-   sudo netctl start work
    /usr/bin/touchpadtoggle
+   sudo netctl start work
 }
