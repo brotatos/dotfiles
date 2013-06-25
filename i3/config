@@ -140,7 +140,7 @@ for_window [class="Steam"] floating enable
 
 # programs
 #bindsym $mod+z exec firefox
-bindsym $mod+z exec google-chrome
+bindsym $mod+z exec chromium
 bindsym $mod+y exec ~/github/scripts/yt
 bindsym $mod+i exec ~/github/scripts/imgur
 bindsym $mod+n exec scrot
