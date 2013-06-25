@@ -6,7 +6,7 @@
 #
 
 urxvtd -q -f -o
-sleep 100s && dropbox start &
+sleep 300s && dropbox start &
 xflux -z 93405
 xbindkeys &
 xset +fp /usr/share/fonts/local/
