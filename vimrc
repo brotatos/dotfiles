@@ -56,7 +56,7 @@ set smartcase
 set pastetoggle=<F5>
 
 " syntax
-syntax enable
+syntax on
 
 " colors
 colorscheme jellybeans

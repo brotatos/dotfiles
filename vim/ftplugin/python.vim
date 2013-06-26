@@ -1,1 +1,1 @@
-set shiftwidth=4 tabstop=4 tw=79 softtabstop=4
+set shiftwidth=4 tabstop=8 tw=79 softtabstop=4
