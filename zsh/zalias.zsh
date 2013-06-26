@@ -37,6 +37,6 @@ alias starcraft="wine /mnt/general/wine-starcraft/drive_c/Program\ Files/StarCra
 #alias winesteam="wine /mnt/general/general/wine/drive_c/Program\ Files/Steam/Steam.exe >/dev/null 2>&1 &"
 alias winesteam="wine /mnt/general/wine/drive_c/Program\ Files/Steam/Steam.exe -no-dwrite>/dev/null 2>&1 &"
 
-alias word="WINEPREFIX=/mnt/general/wine-office wine /mnt/general/general/wine-office/drive_c/Program\ Files/Microsoft\ Office/Office12/WINWORD.EXE>/dev/null 2>&1 &"
-alias powerpoint="WWINEPREFIX=/mnt/general/general/wine-office wine /mnt/general/general/wine-office/drive_c/Program\ Files/Microsoft\ Office/Office12/POWERPNT.EXE>/dev/null 2>&1 &"
+alias word="WINEPREFIX=/mnt/general/wine-office wine /mnt/general/wine-office/drive_c/Program\ Files/Microsoft\ Office/Office12/WINWORD.EXE>/dev/null 2>&1 &"
+alias powerpoint="WWINEPREFIX=/mnt/general/general/wine-office wine /mnt/general/wine-office/drive_c/Program\ Files/Microsoft\ Office/Office12/POWERPNT.EXE>/dev/null 2>&1 &"
 alias excel="wine /mnt/general/wine-office/drive_c/Program\ Files/Microsoft\ Office/Office12/EXCEL.EXE>/dev/null 2>&1 &"
