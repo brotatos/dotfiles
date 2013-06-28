@@ -9,8 +9,8 @@ urxvtd -q -f -o
 sleep 300s && dropbox start &
 redshift -l 35:-120 &
 xbindkeys &
-xset +fp /usr/share/fonts/local/
-xset fp rehash
+#xset +fp /usr/share/fonts/local/
+#xset fp rehash
 unclutter & > /dev/null
 mpd
 ps -C mpdscribble &>/dev/null || mpdscribble
