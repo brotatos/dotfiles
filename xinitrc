@@ -7,7 +7,7 @@
 
 urxvtd -q -f -o
 sleep 300s && dropbox start &
-xflux -z 93405
+redshift -l 35:-120 &
 xbindkeys &
 xset +fp /usr/share/fonts/local/
 xset fp rehash
