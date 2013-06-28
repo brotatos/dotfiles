@@ -7,7 +7,7 @@
 
 sleep 100s && dropbox start &
 pulseaudio --start
-xflux -z 93405
+redshift -l 35:-120 &
 sh ~/.fehbg
 xset +fp /usr/share/fonts/local/
 xset fp rehash
