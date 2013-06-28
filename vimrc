@@ -51,6 +51,7 @@ set ruler
 set ignorecase
 set hlsearch
 set smartcase
+set incsearch
 
 " copy pasta
 set pastetoggle=<F5>
