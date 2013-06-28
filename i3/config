@@ -136,8 +136,8 @@ for_window [class="Gimp"] floating enable;
 for_window [class="Steam"] floating enable;
 
 # programs
-bindsym $mod+z exec chromium
-#bindsym $mod+z exec firefox
+#bindsym $mod+z exec chromium
+bindsym $mod+z exec firefox
 bindsym $mod+y exec yt
 bindsym $mod+i exec imgur
 bindsym $mod+n exec scrot
