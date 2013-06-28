@@ -47,7 +47,7 @@ set visualbell
 set number
 set ruler
 
-" smart case search
+" search
 set ignorecase
 set hlsearch
 set smartcase
