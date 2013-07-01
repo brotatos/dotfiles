@@ -46,5 +46,4 @@ function work () {
 
 function squash () {
    git rebase -i HEAD~"$1"
-   git push --force
 }
