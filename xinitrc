@@ -5,7 +5,7 @@
 # Executed by startx (run your window manager from here)
 #
 
-urxvtd -q -f -o
+urxvtd -q -o -f
 sleep 300s && dropbox start &
 redshift -l 35:-120 &
 xbindkeys &
