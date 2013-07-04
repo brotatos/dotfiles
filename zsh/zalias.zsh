@@ -32,4 +32,3 @@ alias sickbeards="sudo systemctl stop sickbeard.service"
 alias home="sudo netctl start home"
 alias smw="sudo netctl start smw"
 alias cplan="sudo netctl start cplan"
-

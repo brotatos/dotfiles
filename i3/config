@@ -19,7 +19,8 @@ font pango:DejaVu Sans Mono 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id urxvtc
+bindsym $mod+Return exec --no-startup-id termite
+#bindsym $mod+Return exec --no-startup-id urxvtc
 
 # kill focused window
 bindsym $mod+Shift+Q kill
