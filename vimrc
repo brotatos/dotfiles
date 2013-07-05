@@ -18,6 +18,7 @@ set wrap
 set linebreak
 set cursorline
 set visualbell
+set laststatus=2
 set scrolloff=5
 set colorcolumn=80
 
