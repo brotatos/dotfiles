@@ -71,6 +71,8 @@ au BufRead /tmp/mutt-* setlocal spell spelllang=en_us
 " language specific
 autocmd FileType make set noexpandtab
 
+" plugins
+"let g:airline_theme='default'
 
 " folding
 if has ('folding')
