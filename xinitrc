@@ -16,7 +16,6 @@ mpd
 ps -C mpdscribble &>/dev/null || mpdscribble
 xsetroot -cursor_name left_ptr
 xrdb -merge ~/.Xresources
-urxvtd -q -f -o
 chromium &
 
 exec /usr/bin/i3
