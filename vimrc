@@ -61,9 +61,6 @@ if has ('folding')
   set foldcolumn=0
 endif
 
-" Plugins
-let g:airline_theme='simple'
-
 " Commands
 
 " Copy and paste
