@@ -1,42 +1,35 @@
 #!/bin/zsh
 
+#thinkpad
+alias tg="/usr/bin/touchpadtoggle"
+
 # general
-alias la='ls --group-directories-first --color=auto -lha'
-alias l='ls --group-directories-first --color=auto -lh'
+alias g="git"
+alias l='ls --group-directories-first --color=auto'
 alias ls='ls --group-directories-first --color=auto'
+alias more='/usr/bin/less'
 alias grep='grep --colour=auto'
+alias ...='cd ..'
+alias fixr='xrandr --output LVDS1 --mode 1600x900'
 
 alias shutdown="systemctl poweroff"
 alias reboot="systemctl reboot"
 alias suspend="systemctl suspend"
 
-alias list="pacman -Qqet"
 alias webcam="mplayer tv:// -tv driver=v4l2:width=640:height=480:device=/dev/video0 -fps 30 -vf screenshot"
 alias omup="omup -s"
 
+alias reconnect="sudo netctl restore"
 alias gc="ping -c 3 google.com"
-alias record="ffmpeg -f alsa -i default -f x11grab -s 1920x1200 -r 30 -i :0.0 -qscale 0 filename.avi"
-alias recordmydesktop="/usr/bin/recordmydesktop --device pulse"
-
-# git
-alias g="git"
 
 # arch
-alias update="sudo pacman -Syu; meat -u"
+alias pacman="pacman --color=always"
+alias update="sudo pacman --color=always -Syu; meat -u"
 alias sprunge="curl -F 'sprunge=<-' http://sprunge.us"
-alias mpd="mpd; mpdscribble"
 alias sickbeard="sudo systemctl start sickbeard.service"
 alias sickbeards="sudo systemctl stop sickbeard.service"
-alias search="pacman -Ss $1; meat -s $1"
 
-# latex
-alias ct="rm -f *.{aux,dvi,pdf,log}"
-
-# wine
-alias starcraft="wine /mnt/general/wine-starcraft/drive_c/Program\ Files/StarCraft\ II/StarCraft\ II.exe>/dev/null 2>&1 &"
-#alias winesteam="wine /mnt/general/general/wine/drive_c/Program\ Files/Steam/Steam.exe >/dev/null 2>&1 &"
-alias winesteam="wine /mnt/general/wine/drive_c/Program\ Files/Steam/Steam.exe -no-dwrite>/dev/null 2>&1 &"
-
-alias word="WINEPREFIX=/mnt/general/wine-office wine /mnt/general/wine-office/drive_c/Program\ Files/Microsoft\ Office/Office12/WINWORD.EXE>/dev/null 2>&1 &"
-alias powerpoint="WWINEPREFIX=/mnt/general/general/wine-office wine /mnt/general/wine-office/drive_c/Program\ Files/Microsoft\ Office/Office12/POWERPNT.EXE>/dev/null 2>&1 &"
-alias excel="wine /mnt/general/wine-office/drive_c/Program\ Files/Microsoft\ Office/Office12/EXCEL.EXE>/dev/null 2>&1 &"
+# school
+alias home="sudo netctl start home"
+alias smw="sudo netctl start smw"
+alias cplan="sudo netctl start cplan"

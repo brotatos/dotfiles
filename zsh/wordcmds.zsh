@@ -1,5 +1,4 @@
 #!/bin/zsh
-#stolen from gtmanfred
 
 my_extended_wordchars='*?_-.[]~=&;!#$%^(){}<>:@,\\';
 my_extended_wordchars_space="${my_extended_wordchars} "
