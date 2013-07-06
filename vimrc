@@ -1,3 +1,4 @@
+let g:airline_theme='simple'
 " Encoding
 scriptencoding utf-8
 set encoding=utf-8
@@ -52,7 +53,9 @@ set smartcase
 set incsearch
 
 " Mutt
-au BufRead /tmp/mutt-* set tw=72 set nohlsearch setlocal spell spelllang=en_us
+au BufRead /tmp/mutt-* set tw=72
+au BufRead /tmp/mutt-* set nohlsearch
+au BufRead /tmp/mutt-* setlocal spell spelllang=en_us
 
 " Folding
 if has ('folding')
