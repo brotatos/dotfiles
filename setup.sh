@@ -5,7 +5,7 @@
 files=('bash_profile' 'bashrc' 'rtorrent.rc' 'vim' 'xinitrc'
 'Xresources' 'mpd' 'mplayer' 'ncmpcpp' 'beetsconfig' 'mpdscribble' 'i3'
 'livestreamerrc' 'mutt' 'weechat' 'vimrc' 'tmux.conf' 'bash_alias'
-'i3status.conf' 'zshrc' 'vimperatorrc' 'zprofile' 'pentadactylrc'
+'i3status.conf' 'zsh' 'zshrc' 'vimperatorrc' 'zprofile' 'pentadactylrc'
 'xbindkeysrc')
 
 for i in "${files[@]}"; do
