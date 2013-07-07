@@ -36,12 +36,11 @@ promptinit
 # aur
 source /usr/share/zsh/plugins/zsh-syntax-highlight/zsh-syntax-highlighting.zsh
 
-function work () {
+function setup () {
    # Turn off laptop monitor and just use external.
    xrandr --output HDMI1 --auto --right-of LVDS1
    xrandr --output LVDS1 --off
-   /usr/bin/touchpadtoggle
-   sudo netctl start work
+   sudo netctl start "$1"
 }
 
 function squash () {

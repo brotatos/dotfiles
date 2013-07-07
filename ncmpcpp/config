@@ -29,8 +29,9 @@ mouse_support = "yes"
 allow_physical_files_deletion = "no"
 allow_physical_directories_deletion = "no"
 
-mpd_host "127.0.0.1"
-mpd_port "6600"
+#mpd_host "brotatos.mooo.com"
+mpd_host "192.168.1.132"
+mpd_port "6601"
 
 # Bars {{{1
 song_status_format = "{%a - }{%t - }{%b}"
