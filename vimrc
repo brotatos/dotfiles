@@ -1,44 +1,42 @@
-" encoding
+" Encoding
 scriptencoding utf-8
 set encoding=utf-8
 
-" generic
+" Generic
 set autoread
-set title
 set nocompatible
 set wrapscan
 set mouse=a
+colorscheme jellybeans
+syntax on
 filetype plugin indent on
-set wrap
-set tw=79
 set modelines=5
-set vb
-set scrolloff=5
-"setlocal spell spelllang=en_us
 
-" backup
-set backupcopy=yes
-set backupdir=$HOME/.vim/backup
-
-" display
-set colorcolumn=80
+" Display
+set title
+set wrap
 set linebreak
 set cursorline
+set visualbell
+set laststatus=2
+set scrolloff=5
+set colorcolumn=80
 
-" indentation
+" Indentation
 set autoindent
 set smartindent
 set smarttab
+set expandtab
+set tw=79
 set shiftwidth=3
 set softtabstop=3
 set tabstop=3
-set expandtab
 
-" trailings
+" Trailings
 set list
 set listchars=trail:·,tab:▸\
 
-" show
+" Show
 set showmode
 set showcmd
 set title
@@ -47,50 +45,37 @@ set visualbell
 set number
 set ruler
 
-" search
+" Search
 set ignorecase
 set hlsearch
 set smartcase
 set incsearch
 
-" copy pasta
-set pastetoggle=<F5>
-
-" syntax
-syntax enable
-
-" colors
-colorscheme jellybeans
-"set background=dark
-
-" mutt
+" Mutt
 au BufRead /tmp/mutt-* set tw=72
 au BufRead /tmp/mutt-* set nohlsearch
 au BufRead /tmp/mutt-* setlocal spell spelllang=en_us
 
-" language specific
-autocmd FileType make set noexpandtab
-
-
-" folding
+" Folding
 if has ('folding')
   set foldenable
   set foldmethod=marker
-  "set foldmethod=syntax
   set foldmarker={{{,}}}
   set foldcolumn=0
 endif
 
-" commands
-" word count
-nmap <silent> <F2> g<C-g>
-nnoremap <silent> <C-l> :noh<CR><C-l>
-" switch a this_command to thisCommand
-" camelCase 4 lyfe
-nmap  <F3> :%s/_\([a-z]\)/\u\1/gc
+" Commands
 
-au BufEnter ?akefile* set noet
-au BufLeave ?akefile* set et
+" Copy and paste
+set pastetoggle=<F5>
+" Word count
+nmap <silent> <F2> g<C-g>
+
+" Redraw and clear hlsearch.
+nnoremap <silent> <C-l> :noh<CR><C-l>
+
+" camelCase
+nmap  <F3> :%s/_\([a-z]\)/\u\1/gc
 
 " Notes to self
 " :retab - fix all old tabs/space errors
