@@ -1,7 +1,7 @@
 # general
 alias g="git"
 alias l='ls --group-directories-first --color=auto'
-alias l='ls --group-directories-first --color=auto -lash'
+alias la='ls --group-directories-first --color=auto -lash'
 alias ls='ls --group-directories-first --color=auto'
 alias more='/usr/bin/less'
 alias grep='grep --colour=auto'
