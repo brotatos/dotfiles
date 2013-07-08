@@ -12,8 +12,8 @@ xbindkeys &
 #xset +fp /usr/share/fonts/local/
 #xset fp rehash
 unclutter & > /dev/null
-mpd
-ps -C mpdscribble &>/dev/null || mpdscribble
+#mpd
+#ps -C mpdscribble &>/dev/null || mpdscribble
 sh ~/.fehbg
 xsetroot -cursor_name left_ptr
 xrdb -merge ~/.Xresources

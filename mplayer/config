@@ -1,4 +1,5 @@
 [default]
+quiet=yes
 nojoystick=1
 lirc=0
 vf=screenshot
