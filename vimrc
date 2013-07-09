@@ -1,7 +1,3 @@
-" Encoding
-scriptencoding utf-8
-set encoding=utf-8
-
 " Generic
 set autoread
 set nocompatible
@@ -11,6 +7,10 @@ colorscheme jellybeans
 syntax on
 filetype plugin indent on
 set modelines=5
+
+" Encoding
+scriptencoding utf-8
+set encoding=utf-8
 
 " Display
 set title
