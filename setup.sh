@@ -9,12 +9,12 @@ files=('bash_profile' 'bashrc' 'rtorrent.rc' 'vim' 'xinitrc'
 'xbindkeysrc')
 
 for i in "${files[@]}"; do
-    rm -r ~/.$i
-    ln -s ~/github/dotfiles/$i ~/.$i
+   rm -r ~/.$i
+   ln -s ~/github/dotfiles/$i ~/.$i
 done
 
 if [ ! -d ~/.config/termite ]; then
    mkdir -p ~/.config/termite
 fi
 
-ln -s ~/github/dotfiles/termite.cfg ~/.config/termite/config
+ln -sf ~/github/dotfiles/termite.cfg ~/.config/termite/config
