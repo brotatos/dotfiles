@@ -11,13 +11,14 @@ auto_view text/html
 set editor = "vim -c ':normal O'"     # use vim and skip to last blank line
 
 # options
-set mbox_type   = Maildir               # mailbox type
-set folder      = ~/.mail/              # root folder
-set spoolfile   = "+gmail/inbox"        # inbox
-set mbox        = "+gmail/inbox"        # [Gmail]/All Mail
-unset record                            # required to prevent duplicates in Sent
-set sendmail    = /usr/bin/msmtp        # use msmtp 'default' account
-set mailcap_path = ~/.mutt/mailcap      # i keep forgetting this silly option :(
+set mbox_type   = Maildir          # mailbox type
+set folder      = ~/.mail/         # root folder
+set spoolfile   = "+gmail/inbox"   # inbox
+set mbox        = "+gmail/inbox"   # [Gmail]/All Mail
+unset record                       # required to prevent duplicates in Sent
+set sendmail    = /usr/bin/msmtp   # use msmtp 'default' account
+set mailcap_path = ~/.mutt/mailcap # i keep forgetting this silly option :(
+set beep_new                       # beep on new mail
 
 # main options
 set header_cache = ~/.mutt/cache/headers
@@ -44,14 +45,14 @@ set tilde                                               # show tildes like in vi
 unset markers                                           # no ugly plus signs
 
 # composing mail
-set fcc_attach                              # save attachments with the body
-unset mime_forward                          # forward attachments as part of body
-set forward_format      = "Fwd: %s"         # format for subject when forwarding
-set include                                 # include message in replies
-set forward_quote                           # include message in forwards
-set include                                 # include message in replies
-set askcc                                   # ask for CC:
-set attribution         = "On %d, %n wrote:"        # set attribution
+set fcc_attach                               # save attachments with the body
+unset mime_forward                           # forward attachments as part of body
+set forward_format      = "Fwd: %s"          # format for subject when forwarding
+set include                                  # include message in replies
+set forward_quote                            # include message in forwards
+set include                                  # include message in replies
+set askcc                                    # ask for CC:
+set attribution         = "On %d, %n wrote:" # set attribution
 set reply_to
 
 # headers to show
