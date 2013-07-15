@@ -16,7 +16,7 @@ set folder      = ~/.mail/              # root folder
 set spoolfile   = "+work/inbox"        # inbox
 set mbox        = "+work/inbox"        # [Gmail]/All Mail
 unset record                            # required to prevent duplicates in Sent
-#set sendmail    = /usr/bin/msmtp        # use msmtp 'default' account
+set sendmail    = /usr/bin/msmtp        # use msmtp 'default' account
 set mailcap_path = ~/.mutt/mailcap      # i keep forgetting this silly option :(
 
 # main options
