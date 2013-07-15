@@ -16,4 +16,4 @@ if [ ! -d ~/.config/termite ]; then
    mkdir -p ~/.config/termite
 fi
 
-ln -s ~/github/dotfiles/termite.cfg ~/.config/termite/config
+ln -sf ~/github/dotfiles/termite.cfg ~/.config/termite/config
