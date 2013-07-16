@@ -21,6 +21,7 @@ mpdscribble/lastfm.journal
 
 #mutt
 mutt/cache/*
+mutt/mailboxes
 
 #weechat
 weechat/logs
