@@ -3,7 +3,7 @@
 #ln -s source_file link_name
 
 files=('bash_profile' 'bashrc' 'rtorrent.rc' 'vim' 'xinitrc' 'Xresources' 'mpd'
-'mplayer' 'ncmpcpp' 'beetsconfig' 'mpdscribble' 'i3' 'livestreamerrc' 'mutt'
+'mplayer' 'ncmpcpp'  'mpdscribble' 'i3' 'livestreamerrc' 'mutt'
 'weechat' 'vimrc' 'tmux.conf' 'bash_alias' 'i3status.conf' 'zshrc'
 'vimperatorrc' 'zprofile' 'pentadactylrc')
 
@@ -12,8 +12,8 @@ for i in "${files[@]}"; do
     ln -s ~/github/dotfiles/$i ~/.$i
 done
 
-if [ ! -d ~/.config/termite ]; then
-   mkdir -p ~/.config/termite
-fi
+mkdir -p ~/.config/termite
+mkdir -p ~/.config/beets
 
 ln -sf ~/github/dotfiles/termite.cfg ~/.config/termite/config
+ln -sf ~/github/dotfiles/beetsconfig ~/.config/beets/config.yaml

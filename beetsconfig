@@ -1,11 +1,14 @@
-[beets]
-directory: /mnt/media/media/music
+# Automatically migrated from legacy .beetsconfig.
+
+directory: ~/music
 library: /home/robin/.beetsmusic.blb
 plugins: bpd
-import_resume: yes
-import_incremental: yes
-import_move : yes
-import_write: yes
-import_delete: yes
-threaded: yes
-color: yes
+
+import:
+    resume: true
+    incremental: true
+    move: true
+    write: true
+    delete: true
+threaded: true
+color: true
