@@ -1,14 +1,11 @@
-# Automatically migrated from legacy .beetsconfig.
-
 directory: ~/music
-library: /home/robin/.beetsmusic.blb
+library: ~/.beetsmusic.blb
 plugins: bpd
 
 import:
-    resume: true
-    incremental: true
-    move: true
-    write: true
-    delete: true
-threaded: true
-color: true
+    resume: yes
+    incremental: yes
+    move: yes
+    write: yes
+threaded: yes
+color: yes
