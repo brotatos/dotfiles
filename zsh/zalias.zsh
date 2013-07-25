@@ -11,6 +11,7 @@ alias more='/usr/bin/less'
 alias grep='grep --colour=auto'
 alias ...='cd ..'
 alias fixr='xrandr --output LVDS1 --mode 1600x900'
+alias mosh='mosh --predict=never'
 
 alias shutdown="systemctl poweroff"
 alias reboot="systemctl reboot"
