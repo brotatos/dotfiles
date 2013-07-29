@@ -4,7 +4,6 @@
 alias tg="/usr/bin/touchpadtoggle"
 
 # general
-alias g="git"
 alias l='ls --group-directories-first --color=auto'
 alias ls='ls --group-directories-first --color=auto'
 alias more='/usr/bin/less'
@@ -37,3 +36,7 @@ alias cplan="sudo netctl start cplan"
 
 # web
 alias htmlnow="rst2html5 --bootstrap-css --pretty-print-code --jquery --embed-content $1 > file.html"
+
+# git
+alias g="git"
+alias 'g b'="git branch"
