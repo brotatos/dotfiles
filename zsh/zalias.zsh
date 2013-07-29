@@ -39,4 +39,5 @@ alias htmlnow="rst2html5 --bootstrap-css --pretty-print-code --jquery --embed-co
 
 # git
 alias g="git"
-alias 'g b'="git branch"
+alias f="feature"
+alias h="hotfix"
