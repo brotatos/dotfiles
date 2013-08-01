@@ -10,7 +10,6 @@ alias more='/usr/bin/less'
 alias grep='grep --colour=auto'
 alias ...='cd ..'
 alias fixr='xrandr --output LVDS1 --mode 1600x900'
-alias mosh='mosh --predict=never'
 
 alias shutdown="systemctl poweroff"
 alias reboot="systemctl reboot"
@@ -23,7 +22,7 @@ alias reconnect="sudo netctl restore"
 alias gc="ping -c 3 google.com"
 
 # arch
-alias pacman="pacman --color=always"
+#alias pacman="pacman --color=always"
 alias update="sudo pacman --color=always -Syu; meat -u"
 alias sprunge="curl -F 'sprunge=<-' http://sprunge.us"
 alias sickbeard="sudo systemctl start sickbeard.service"

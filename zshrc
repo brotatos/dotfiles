@@ -1,3 +1,5 @@
+fpath=(~/.zsh/completion $fpath)
+
 for f in $HOME/.zsh/*.zsh(on); do
     . $f
 done
@@ -28,8 +30,6 @@ setopt appendhistory autocd beep extendedglob nomatch notify
 
 # prompt
 autoload -U colors && colors
-autoload -Uz compinit
-compinit
 autoload -U promptinit
 promptinit
 
@@ -51,3 +51,5 @@ function setup () {
 function squash () {
    git rebase -i HEAD~"$1"
 }
+
+zstyle ':completion:*' menu select=2
