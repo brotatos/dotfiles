@@ -8,8 +8,8 @@ files=('bash_profile' 'bashrc' 'rtorrent.rc' 'vim' 'xinitrc' 'Xresources' 'mpd'
 'vimperatorrc' 'zprofile' 'pentadactylrc')
 
 for i in "${files[@]}"; do
-    rm -r ~/.$i
-    ln -s ~/github/dotfiles/$i ~/.$i
+    rm -r "~/.$i"
+    ln -s "~/github/dotfiles/$i" "~/.$i"
 done
 
 mkdir -p ~/.config/termite
