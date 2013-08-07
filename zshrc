@@ -49,6 +49,7 @@ function setup () {
       sudo ifconfig eth0 up
       sudo dhcpcd eth0
       sudo dhcpcd eth0
+      /usr/bin/touchpadtoggle
    else
       sudo netctl start "$1"
    fi
