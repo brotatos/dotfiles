@@ -45,7 +45,13 @@ function setup () {
    xrandr --output HDMI1 --auto --right-of LVDS1
    xrandr --output LVDS1 --off
    sh ~/.fehbg
-   sudo netctl start "$1"
+   if [[ "$1" == "work" ]]; then
+      sudo ifconfig eth0 up
+      sudo dhcpcd eth0
+      sudo dhcpcd eth0
+   else
+      sudo netctl start "$1"
+   fi
 }
 
 function squash () {
