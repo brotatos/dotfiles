@@ -46,7 +46,7 @@ function setup () {
    xrandr --output LVDS1 --off
    sh ~/.fehbg
    if [[ "$1" == "work" ]]; then
-      sudo ifconfig eth0 up
+      sudo ip link set eth0 up
       sudo dhcpcd eth0
       sudo dhcpcd eth0
       /usr/bin/touchpadtoggle
