@@ -21,9 +21,12 @@ alias omup="omup -s"
 alias reconnect="sudo netctl restore"
 alias gc="ping -c 3 google.com"
 
+alias mplayer="mpv"
+
 # arch
 alias pacman="pacman --color=auto"
 alias update="sudo pacman --color=always -Syu; meat -u"
+
 alias sprunge="curl -F 'sprunge=<-' http://sprunge.us"
 alias sickbeard="sudo systemctl start sickbeard.service"
 alias sickbeards="sudo systemctl stop sickbeard.service"
