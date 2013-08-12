@@ -1,31 +1,30 @@
-# vim
+#vim
 *.swp
 vim/.netrwhist
+vim/backup/*
+vim/swap/*
 vim/view/*
-vim/backup/
 
-# mpd
+#mpd
 mpd/mpd.db
 mpd/mpd.log
 mpd/mpd.pid
 mpd/mpdstate
 mpd/playlists
 
-# ncmpcpp
+#ncmpcpp
 ncmpcpp/error.log
 
-# mpdscribble
+#mpdscribble
 mpdscribble/mpdscribble.log
 mpdscribble/lastfm.journal
 
-# mutt
+#mutt
 mutt/cache/*
 mutt/mailboxes
 
-# weechat
+#weechat
 weechat/logs
 weechat/irc.conf
 weechat/weechat.log
-
-# zsh
-zsh/history.zsh
+weechat/script/plugins.xml.gz
