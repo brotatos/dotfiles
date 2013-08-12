@@ -27,3 +27,4 @@ mutt/mailboxes
 weechat/logs
 weechat/irc.conf
 weechat/weechat.log
+weechat/script/plugins.xml.gz
