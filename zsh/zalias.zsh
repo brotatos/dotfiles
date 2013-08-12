@@ -36,9 +36,6 @@ alias home="sudo netctl start home"
 alias smw="sudo netctl start smw"
 alias cplan="sudo netctl start cplan"
 
-# web
-alias htmlnow="rst2html5 --bootstrap-css --pretty-print-code --jquery --embed-content $1 > file.html"
-
 # git
 alias g="git"
 alias f="feature"
