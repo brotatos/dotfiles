@@ -131,6 +131,8 @@ focus_follows_mouse no
 bindsym $mod+Tab workspace back_and_forth
 new_window 1pixel
 for_window [class="Firefox"] border normal
+for_window [class="Pavucontrol"] border normal
+for_window [class="Gajim"] border normal
 for_window [class="Vimperator"] border normal
 for_window [class="Wine"] floating enable
 for_window [class="Gimp"] floating enable
