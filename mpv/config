@@ -20,7 +20,7 @@
 ##################
 
 # Specify default video driver (see -vo help for a list).
-vo=vdpau
+#vo=vdpau
 
 # Start in fullscreen mode by default.
 #fs=yes
@@ -96,11 +96,11 @@ softvol=yes
 
 #[vdpau]
 # The profile forces the vdpau VO.
-vo=vdpau
+#vo=vdpau
 # Use hardware decoding (this might break playback of some h264 files)
-hwdec=vdpau
+#hwdec=vdpau
 # Most video filters do not work with vdpau.
-vf-clr=yes
+#vf-clr=yes
 
 
 # You can also include other configuration files.
