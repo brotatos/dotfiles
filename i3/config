@@ -10,16 +10,16 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod4
-#
+
 # font for window titles. ISO 10646 = Unicode
 #font -*-terminus-medium-r-normal-*-12-120-72-72-c-60-iso10646-1
-font pango:DejaVu Sans Mono 9
+font pango:DejaVu Sans Mono 8
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec termite
+bindsym $mod+Return exec --no-startup-id termite
 
 # kill focused window
 bindsym $mod+Shift+Q kill
@@ -111,7 +111,7 @@ bindsym $mod+Shift+E exit
 # automatic back-and-forth when switching to the current workspace
 workspace_auto_back_and_forth yes
 
-#audio 
+#audio
 bindsym XF86_AudioRaiseVolume exec amixer -q set Master 5%+
 bindsym XF86_AudioLowerVolume exec amixer -q set Master 5%-
 bindsym XF86_AudioMute exec amixer -q set Master toggle
@@ -130,16 +130,21 @@ focus_follows_mouse no
 # Window rules
 bindsym $mod+Tab workspace back_and_forth
 new_window 1pixel
-for_window [class="Firefox"] border normal;
-for_window [class="Wine"] floating enable;
-for_window [class="Gimp"] floating enable;
-for_window [class="Steam"] floating enable;
+for_window [class="Firefox"] border normal
+for_window [class="Pavucontrol"] border normal
+for_window [class="Gajim"] border normal
+for_window [class="Vimperator"] border normal
+for_window [class="Wine"] floating enable
+for_window [class="Gimp"] floating enable
+for_window [class="mplayer"] floating enable
+for_window [class="mumble"] floating enable
+for_window [class="Steam"] floating enable
 
 # programs
-bindsym $mod+z exec chromium
 #bindsym $mod+z exec firefox
-bindsym $mod+y exec yt
-bindsym $mod+i exec imgur
+bindsym $mod+z exec chromium
+bindsym $mod+y exec ~/github/scripts/yt
+bindsym $mod+i exec ~/github/scripts/imgur
 bindsym $mod+n exec scrot
 
 # Assignments
@@ -148,40 +153,40 @@ assign [class="Wine"] 9
 # resize window (you can also use the mouse for that)
 
 mode "resize" {
-    # These bindings trigger as soon as you enter the resize mode
+        # These bindings trigger as soon as you enter the resize mode
 
-    # They resize the border in the direction you pressed, e.g.
-    # when pressing left, the window is resized so that it has
-    # more space on its left
+        # They resize the border in the direction you pressed, e.g.
+        # when pressing left, the window is resized so that it has
+        # more space on its left
 
-    bindsym h resize shrink left 10 px or 10 ppt
-    bindsym Shift+H resize grow   left 10 px or 10 ppt
+bindsym h resize shrink left 10 px or 10 ppt
+bindsym Shift+H resize grow   left 10 px or 10 ppt
 
-    bindsym j resize shrink down 10 px or 10 ppt
-    bindsym Shift+J resize grow   down 10 px or 10 ppt
+bindsym j resize shrink down 10 px or 10 ppt
+bindsym Shift+J resize grow   down 10 px or 10 ppt
 
-    bindsym k resize shrink up 10 px or 10 ppt
-    bindsym Shift+K resize grow   up 10 px or 10 ppt
+bindsym k resize shrink up 10 px or 10 ppt
+bindsym Shift+K resize grow   up 10 px or 10 ppt
 
-    bindsym l resize shrink right 10 px or 10 ppt
-    bindsym Shift+L resize grow   right 10 px or 10 ppt
+bindsym l resize shrink right 10 px or 10 ppt
+bindsym Shift+L resize grow   right 10 px or 10 ppt
 
-            # same bindings, but for the arrow keys
-    bindsym Left resize shrink left 10 px or 10 ppt
-    bindsym Shift+Left resize grow   left 10 px or 10 ppt
+        # same bindings, but for the arrow keys
+bindsym Left resize shrink left 10 px or 10 ppt
+bindsym Shift+Left resize grow   left 10 px or 10 ppt
 
-    bindsym Down resize shrink down 10 px or 10 ppt
-    bindsym Shift+Down resize grow   down 10 px or 10 ppt
+bindsym Down resize shrink down 10 px or 10 ppt
+bindsym Shift+Down resize grow   down 10 px or 10 ppt
 
-    bindsym Up resize shrink up 10 px or 10 ppt
-    bindsym Shift+Up resize grow   up 10 px or 10 ppt
+bindsym Up resize shrink up 10 px or 10 ppt
+bindsym Shift+Up resize grow   up 10 px or 10 ppt
 
-    bindsym Right resize shrink right 10 px or 10 ppt
-    bindsym Shift+Right resize grow   right 10 px or 10 ppt
+bindsym Right resize shrink right 10 px or 10 ppt
+bindsym Shift+Right resize grow   right 10 px or 10 ppt
 
-    # back to normal: Enter or Escape
-    bindsym Return mode "default"
-    bindsym Escape mode "default"
+        # back to normal: Enter or Escape
+bindsym Return mode "default"
+bindsym Escape mode "default"
 }
 
 bindsym $mod+r mode "resize"
