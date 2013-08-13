@@ -117,7 +117,7 @@ bindsym XF86_AudioLowerVolume exec amixer -q set Master 5%-
 bindsym XF86_AudioMute exec amixer -q set Master toggle
 
 # lock
-bindsym $mod+x exec i3lock -d -c 000000
+bindsym $mod+x exec i3lock -c 000000
 
 # music control
 bindsym $mod+F1 exec ncmpcpp prev
