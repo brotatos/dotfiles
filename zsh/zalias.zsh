@@ -17,6 +17,8 @@ alias omup="omup -s"
 alias reconnect="sudo netctl restore"
 alias gc="ping -c 3 google.com"
 
+alias mplayer="mpv"
+
 # arch
 alias pacman="pacman --color=auto"
 alias update="sudo pacman --color=always -Syu; meat -u"
