@@ -11,27 +11,24 @@ _feature() {
 
    case $state in
       commands)
-         _arguments -s "1:Commands:(list start switch finish merge pull prune status stashes clean github-test)"
+         _arguments '1:Commands:(list start switch finish merge pull prune status stashes clean github-test)'
       ;;
       params)
          if [[ "$words[2]" == "prune" ]]; then
-            _arguments "2:Location:(local origin)"
+            _arguments '2:Location:(local origin)'
          fi
          if [[ "$words[2]" == "switch" ||
                "$words[2]" == "merge"  ||
                "$words[2]" == "finish" ]]; then
-            local -a featureBranches args array_args
-            featureBranches="$(git branch -a | tr -d ' *' | grep -v 'hotfix-' | sed 's|remotes/origin/||')"
-            args="$(echo ${hotfixBranches} | tr "\$\'\\n\'" " ")"
-            array_args=( $(echo ${args}) )
-            #_arguments "2:Branches:($(echo ${args}))"
-            #compadd "$@" -a ( $(echo ${args}) )
-            compadd "$@" -a array_args
+           local -a featureBranches args
+           featureBranches="$(git branch -a | tr -d ' *' | grep -v 'hotfix-' | sed 's|remotes/origin/||')"
+           args="$(echo ${featureBranches} | tr "\$\'\\n\'" " ")"
+           _arguments '2:Branches:($(echo ${args}))'
          fi
       ;;
       choice)
          if [[ "$words[3]" == "local" || "$words[3]" == "origin" ]]; then
-            _arguments "3:Commands:(preview clean)"
+            _arguments '3:Commands:(preview clean)'
          fi
       ;;
       *)
@@ -39,3 +36,4 @@ _feature() {
 }
 
 _feature "$@"
+
