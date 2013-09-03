@@ -4,7 +4,6 @@ highlight Hint font-family: monospace; font-size: 10px; font-weight: bold; text-
 map <C-z> <S-Esc>
 "set hintchars=abcdefghijklmnopqrstuvwxyz
 set hintchars=asdfghjkl
-set showtabline=2
 set visualbell
 set defsearch=duckduckgo
 nnoremap j 3j
