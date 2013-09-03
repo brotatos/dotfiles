@@ -1,4 +1,5 @@
 export PATH=/home/robin/.gem/ruby/2.0.0/bin:$PATH
+. /etc/profile.d/z.sh
 for f in $HOME/.zsh/*.zsh(on); do
     . $f
 done
