@@ -6,8 +6,12 @@ set visualbell
 set defsearch=duckduckgo
 set noscrollbars
 set status=input,position,tabcount
+set gui=noaddons,nobookmarks,nomenu,navigation,tabs
 set titlestring=
 
+map t <C-t>
+map o <C-l>
+map O <C-l><Right>
 map <C-z> <S-Esc>
 nnoremap j 3j
 nnoremap k 3k
