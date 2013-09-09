@@ -3,7 +3,6 @@ highlight Hint font-family: sans-serif; font-size: 10px; font-weight: bold; text
 
 set hintchars=asdfghjkl
 set visualbell
-set defsearch=duckduckgo
 set noscrollbars
 set status=input,position,tabcount
 set gui=noaddons,nobookmarks,nomenu,navigation,tabs
