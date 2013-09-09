@@ -3,6 +3,7 @@ fpath=(~/.zsh/completion $fpath)
 for f in $HOME/.zsh/*.zsh(on); do
     . $f
 done
+. /etc/profile.d/z.sh
 export EDITOR=vim
 export VISUAL=vim
 export BROWSER=chromium
