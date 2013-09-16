@@ -17,7 +17,7 @@ sh ~/.fehbg
 xsetroot -cursor_name left_ptr
 xrdb -merge ~/.Xresources
 pulseaudio --start &
-/usr/bin/touchpadtoggle
 chromium &
+termite &
 
 exec /usr/bin/i3
