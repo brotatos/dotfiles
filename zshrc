@@ -1,10 +1,11 @@
 fpath=(~/.zsh/completion $fpath)
-. /etc/profile.d/z.sh
+. /usr/lib/z.sh
 
 for f in $HOME/.zsh/*.zsh(on); do
     . $f
 done
 
+export CUPS_SERVER=localhost
 export EDITOR=vim
 export VISUAL=vim
 export BROWSER=firefox
