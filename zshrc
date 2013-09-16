@@ -39,8 +39,8 @@ promptinit
 source /usr/share/zsh/plugins/zsh-syntax-highlight/zsh-syntax-highlighting.zsh
 
 # envoy
-#envoy -t ssh-agent cominor csc github id_rsa
-#source <(envoy -p)
+envoy -t ssh-agent cominor csc
+source <(envoy -p)
 
 function setup () {
    # Turn off laptop monitor and just use external.
