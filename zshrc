@@ -38,10 +38,6 @@ promptinit
 # aur
 source /usr/share/zsh/plugins/zsh-syntax-highlight/zsh-syntax-highlighting.zsh
 
-# envoy
-envoy -t ssh-agent cominor csc
-source <(envoy -p)
-
 function setup () {
    # Turn off laptop monitor and just use external.
    xrandr --output DVI1 --auto --right-of LVDS1
