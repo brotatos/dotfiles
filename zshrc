@@ -1,10 +1,11 @@
 fpath=(~/.zsh/completion $fpath)
-. /etc/profile.d/z.sh
+. /usr/lib/z.sh
 
 for f in $HOME/.zsh/*.zsh(on); do
     . $f
 done
 
+export CUPS_SERVER=localhost
 export EDITOR=vim
 export VISUAL=vim
 export BROWSER=firefox
@@ -36,10 +37,6 @@ promptinit
 
 # aur
 source /usr/share/zsh/plugins/zsh-syntax-highlight/zsh-syntax-highlighting.zsh
-
-# envoy
-#envoy -t ssh-agent cominor csc github id_rsa
-#source <(envoy -p)
 
 function setup () {
    # Turn off laptop monitor and just use external.

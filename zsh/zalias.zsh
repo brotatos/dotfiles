@@ -32,6 +32,7 @@ alias sickbeard="sudo systemctl start sickbeard.service"
 alias sickbeards="sudo systemctl stop sickbeard.service"
 
 # school
+alias print="lpr"
 alias home="sudo netctl start home"
 alias smw="sudo netctl start smw"
 alias cplan="sudo netctl start cplan"
