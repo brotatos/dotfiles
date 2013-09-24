@@ -35,6 +35,7 @@ alias sickbeards="sudo systemctl stop sickbeard.service"
 alias print="lpr"
 alias home="sudo netctl start home"
 alias smw="sudo netctl start smw"
+alias smw2="sudo netctl start smw2"
 alias cplan="sudo netctl start cplan"
 
 # git
