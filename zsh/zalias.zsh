@@ -42,3 +42,5 @@ alias cplan="sudo netctl start cplan"
 alias g="git"
 alias f="feature"
 alias h="hotfix"
+
+alias gx="cd /home/robin/xilinx/14.6/ISE_DS/ISE/bin/lin64"
