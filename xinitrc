@@ -5,7 +5,7 @@
 # Executed by startx (run your window manager from here)
 #
 
-sleep 300s && dropbox start &
+#sleep 300s && dropbox start &
 redshift -l 35:-120 &
 xbindkeys &
 #xset +fp /usr/share/fonts/local/
@@ -15,7 +15,7 @@ unclutter & > /dev/null
 #ps -C mpdscribble &>/dev/null || mpdscribble
 sh ~/.fehbg
 xsetroot -cursor_name left_ptr
-xrdb -merge ~/.Xresources
+#xrdb -merge ~/.Xresources
 pulseaudio --start &
 chromium &
 termite &

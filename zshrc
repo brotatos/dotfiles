@@ -8,7 +8,7 @@ done
 export CUPS_SERVER=localhost
 export EDITOR=vim
 export VISUAL=vim
-export BROWSER=firefox
+export BROWSER=chromium
 export GIT_EDITOR=$EDITOR
 export SUDO_EDITOR=$EDITOR
 
