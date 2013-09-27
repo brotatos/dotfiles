@@ -35,9 +35,12 @@ alias sickbeards="sudo systemctl stop sickbeard.service"
 alias print="lpr"
 alias home="sudo netctl start home"
 alias smw="sudo netctl start smw"
+alias smw2="sudo netctl start smw2"
 alias cplan="sudo netctl start cplan"
 
 # git
 alias g="git"
 alias f="feature"
 alias h="hotfix"
+
+alias gx="cd /home/robin/xilinx/14.6/ISE_DS/ISE/bin/lin64"
