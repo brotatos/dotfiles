@@ -129,7 +129,7 @@ focus_follows_mouse no
 
 # Window rules
 bindsym $mod+Tab workspace back_and_forth
-new_window 1pixel
+new_window normal
 for_window [class="Firefox"] border normal
 for_window [class="Pavucontrol"] border normal
 for_window [class="Gajim"] border normal
