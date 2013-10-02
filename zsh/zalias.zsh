@@ -4,6 +4,7 @@
 alias tg="/usr/bin/touchpadtoggle"
 
 # general
+alias i3lock="i3lock -c 000000"
 alias l='ls --group-directories-first --color=auto'
 alias ls='ls --group-directories-first --color=auto'
 alias more='/usr/bin/less'
