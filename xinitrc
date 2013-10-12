@@ -17,5 +17,6 @@ ps -C mpdscribble &>/dev/null || mpdscribble
 xsetroot -cursor_name left_ptr
 xrdb -merge ~/.Xresources
 chromium &
+termite &
 
 exec /usr/bin/i3
