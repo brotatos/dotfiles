@@ -42,4 +42,9 @@ alias g="git"
 alias f="feature"
 alias h="hotfix"
 
+# poly
 alias gx="cd /home/robin/xilinx/14.6/ISE_DS/ISE/bin/lin64"
+alias ise="source /home/robin/xilinx/14.6/ISE_DS; /home/robin/xilinx/14.6/ISE_DS/ISE/bin/lin64/ise"
+
+# python
+alias pysource="source venv/bin/activate"

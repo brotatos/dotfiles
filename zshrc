@@ -57,6 +57,11 @@ function squash () {
    git rebase -i HEAD~"$1"
 }
 
+function axilinx() {
+   source /home/robin/xilinx/14.6/ISE_DS
+   /home/robin/xilinx/14.6/ISE_DS/ISE/bin/lin64/ise
+}
+
 zstyle ':completion:*' menu select=2
 
 # Set custom prompt
