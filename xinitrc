@@ -19,5 +19,6 @@ xsetroot -cursor_name left_ptr
 pulseaudio --start &
 chromium &
 termite &
+/usr/bin/touchpadtoggle
 
 exec /usr/bin/i3
