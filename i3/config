@@ -13,7 +13,7 @@ set $mod Mod4
 
 # font for window titles. ISO 10646 = Unicode
 #font -*-terminus-medium-r-normal-*-12-120-72-72-c-60-iso10646-1
-font pango:DejaVu Sans Mono 8
+font pango:Inconsolata 10
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -129,7 +129,7 @@ focus_follows_mouse no
 
 # Window rules
 bindsym $mod+Tab workspace back_and_forth
-new_window 1pixel
+new_window normal
 for_window [class="Firefox"] border normal
 for_window [class="Pavucontrol"] border normal
 for_window [class="Gajim"] border normal

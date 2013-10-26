@@ -15,5 +15,5 @@ done
 mkdir -p ~/.config/termite
 mkdir -p ~/.config/beets
 
-ln -sf ~/github/dotfiles/termite.cfg ~/.config/termite/config
-ln -sf ~/github/dotfiles/beetsconfig ~/.config/beets/config.yaml
+ln -sf "$PWD"/termite.cfg ~/.config/termite/config
+ln -sf "$PWD"/beetsconfig ~/.config/beets/config.yaml
