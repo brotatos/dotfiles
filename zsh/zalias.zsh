@@ -25,3 +25,6 @@ alias update="sudo pacman --color=auto -Syu; meat -u"
 alias sprunge="curl -F 'sprunge=<-' http://sprunge.us"
 alias sickbeard="sudo systemctl start sickbeard.service"
 alias sickbeards="sudo systemctl stop sickbeard.service"
+
+# python
+alias pysource="source venv/bin/activate"

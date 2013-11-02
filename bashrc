@@ -11,6 +11,7 @@ NUL="\[\033[0m\]"
 
 export PS1="${BLU}\u${WHI}@${PUR}\H ${GRE}\t ${PUR}\W${NUL} > "
 export SHELL=/bin/bash
+export BROWSER=chromium
 
 #PS1='[\u@\h \W ]\$ '
 
