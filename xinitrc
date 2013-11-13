@@ -5,7 +5,7 @@
 # Executed by startx (run your window manager from here)
 #
 
-#sleep 300s && dropbox start &
+sleep 300s && dropbox start &
 redshift -l 35:-120 &
 xbindkeys &
 #xset +fp /usr/share/fonts/local/
