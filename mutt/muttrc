@@ -32,7 +32,7 @@ unset mark_old                                          # read/new is good enoug
 
 # index options
 set sort                = threads                       # like gmail
-#set sort_aux            = reverse-last-date-received    # like gmail
+set sort_aux            = reverse-last-date-received    # like gmail
 set sort_re                                             # thread based on reply_regexp
 
 # pager
