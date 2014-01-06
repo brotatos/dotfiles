@@ -49,3 +49,7 @@ alias ise="source /home/robin/xilinx/14.6/ISE_DS; /home/robin/xilinx/14.6/ISE_DS
 
 # python
 alias pysource="source venv/bin/activate"
+
+# wine
+alias word="WINEDEBUG=-all wine ~/.wine/drive_c/Program\ Files/Microsoft\ Office/Office12/WINWORD.EXE >/dev/null 2>&1 &"
+alias excel="WINEDEBUG=-all wine ~/.wine/drive_c/Program\ Files/Microsoft\ Office/Office12/EXCEL.EXE >/dev/null 2>&1 &"
