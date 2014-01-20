@@ -19,6 +19,8 @@ xsetroot -cursor_name left_ptr
 pulseaudio --start &
 chromium &
 termite &
-/usr/bin/touchpadtoggle
+# Automatically disable the touchpad when typing. Set the idle time to .5
+# seconds.
+syndaemon -k -i .5 -d
 
 exec /usr/bin/i3
