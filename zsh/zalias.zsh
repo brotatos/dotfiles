@@ -4,6 +4,7 @@
 alias tg="/usr/bin/touchpadtoggle"
 
 # general
+alias wdmesg="dmesg -L -w"
 alias rm="mv --verbose -f --backup=numbered --target-directory ~/dump"
 alias i3lock="i3lock -c 000000"
 alias l='ls --group-directories-first --color=auto'
@@ -40,8 +41,6 @@ alias cplan="sudo netctl start cplan"
 
 # git
 alias g="git"
-alias f="feature"
-alias h="hotfix"
 
 # poly
 alias gx="cd /home/robin/xilinx/14.6/ISE_DS/ISE/bin/lin64"
