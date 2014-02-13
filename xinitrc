@@ -22,6 +22,6 @@ termite &
 # Automatically disable the touchpad when typing. Set the idle time to .5
 # seconds.
 #syndaemon -k -i .5 -d
-/usr/bin/touchpadtoggle
+#/usr/bin/touchpadtoggle
 
 exec /usr/bin/i3
