@@ -16,4 +16,9 @@ if [ ! -d ~/.config/termite ]; then
    mkdir -p ~/.config/termite
 fi
 
+if [ ! -d ~/.config/fish ]; then
+   mkdir -p ~/.config/fish
+fi
+
 ln -sf ~/github/dotfiles/termite.cfg ~/.config/termite/config
+ln -sf ~/github/dotfiles/config/config.fish ~/.config/fish/config.fish
