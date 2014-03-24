@@ -14,6 +14,8 @@ done
 
 mkdir -p ~/.config/termite
 mkdir -p ~/.config/beets
+mkdir -p ~/.config/fish
 
 ln -sf "$PWD"/termite.cfg ~/.config/termite/config
 ln -sf "$PWD"/beetsconfig ~/.config/beets/config.yaml
+ln -sf "$PWD"/fish.config ~/.config/fish/config.fish
