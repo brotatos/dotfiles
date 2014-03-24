@@ -128,3 +128,14 @@ function program
    djtgcfg enum
    djtgcfg prog -d Nexys2 -i 0 -f $argv --verbose
 end function
+
+function gstatus
+   for i in (ls (pwd))
+      if test -d $i -a -d $i/.git
+         echo $i
+         cd $i
+         git status -s
+         cd ..
+      end
+   end
+end function
