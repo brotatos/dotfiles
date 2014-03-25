@@ -1,31 +1,43 @@
-set -x EDITOR vim
-set -x VISUAL vim
-set -x BROWSER chromium
-set -x GIT_EDITOR vim
-set -x SUDO_EDITOR vim
-
 set fish_greeting ""
 set fish_git_dirty_color red
 set fish_git_not_dirty_color green
 
-# Git prompt.
-function parse_git_branch
-  set -l branch (git branch 2> /dev/null | grep -e '\* ' | sed 's/^..\(.*\)/\1/')
-  set -l git_diff (git diff)
-
-  if test -n "$git_diff"
-    echo (set_color $fish_git_dirty_color)$branch(set_color normal)
-  else
-    echo (set_color $fish_git_not_dirty_color)$branch(set_color normal)
-  end
-end
-
 function fish_prompt
-  if test -d .git
-    printf '%s@%s %s%s%s:%s\n> ' (whoami) (hostname|cut -d . -f 1) (set_color $fish_color_cwd) (prompt_pwd) (set_color normal) (parse_git_branch)
-  else
-    printf '%s@%s %s%s%s\n> ' (whoami) (hostname|cut -d . -f 1) (set_color $fish_color_cwd) (prompt_pwd) (set_color normal)
+  if not set -q -g __fish_robbyrussell_functions_defined
+  set -g __fish_robbyrussell_functions_defined
+     function _git_branch_name
+       echo (git symbolic-ref HEAD ^/dev/null | sed -e 's|^refs/heads/||')
+     end
+
+     function _is_git_dirty
+       echo (git status -s --ignore-submodules=dirty ^/dev/null)
+     end
   end
+
+  set -l cyan (set_color -o cyan)
+  set -l yellow (set_color -o yellow)
+  set -l red (set_color -o red)
+  set -l blue (set_color -o blue)
+  set -l green (set_color -o green)
+  set -l normal (set_color normal)
+
+  set -l arrow "$red➜ "
+  #set -l cwd $cyan(basename (prompt_pwd))
+  set -l cwd $cyan(prompt_pwd)
+
+  if [ (_git_branch_name) ]
+     set -l git_branch $red(_git_branch_name)
+     #set git_info "$blue git:($git_branch$blue)"
+     set git_info "$blue ($git_branch$blue)"
+
+     if [ (_is_git_dirty) ]
+       set -l dirty "$yellow ✗"
+       set git_info "$git_info$dirty"
+     end
+  end
+
+  echo -n -s $green(hostname|cut -d . -f 1) ':' $cwd $git_info $normal ' '
+  echo -n -s $arrow
 end
 
 function reload_fish
@@ -127,15 +139,4 @@ end function
 function program
    djtgcfg enum
    djtgcfg prog -d Nexys2 -i 0 -f $argv --verbose
-end function
-
-function gstatus
-   for i in (ls (pwd))
-      if test -d $i -a -d $i/.git
-         echo $i
-         cd $i
-         git status -s
-         cd ..
-      end
-   end
 end function

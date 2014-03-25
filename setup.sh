@@ -1,6 +1,4 @@
 #!/bin/bash
-# Sets up the appropriate symlinks for the config files located here
-#ln -s source_file link_name
 
 files=('bash_profile' 'bashrc' 'rtorrent.rc' 'xinitrc' 'Xresources' 'mpd'
 'mplayer' 'ncmpcpp' 'beetsconfig' 'mpdscribble' 'i3' 'livestreamerrc' 'mutt'
@@ -20,5 +18,5 @@ if [ ! -d ~/.config/fish ]; then
    mkdir -p ~/.config/fish
 fi
 
-ln -sf ~/github/dotfiles/termite.cfg ~/.config/termite/config
-ln -sf ~/github/dotfiles/config/config.fish ~/.config/fish/config.fish
+ln -sf "$PWD"/termite.cfg ~/.config/termite/config
+ln -sf "$PWD"/config/config.fish ~/.config/fish/config.fish
