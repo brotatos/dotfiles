@@ -1,3 +1,4 @@
+set -u fish_user_paths $fish_user_paths ~/github/scripts
 set -x EDITOR vim
 set -x VISUAL vim
 set -x BROWSER chromium
