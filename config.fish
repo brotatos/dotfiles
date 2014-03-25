@@ -27,7 +27,7 @@ function fish_prompt
   set -l green (set_color -o green)
   set -l normal (set_color normal)
 
-  set -l arrow "$red➜ "
+  set -l arrow "$red➜"
   #set -l cwd $cyan(basename (prompt_pwd))
   set -l cwd $cyan(prompt_pwd)
 
