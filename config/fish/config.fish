@@ -27,7 +27,7 @@ function fish_prompt
   set -l green (set_color -o green)
   set -l normal (set_color normal)
 
-  set -l arrow "$red➜ "
+  set -l arrow "$red➜"
   #set -l cwd $cyan(basename (prompt_pwd))
   set -l cwd $cyan(prompt_pwd)
 
@@ -43,7 +43,7 @@ function fish_prompt
   end
 
   echo -n -s $green(hostname|cut -d . -f 1) ':' $cwd $git_info
-  echo -n -s ' '$arrow ' ' $normal
+  echo -n -s ' '$arrow ' '$normal
 end
 
 function reload_fish
