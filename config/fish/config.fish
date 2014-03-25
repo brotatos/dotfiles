@@ -32,18 +32,18 @@ function fish_prompt
   set -l cwd $cyan(prompt_pwd)
 
   if [ (_git_branch_name) ]
-     set -l git_branch $red(_git_branch_name)
-     #set git_info "$blue git:($git_branch$blue)"
-     set git_info "$blue ($git_branch$blue)"
+     set -l git_branch $blue(_git_branch_name)
+     set git_info " $blue($git_branch$blue)"
 
      if [ (_is_git_dirty) ]
-       set -l dirty "$yellow ✗"
-       set git_info "$git_info$dirty"
+       set arrow "$yellow✗"
+       set git_branch $red(_git_branch_name)
+       set git_info " $blue($git_branch$blue)"
      end
   end
 
-  echo -n -s $green(hostname|cut -d . -f 1) ':' $cwd $git_info $normal ' '
-  echo -n -s $arrow
+  echo -n -s $green(hostname|cut -d . -f 1) ':' $cwd $git_info
+  echo -n -s ' '$arrow ' ' $normal
 end
 
 function reload_fish
