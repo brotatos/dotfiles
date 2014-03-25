@@ -1,3 +1,9 @@
+set -x EDITOR vim
+set -x VISUAL vim
+set -x BROWSER chromium
+set -x GIT_EDITOR vim
+set -x SUDO_EDITOR vim
+
 set fish_greeting ""
 set fish_git_dirty_color red
 set fish_git_not_dirty_color green
@@ -121,4 +127,15 @@ end function
 function program
    djtgcfg enum
    djtgcfg prog -d Nexys2 -i 0 -f $argv --verbose
+end function
+
+function gstatus
+   for i in (ls (pwd))
+      if test -d $i -a -d $i/.git
+         echo $i
+         cd $i
+         git status -s
+         cd ..
+      end
+   end
 end function
