@@ -6,6 +6,7 @@ alias ls='ls --group-directories-first --color=auto'
 alias more='/usr/bin/less'
 alias grep='grep --colour=auto'
 alias ...='cd ..'
+alias rm="mv --verbose -f --backup=numbered --target-directory ~/dump"
 
 alias shutdown="systemctl poweroff"
 alias reboot="systemctl reboot"
@@ -16,8 +17,6 @@ alias omup="omup -s"
 
 alias reconnect="sudo netctl restore"
 alias gc="ping -c 3 google.com"
-
-alias mplayer="mpv"
 
 # arch
 alias pacman="pacman --color=auto"
