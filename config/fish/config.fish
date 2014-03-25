@@ -1,3 +1,9 @@
+set -x EDITOR vim
+set -x VISUAL vim
+set -x BROWSER chromium
+set -x GIT_EDITOR vim
+set -x SUDO_EDITOR vim
+
 set fish_greeting ""
 set fish_git_dirty_color red
 set fish_git_not_dirty_color green
