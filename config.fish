@@ -1,4 +1,4 @@
-set -u fish_user_paths $fish_user_paths ~/github/scripts
+set -u fish_user_paths $fish_user_paths ~/github/scripts ~/.gem/ruby/2.0.0/bin
 set -x EDITOR vim
 set -x VISUAL vim
 set -x BROWSER chromium
