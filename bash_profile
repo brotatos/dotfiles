@@ -4,7 +4,7 @@
 ### Aliases
 
 # Color LS
-colorflag="-G"
+colorflag="--color=auto"
 alias ls="command ls ${colorflag}"
 alias l="ls -lF ${colorflag}" # all files, in long format
 alias la="ls -laF ${colorflag}" # all files inc dotfiles, in long format
