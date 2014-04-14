@@ -1,3 +1,6 @@
+# Set the color command to pink.
+set fish_color_command d787ff
+set -u fish_user_paths $fish_user_paths ~/github/scripts ~/.gem/ruby/2.0.0/bin
 set -x EDITOR vim
 set -x VISUAL vim
 set -x BROWSER chromium
@@ -43,7 +46,7 @@ function fish_prompt
   end
 
   echo -n -s $green(hostname|cut -d . -f 1) ':' $cwd $git_info
-  echo -n -s ' '$arrow ' '$normal
+  echo -n -s ' '$arrow ' ' $normal
 end
 
 function reload_fish
