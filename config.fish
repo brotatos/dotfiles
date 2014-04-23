@@ -1,4 +1,22 @@
 # Set the color command to pink.
+if test -d /usr/bin/siteperl
+   set -x PATH $PATH /usr/bin/siteperl
+end
+if test -d /usr/lib/perl5/site_perl/bin
+   set -x PATH $PATH /usr/lib/perl5/site_perl/bin
+end
+
+if test -d /usr/bin/vendor_perl
+   set -x PATH $PATH /usr/bin/vendor_perl
+end
+if test -d /usr/bin/vendor_perl/bin
+   set -x PATH $PATH /usr/bin/vendor_perl/bin
+end
+
+if test -d /usr/bin/core_perl
+   set -x PATH $PATH /usr/bin/core_perl
+end
+
 set fish_color_command d787ff
 set -u fish_user_paths $fish_user_paths ~/github/scripts ~/.gem/ruby/2.0.0/bin
 set -x EDITOR vim
