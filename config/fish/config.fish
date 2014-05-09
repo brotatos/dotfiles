@@ -192,3 +192,23 @@ function gstatus
       end
    end
 end function
+
+function newline
+   od -bc $argv
+end function
+
+function style
+   java -jar ~/Dropbox/CStyle.jar $argv
+end function
+
+function compare
+   ./Compress -sct $argv > mine; ./providedCompress -sct $argv > his; colordiff mine his;
+end function
+
+function comp
+   make
+   echo -e "\nmine:"
+   ./Compress -s $argv $argv
+   echo -e "\nStaley:"
+   ./StaleyLZWCmp -s $argv $argv
+end function
