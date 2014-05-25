@@ -194,6 +194,16 @@ function compare
    colordiff mine his
 end function
 
+function compareLZWOut
+   make
+   ./Compress -rsct $argv > mine
+   mv $argv.Z mine.Z
+   ./StaleyLZWCmp -rsct $argv > his
+   mv $argv.Z his.Z
+   colordiff mine his
+   colordiff mine.Z his.Z
+end function
+
 function compareOut
    make
    ./Compress $argv
