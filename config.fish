@@ -226,3 +226,8 @@ function compareLZW
    ./StaleyLZWCmp -s $argv > his
    colordiff mine his
 end function
+
+function timeit
+   make
+   bash -c "(time ./StaleyStress) > curTime 2>&1"
+end function
