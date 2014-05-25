@@ -188,13 +188,31 @@ function style
 end function
 
 function compare
-   ./Compress -sct $argv > mine; ./providedCompress -sct $argv > his; colordiff mine his;
+   make
+   ./Compress -rsct $argv > mine
+   ./providedCompress -rsct $argv > his
+   colordiff mine his
+end function
+
+function compareOut
+   make
+   ./Compress $argv
+   mv $argv.Z mine.Z
+   ./providedCompress $argv
+   mv $argv.Z his.Z
+   colordiff mine.Z his.Z
 end function
 
 function comp
    make
-   echo -e "\nmine:"
-   ./Compress -s $argv $argv
-   echo -e "\nStaley:"
-   ./StaleyLZWCmp -s $argv $argv
+   ./Compress -s $argv > mine
+   ./StaleyCompress -s $argv > his
+   colordiff mine his
+end function
+
+function compareLZW
+   make
+   ./Compress -s $argv > mine
+   ./StaleyLZWCmp -s $argv > his
+   colordiff mine his
 end function
