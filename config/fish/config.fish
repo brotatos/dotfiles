@@ -1,36 +1,22 @@
-# Regular syntax highlighting colors
-set fish_color_normal normal
-set fish_color_param 00afff cyan
-set fish_color_redirection normal
-set fish_color_comment red
-set fish_color_error red --bold
-set fish_color_escape cyan
-set fish_color_operator cyan
-set fish_color_quote brown
-set fish_color_autosuggestion 555 yellow
-set fish_color_valid_path --underline
-
-set fish_color_cwd green
-set fish_color_cwd_root red
-
-# Background color for matching quotes and parenthesis
-set fish_color_match cyan
-
-# Background color for search matches
-set fish_color_search_match --background=purple
-
-# Pager colors
-set fish_pager_color_prefix cyan
-set fish_pager_color_completion normal
-set fish_pager_color_description 555 yellow
-set fish_pager_color_progress cyan
-
-#
-# Directory history colors
-#
-set fish_color_history_current cyan
-
 # Set the color command to pink.
+if test -d /usr/bin/siteperl
+   set -x PATH $PATH /usr/bin/siteperl
+end
+if test -d /usr/lib/perl5/site_perl/bin
+   set -x PATH $PATH /usr/lib/perl5/site_perl/bin
+end
+
+if test -d /usr/bin/vendor_perl
+   set -x PATH $PATH /usr/bin/vendor_perl
+end
+if test -d /usr/bin/vendor_perl/bin
+   set -x PATH $PATH /usr/bin/vendor_perl/bin
+end
+
+if test -d /usr/bin/core_perl
+   set -x PATH $PATH /usr/bin/core_perl
+end
+
 set fish_color_command d787ff
 set -u fish_user_paths $fish_user_paths ~/github/scripts ~/.gem/ruby/2.0.0/bin
 set -x EDITOR vim
@@ -202,13 +188,46 @@ function style
 end function
 
 function compare
-   ./Compress -sct $argv > mine; ./providedCompress -sct $argv > his; colordiff mine his;
+   make
+   ./Compress -rsct $argv > mine
+   ./providedCompress -rsct $argv > his
+   colordiff mine his
+end function
+
+function compareLZWOut
+   make
+   ./Compress -rsct $argv > mine
+   mv $argv.Z mine.Z
+   ./StaleyLZWCmp -rsct $argv > his
+   mv $argv.Z his.Z
+   colordiff mine his
+   colordiff mine.Z his.Z
+end function
+
+function compareOut
+   make
+   ./Compress $argv
+   mv $argv.Z mine.Z
+   ./providedCompress $argv
+   mv $argv.Z his.Z
+   colordiff mine.Z his.Z
 end function
 
 function comp
    make
-   echo -e "\nmine:"
-   ./Compress -s $argv $argv
-   echo -e "\nStaley:"
-   ./StaleyLZWCmp -s $argv $argv
+   ./Compress -s $argv > mine
+   ./StaleyCompress -s $argv > his
+   colordiff mine his
+end function
+
+function compareLZW
+   make
+   ./Compress -s $argv > mine
+   ./StaleyLZWCmp -s $argv > his
+   colordiff mine his
+end function
+
+function timeit
+   make
+   bash -c "(time ./StaleyStress) > curTime 2>&1"
 end function
