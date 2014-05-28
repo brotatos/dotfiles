@@ -218,6 +218,10 @@ function style
    java -jar ~/Dropbox/CStyle.jar $argv
 end function
 
+function saferun
+   ~/Dropbox/SafeRun $argv
+end function
+
 function compare
    make
    ./Compress -rsct $argv > mine
