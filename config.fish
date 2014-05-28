@@ -231,3 +231,7 @@ function timeit
    make
    bash -c "(time ./StaleyStress) > curTime 2>&1"
 end function
+
+function saferun
+   ~/Dropbox/SafeRun $argv
+end function
