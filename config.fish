@@ -235,3 +235,7 @@ end function
 function saferun
    ~/Dropbox/SafeRun $argv
 end function
+
+function myip
+   dig +short myip.opendns.com @resolver1.opendns.com
+end function
