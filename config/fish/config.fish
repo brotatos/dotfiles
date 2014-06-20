@@ -141,6 +141,10 @@ function smw
    sudo netctl start smw
 end function
 
+function con
+   sudo netctl start wlan0-RE409
+end function
+
 function home
    sudo netctl start home
 end function
@@ -163,6 +167,10 @@ end function
 
 function ls
    /usr/bin/ls --group-directories-first --color=auto $argv
+end function
+
+function la
+   /usr/bin/ls -a --group-directories-first --color=auto $argv
 end function
 
 function grep
@@ -287,4 +295,15 @@ function comp
    ./Compress -s $argv
    echo -e "\nStaley:"
    ./StaleyCompress -s $argv
+end function
+
+function sort_this
+   bash -c "LANG=C; sort -o $argv $argv"
+end function
+
+function copy_all
+   make
+   for x in (seq 8)
+      cp Calculon suite$x\_temp/
+   end
 end function
