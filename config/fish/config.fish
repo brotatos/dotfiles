@@ -307,3 +307,11 @@ function copy_all
       cp Calculon suite$x\_temp/
    end
 end function
+
+function pgup
+   sudo systemctl start postgresql
+end function
+
+function pgdown
+   sudo systemctl stop postgresql
+end function
