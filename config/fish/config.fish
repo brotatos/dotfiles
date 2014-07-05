@@ -315,3 +315,7 @@ end function
 function pgdown
    sudo systemctl stop postgresql
 end function
+
+function guest
+   sudo netctl start guest
+end function
