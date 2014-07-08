@@ -317,5 +317,5 @@ function pgdown
 end function
 
 function guest
-   sudo netctl start guest
+   sudo netctl start wlan0-Guest
 end function
