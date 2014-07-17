@@ -17,7 +17,6 @@ sh ~/.fehbg
 xsetroot -cursor_name left_ptr
 #xrdb -merge ~/.Xresources
 pulseaudio --start &
-chromium &
 termite &
 # Automatically disable the touchpad when typing. Set the idle time to .5
 # seconds.
