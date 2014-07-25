@@ -6,7 +6,7 @@
 #
 
 sleep 300s && dropbox start &
-redshift -l 35:-120 &
+redshift -l 37:-121 &
 xbindkeys &
 #xset +fp /usr/share/fonts/local/
 #xset fp rehash
