@@ -20,7 +20,7 @@ font pango:Source Code Pro 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id termite
+bindsym $mod+Return exec --no-startup-id urxvt
 
 # kill focused window
 bindsym $mod+Shift+Q kill
@@ -138,7 +138,7 @@ for_window [class="mumble"] floating enable
 for_window [class="Steam"] floating enable
 
 # programs
-bindsym $mod+z exec chromium
+bindsym $mod+z exec firefox
 bindsym $mod+y exec ~/github/scripts/yt
 bindsym $mod+i exec ~/github/scripts/imgur
 bindsym $mod+n exec scrot
