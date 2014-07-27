@@ -83,6 +83,7 @@ function fish_prompt
   set -l arrow "$red➜"
   #set -l cwd $cyan(basename (prompt_pwd))
   set -l cwd $cyan(prompt_pwd)
+  set -l pwd $cyan(pwd)
 
   if [ (_git_branch_name) ]
      set -l git_branch $blue(_git_branch_name)
@@ -95,8 +96,10 @@ function fish_prompt
      end
   end
 
-  echo -n -s $green(hostname|cut -d . -f 1) ':' $cwd $git_info
-  echo -n -s ' '$arrow ' ' $normal
+  #echo -n -s $green(hostname|cut -d . -f 1) ':' $cwd $git_info
+  echo -n -s $green(hostname|cut -d . -f 1) ':' $pwd $git_info
+  echo  ''
+  echo -n -s $arrow ' ' $normal
 end
 
 function reload_fish
