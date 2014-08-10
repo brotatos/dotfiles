@@ -3,7 +3,7 @@
 files=('bash_profile' 'bashrc' 'rtorrent.rc' 'xinitrc' 'Xresources' 'mpd'
 'mplayer' 'ncmpcpp' 'beetsconfig' 'mpdscribble' 'i3' 'livestreamerrc' 'mutt'
 'mpv' 'weechat'  'tmux.conf' 'bash_alias' 'i3status.conf' 'zsh' 'zshrc'
-'vimperatorrc' 'zprofile' 'pentadactylrc' 'xbindkeysrc')
+'vimperatorrc' 'zprofile' 'pentadactylrc' 'xbindkeysrc' 'dircolors.256')
 
 for i in "${files[@]}"; do
    rm -r ~/.$i
