@@ -15,11 +15,11 @@ URxvt.scrollBar    :  false
 URxvt.perl-ext-common      : default,url-select,keyboard-select, matcher
 URxvt.matcher.button       : 1
 URxvt.keysym.M-u           : perl:url-select:select_next
-URxvt.url-select.launcher  : /usr/bin/firefox
+URxvt.url-select.launcher  : /usr/bin/chromium
 URxvt.url-select.underline : true
 URxvt.keysym.M-Escape      : perl:keyboard-select:activate
 URxvt.keysym.M-s           : perl:keyboard-select:search
-URxvt.url-launcher         : /usr/bin/firefox
+URxvt.url-launcher         : /usr/bin/chromium
 
 ! Effects
 ! *fading    :  40
