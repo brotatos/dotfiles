@@ -18,5 +18,5 @@ if [ ! -d ~/.config/fish ]; then
    mkdir -p ~/.config/fish
 fi
 
-ln -sf "$PWD"/termite.cfg ~/.config/termite/config
-ln -sf "$PWD"/config/config.fish ~/.config/fish/config.fish
+ln -sf "$PWD/config/termite/termite.cfg" "$HOME/.config/termite/config"
+ln -sf "$PWD/config/fish/config.fish" ~/.config/fish/config.fish
