@@ -139,6 +139,7 @@ for_window [class="Steam"] floating enable
 
 # programs
 bindsym $mod+z exec chromium
+bindsym $mod+shift+z exec chromium --incognito
 bindsym $mod+y exec ~/github/scripts/yt
 bindsym $mod+i exec ~/github/scripts/imgur
 bindsym $mod+n exec scrot
