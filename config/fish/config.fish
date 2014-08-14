@@ -337,8 +337,6 @@ function _dircolors_set_256_color
 end
 
 switch (echo $TERM)
-    case linux
-        _dircolors_set_ansi_color
     case '*'
         _dircolors_set_256_color
 end
