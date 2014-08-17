@@ -203,3 +203,5 @@ bar {
                 urgent_workspace #ffffff #900000
         }
 }
+
+exec --no-startup-id nm-applet

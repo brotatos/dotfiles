@@ -20,7 +20,7 @@
 ##################
 
 # Specify default video driver (see -vo help for a list).
-#vo=vdpau
+vo=opengl
 
 # Start in fullscreen mode by default.
 #fs=yes

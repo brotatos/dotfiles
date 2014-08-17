@@ -19,7 +19,8 @@ pulseaudio --start &
 # seconds.
 #syndaemon -k -i .5 -d
 #/usr/bin/touchpadtoggle
-urxvtd -q -o -f
-urxvt &
+#urxvtd -q -o -f
+#urxvt &
+termite &
 
 exec /usr/bin/i3
