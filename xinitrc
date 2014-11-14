@@ -5,7 +5,7 @@
 # Executed by startx (run your window manager from here)
 #
 
-sleep 100s && dropbox start &
+sleep 10s && dropbox start &
 pulseaudio --start
 redshift -l 35:-120 &
 sh ~/.fehbg
