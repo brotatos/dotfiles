@@ -1,4 +1,9 @@
-#!/bin/sh
+#!/bin/bash
+alias set-debug="DEBUG_MALLOC='foo'; export DEBUG_MALLOC";
+alias set-lib="LD_LIBRARY_PATH=$PWD/lib:$PWD/lib64:$LD_LIBRARY_PATH; export LD_LIBRARY_PATH"
+alias set-nico="LD_LIBRARY_PATH=; export LD_LIBRARY_PATH; LD_LIBRARY_PATH=$PWD/nico/lib:$PWD/nico/lib64:$LD_LIBRARY_PATH; export LD_LIBRARY_PATH"
+#alias set_lib="LD_LIBRARY_PATH=$PWD/lib:$LD_LIBRARY_PATH; export LD_LIBRARY_PATH"
+
 alias diff="colordiff"
 alias ls='ls --color=auto'
 
@@ -12,9 +17,13 @@ alias suspend="sudo pm-suspend"
 alias pinstall="sudo pacman -S"
 alias update="sudo pacman -Syu"
 alias updatef="sudo pacman -Syyuu"
-alias updatee="sudo pacman -Syu; cower -uddv"
+alias updatee="sudo pacman -Syu; cower -uv"
 
 alias sprunge="curl -F 'sprunge=<-' http://sprunge.us"
 
 alias omup="omup -s"
 
+#~/github/bin/
+
+alias screenshot="~/github/scripts/screenshot"
+alias imgur="~/github/scripts/imgur"
