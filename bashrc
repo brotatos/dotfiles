@@ -17,9 +17,10 @@
 #
 #export EDITOR="/usr/bin/vim"
 #
-#if [ -f ~/.bash_alias ]; then
-#    source ~/.bash_alias
-#fi
-#
+if [ -f ~/.bash_alias ]; then
+    source ~/.bash_alias
+fi
+
 
 [ -n "$PS1" ] && source ~/.bash_profile
+source ~/.bash_prompt

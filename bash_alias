@@ -1,10 +1,15 @@
 #!/bin/bash
+alias set-debug="DEBUG_MALLOC='foo'; export DEBUG_MALLOC";
+alias set-lib="LD_LIBRARY_PATH=$PWD/lib:$PWD/lib64:$LD_LIBRARY_PATH; export LD_LIBRARY_PATH"
+alias set-nico="LD_LIBRARY_PATH=; export LD_LIBRARY_PATH; LD_LIBRARY_PATH=$PWD/nico/lib:$PWD/nico/lib64:$LD_LIBRARY_PATH; export LD_LIBRARY_PATH"
+#alias set_lib="LD_LIBRARY_PATH=$PWD/lib:$LD_LIBRARY_PATH; export LD_LIBRARY_PATH"
+
 alias diff="colordiff"
 alias ls='ls --color=auto'
 
 alias gc="ping -c 3 google.com"
 
-alias reconnect="sudo netcfg -r home" 
+alias reconnect="sudo netcfg -r home"
 alias shutdown="sudo systemctl poweroff"
 alias reboot="sudo systemctl reboot"
 alias suspend="sudo pm-suspend"
