@@ -1,6 +1,6 @@
 # Set the color command to pink.
 set -x GOPATH $HOME/go
-set -x PATH $PATH /home/robin/.gem/ruby/2.1.0/bin
+set -x PATH $PATH /home/robin/.gem/ruby/2.1.0/bin ~/github/scripts
 if test -d /usr/bin/siteperl
    set -x PATH $PATH /usr/bin/siteperl
 end
