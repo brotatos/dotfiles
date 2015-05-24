@@ -9,6 +9,9 @@ sleep 10s && dropbox start &
 pulseaudio --start
 redshift -l 35:-120 &
 sh ~/.fehbg
+xset s off
+xset s noblank
+xset -dpms
 xset +fp /usr/share/fonts/local/
 xset fp rehash
 unclutter & > /dev/null
