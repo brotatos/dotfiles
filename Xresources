@@ -1,7 +1,7 @@
 ! General
 
-URxvt*font         :  xft:DejaVuSansMono:pixelsize=14,xft:Symbola:pixelsize=10
-URxvt*boldFont     :  xft:DejaVuSansMono:pixelsize=14:bold,xft:Symbola:pixelsize=6:bold
+URxvt*font         :  xft:SourceCodePro:pixelsize=14,xft:Symbola:pixelsize=10
+URxvt*boldFont     :  xft:SourceCodePro:pixelsize=14:bold,xft:Symbola:pixelsize=6:bold
 !URxvt*font        :  -*-terminus-*-*-*-*-*-*-*-*-*-*-*-*
 !URxvt*boldFont    :  -*-terminus-bold-*-*-*-*-*-*-*-*-*-*-*
 urxvt.italicFont   :  xft:Bitstream Vera Sans Mono:italic:autohint=true
