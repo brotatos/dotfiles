@@ -9,7 +9,7 @@ files=('bash_profile' 'bashrc' 'rtorrent.rc' 'xinitrc' 'Xresources' 'mpd'
 
 for i in "${files[@]}"; do
     rm -rf "~/.$i"
-    ln -sf "~/github/dotfiles/$i" "~/.$i"
+    ln -sf "$HOME/github/dotfiles/$i" "$HOME/.$i"
 done
 
 mkdir -p ~/.config/termite
