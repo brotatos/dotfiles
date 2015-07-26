@@ -97,7 +97,8 @@ function pysource
 end function
 
 function rm
-   mv -v -f $argv ~/dump
+   rsync -av $argv ~/dump
+   /bin/rm -rf $argv
 end function
 
 function l
