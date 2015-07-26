@@ -1,6 +1,11 @@
 ##!/bin/sh
 #[[ -f $HOME/.bashrc ]] && . $HOME/.bashrc
 
+if [ -z "$SSH_AUTH_SOCK" ] ; then
+   eval `ssh-agent -s`
+   ssh-add
+fi
+
 ### Aliases
 
 # Color LS
@@ -19,7 +24,7 @@ alias .....="cd ../../../.."
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
 
-# Git 
+# Git
 # You must install Git first - ""
 alias gs='git status'
 alias ga='git add .'
