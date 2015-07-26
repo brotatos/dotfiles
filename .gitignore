@@ -24,6 +24,7 @@ mutt/cache/*
 mutt/mailboxes
 
 #weechat
+weechat/weechat_crash*
 weechat/logs
 weechat/irc.conf
 weechat/weechat.log
