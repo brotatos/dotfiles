@@ -1,4 +1,4 @@
-directory: ~/music
+directory: /mnt/media/music
 library: ~/.beetsmusic.blb
 plugins: bpd
 
@@ -8,4 +8,5 @@ import:
     move: yes
     write: yes
 threaded: yes
-color: yes
+ui:
+   color: yes
