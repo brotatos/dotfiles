@@ -1,3 +1,4 @@
+set PATH /usr/local/sbin $PATH
 # Regular syntax highlighting colors
 set fish_color_normal normal
 set fish_color_param 00afff cyan
