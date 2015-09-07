@@ -4,8 +4,31 @@ alias set-lib="LD_LIBRARY_PATH=$PWD/lib:$PWD/lib64:$LD_LIBRARY_PATH; export LD_L
 alias set-nico="LD_LIBRARY_PATH=; export LD_LIBRARY_PATH; LD_LIBRARY_PATH=$PWD/nico/lib:$PWD/nico/lib64:$LD_LIBRARY_PATH; export LD_LIBRARY_PATH"
 #alias set_lib="LD_LIBRARY_PATH=$PWD/lib:$LD_LIBRARY_PATH; export LD_LIBRARY_PATH"
 
+alias ls="command ls"
+alias l="ls -lF" # all files, in long format
+alias la="ls -laF" # all files inc dotfiles, in long format
+alias lsd='ls -lF | grep "^d"' # only directories
+
+# Quicker navigation
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
+# Enable aliases to be sudo’ed
+alias sudo='sudo '
+
+# Git
+# You must install Git first - ""
+alias gs='git status'
+alias ga='git add .'
+alias gc='git commit -m' # requires you to type a commit message
+alias gp='git push'
+
+# init z! (https://github.com/rupa/z)
+#. ~/z.sh
+
 alias diff="colordiff"
-alias ls='ls --color=auto'
 
 alias gc="ping -c 3 google.com"
 
