@@ -110,10 +110,6 @@ function la
    ls -a $argv
 end function
 
-function grep
-   grep --colour=auto $argv
-end function
-
 function sprunge
    curl -F 'sprunge=<-' http://sprunge.us
 end function
