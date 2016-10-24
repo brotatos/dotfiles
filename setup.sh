@@ -9,7 +9,7 @@ files=('bash_profile' 'bash_prompt' 'bashrc' 'rtorrent.rc' 'xinitrc' 'Xresources
 
 for i in "${files[@]}"; do
     rm -rf "~/.$i"
-    ln -sf "$HOME/github/dotfiles/$i" "$HOME/.$i"
+    ln -sf "$HOME/github/dotfiles/$i" "$HOME/.$i" # this line is causing dupes
 done
 
 mkdir -p ~/.config/termite

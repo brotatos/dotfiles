@@ -84,30 +84,9 @@ function fish_prompt
   echo -n -s $arrow ' ' $normal
 end
 
-function reload_fish
-   . ~/.config/fish/config.fish
-end
-
-# Python
-function pysource
-   source venv/bin/activate.fish
-end function
-
-function pysource
-   . venv/bin/activate.fish
-end function
-
 function rm
    rsync -av $argv ~/dump
    /bin/rm -rf $argv
-end function
-
-function l
-   ls $argv
-end function
-
-function la
-   ls -a $argv
 end function
 
 function sprunge
@@ -134,3 +113,11 @@ function gstatus
       end
    end
 end function
+
+alias v="vim"
+alias la="ls -a"
+alias l="ls"
+alias pysource=". venv/bin/activate.fish"
+alias reload_fish=". ~/.config/fish/config.fish"
+alias g="git"
+alias gg="git grep -n"
