@@ -31,14 +31,13 @@ set fish_pager_color_progress cyan
 set fish_color_history_current cyan
 
 set fish_color_command d787ff
-set -u fish_user_paths $fish_user_paths ~/github/scripts ~/.gem/ruby/2.0.0/bin
+set -u fish_user_paths $fish_user_paths ~/github/scripts
 set -x EDITOR vim
 set -x VISUAL vim
 set -x BROWSER chromium
 set -x GIT_EDITOR vim
 set -x SUDO_EDITOR vim
 
-set fish_greeting ""
 set fish_git_dirty_color red
 set fish_git_not_dirty_color green
 
