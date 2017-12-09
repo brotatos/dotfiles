@@ -34,18 +34,3 @@ autoload -Uz compinit
 compinit
 autoload -U promptinit
 promptinit
-
-# aur
-source /usr/share/zsh/plugins/zsh-syntax-highlight/zsh-syntax-highlighting.zsh
-
-function work () {
-   # Turn off laptop monitor and just use external.
-   xrandr --output HDMI1 --auto --right-of LVDS1
-   xrandr --output LVDS1 --off
-   /usr/bin/touchpadtoggle
-   sudo netctl start work
-}
-
-function squash () {
-   git rebase -i HEAD~"$1"
-}
