@@ -1,13 +1,12 @@
-export PATH=/home/robin/.gem/ruby/2.0.0/bin:$PATH
-. /etc/profile.d/z.sh
-for f in $HOME/.zsh/*.zsh(on); do
-    . $f
-done
 export EDITOR=vim
 export VISUAL=vim
 export BROWSER=chromium
 export GIT_EDITOR=$EDITOR
 export SUDO_EDITOR=$EDITOR
+
+for f in $HOME/.zsh/*.zsh(on); do
+    . $f
+done
 
 # modules
 zmodload zsh/complist
