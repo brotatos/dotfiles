@@ -15,7 +15,9 @@ done
 mkdir -p ~/.config/termite
 mkdir -p ~/.config/beets
 mkdir -p ~/.config/fish
+mkdir -p ~/.config/nvim
 
 ln -sf "$PWD"/termite.cfg ~/.config/termite/config
 ln -sf "$PWD"/beetsconfig ~/.config/beets/config.yaml
 ln -sf "$PWD"/config.fish ~/.config/fish/config.fish
+ln -sf "$PWD"/init.vim ~/.config/nvim/init.vim
