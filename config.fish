@@ -1,3 +1,22 @@
+# Set the color command to pink.
+set -x PATH /usr/local/bin $PATH /home/robin/.gem/ruby/2.1.0/bin
+if test -d /usr/bin/siteperl
+   set -x PATH $PATH /usr/bin/siteperl
+end
+if test -d /usr/lib/perl5/site_perl/bin
+   set -x PATH $PATH /usr/lib/perl5/site_perl/bin
+end
+
+if test -d /usr/bin/vendor_perl
+   set -x PATH $PATH /usr/bin/vendor_perl
+end
+if test -d /usr/bin/vendor_perl/bin
+   set -x PATH $PATH /usr/bin/vendor_perl/bin
+end
+
+if test -d /usr/bin/core_perl
+   set -x PATH $PATH /usr/bin/core_perl
+end
 # Regular syntax highlighting colors
 set fish_color_normal normal
 set fish_color_param 00afff cyan
@@ -34,7 +53,7 @@ set fish_color_command d787ff
 set -u fish_user_paths $fish_user_paths ~/github/scripts
 set -x EDITOR vim
 set -x VISUAL vim
-set -x BROWSER chromium
+set -x BROWSER google-chrome-stable
 set -x GIT_EDITOR vim
 set -x SUDO_EDITOR vim
 
@@ -86,6 +105,10 @@ function reload_fish
    source ~/.config/fish/config.fish
 end
 
+function rf
+   source ~/.config/fish/config.fish
+end
+
 # Systemctl
 function shutdown
    systemctl poweroff
@@ -105,8 +128,20 @@ function pacman
 end
 
 function update
+   set current (pwd)
+   cd ~/workspace/packages
    sudo pacman --color=auto -Syu
-   meat -u
+   auracle sync
+
+   for i in (auracle sync);
+      set package (echo $i | awk -F ' ' '{print $1}')
+      auracle download $package
+      cd ~/workspace/packages/$package
+      makepkg -si
+      cd ..
+   end
+
+   cd $pwd
 end
 
 # Python
@@ -171,3 +206,4 @@ end function
 
 alias rf="reload_fish"
 
+alias spotify="spotify --force-device-scale-factor=1.5 $argv"

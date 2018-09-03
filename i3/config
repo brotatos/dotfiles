@@ -13,13 +13,13 @@ set $mod Mod4
 
 # font for window titles. ISO 10646 = Unicode
 #font -*-terminus-medium-r-normal-*-12-120-72-72-c-60-iso10646-1
-font pango:Source Code Pro 10
+font pango:Source Code Pro 12
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id termite
+bindsym $mod+Return exec --no-startup-id urxvtc
 
 # kill focused window
 bindsym $mod+Shift+Q kill
@@ -120,9 +120,9 @@ bindsym XF86_AudioMute exec amixer -q set Master toggle
 bindsym $mod+x exec i3lock -c 000000
 
 # music control
-bindsym $mod+F1 exec mpc prev
-bindsym $mod+F2 exec mpc toggle
-bindsym $mod+F3 exec mpc next
+bindsym $mod+F1 exec playerctl play-pause
+bindsym $mod+F2 exec playerctl next
+bindsym $mod+F3 exec playerctl previous
 
 # mouse
 focus_follows_mouse no
@@ -131,6 +131,7 @@ focus_follows_mouse no
 bindsym $mod+Tab workspace back_and_forth
 new_window normal
 for_window [class="Firefox"] border normal
+for_window [class="Google-chrome"] border pixel 3
 for_window [class="Pavucontrol"] border normal
 for_window [class="Gajim"] border normal
 for_window [class="Vimperator"] border normal
@@ -142,7 +143,7 @@ for_window [class="Steam"] floating enable
 
 # programs
 #bindsym $mod+z exec firefox
-bindsym $mod+z exec chromium
+bindsym $mod+z exec google-chrome-stable
 bindsym $mod+y exec ~/github/scripts/yt
 bindsym $mod+i exec ~/github/scripts/imgur
 bindsym $mod+n exec scrot
@@ -206,3 +207,8 @@ bar {
                 urgent_workspace #ffffff #900000
         }
 }
+
+workspace 1 output DVI-D-0
+workspace 2 output DP-0
+
+exec --no-startup-id i3-msg "workspace 2; exec /usr/bin/google-chrome-stable; workspace 1"
