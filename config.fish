@@ -49,6 +49,8 @@ set fish_pager_color_progress cyan
 #
 set fish_color_history_current cyan
 
+set fish_greeting ""
+
 set fish_color_command d787ff
 set -u fish_user_paths $fish_user_paths ~/github/scripts
 set -x EDITOR vim
