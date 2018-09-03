@@ -1,7 +1,7 @@
 ! General
 
-URxvt*font         :  xft:SourceCodePro:pixelsize=14,xft:Symbola:pixelsize=10
-URxvt*boldFont     :  xft:SourceCodePro:pixelsize=14:bold,xft:Symbola:pixelsize=6:bold
+URxvt*font         :  xft:SourceCodePro:pixelsize=22,xft:Symbola:pixelsize=18
+URxvt*boldFont     :  xft:SourceCodePro:pixelsize=22:bold,xft:Symbola:pixelsize=18:bold
 !URxvt*font        :  -*-terminus-*-*-*-*-*-*-*-*-*-*-*-*
 !URxvt*boldFont    :  -*-terminus-bold-*-*-*-*-*-*-*-*-*-*-*
 urxvt.italicFont   :  xft:Bitstream Vera Sans Mono:italic:autohint=true
@@ -44,3 +44,6 @@ URxvt*color3      :  #ffb964
 URxvt*color5      :  #eeeeec
 URxvt*color14     :  #8fbfdc
 URxvt*color8      :  #555753
+
+! X org
+Xft.dpi: 144
