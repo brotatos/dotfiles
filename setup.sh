@@ -8,7 +8,6 @@ files=('bash_profile' 'bashrc' 'rtorrent.rc' 'xinitrc' 'Xresources' 'mpd'
 'pentadactylrc' 'mpv' 'zsh' 'Xmodmap')
 
 for i in "${files[@]}"; do
-    rm -rf "~/.$i"
     ln -sf "$PWD/$i" "$HOME/.$i"
 done
 

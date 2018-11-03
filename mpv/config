@@ -42,10 +42,6 @@ vo=vdpau
 # Specify default audio driver (see -ao help for a list).
 ao=pulse
 
-# Enable softvol usage,
-softvol=yes
-
-
 ##################
 # other settings #
 ##################
