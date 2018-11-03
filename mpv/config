@@ -40,7 +40,7 @@ vo=vdpau
 ##################
 
 # Specify default audio driver (see -ao help for a list).
-ao=pulse
+ao=alsa
 
 ##################
 # other settings #
