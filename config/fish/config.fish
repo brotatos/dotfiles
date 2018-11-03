@@ -1,4 +1,5 @@
-# Set the color command to pink.
+source ~/.config/fish/alias.fish
+
 set -x PATH /usr/local/bin $PATH /home/robin/.gem/ruby/2.1.0/bin
 if test -d /usr/bin/siteperl
    set -x PATH $PATH /usr/bin/siteperl
@@ -206,6 +207,3 @@ function remove-branches
    git branch --merged master | grep -v "\* master" | xargs -n 1 git branch -d
 end function
 
-alias rf="reload_fish"
-
-alias spotify="spotify --force-device-scale-factor=1.5 $argv"
