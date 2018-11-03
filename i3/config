@@ -143,7 +143,7 @@ for_window [class="Steam"] floating enable
 
 # programs
 #bindsym $mod+z exec firefox
-bindsym $mod+z exec google-chrome-stable
+bindsym $mod+z exec firefox
 bindsym $mod+y exec ~/github/scripts/yt
 bindsym $mod+i exec ~/github/scripts/imgur
 bindsym $mod+n exec scrot
@@ -208,7 +208,5 @@ bar {
         }
 }
 
-workspace 1 output DVI-D-0
-workspace 2 output DP-0
-
-exec --no-startup-id i3-msg "workspace 2; exec /usr/bin/google-chrome-stable; workspace 1"
+workspace 2 output DP-1
+workspace 1 output DP-2

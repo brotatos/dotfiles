@@ -5,7 +5,7 @@
 files=('bash_profile' 'bashrc' 'rtorrent.rc' 'xinitrc' 'Xresources' 'mpd'
 'mplayer' 'ncmpcpp'  'mpdscribble' 'i3' 'livestreamerrc' 'mutt' 'weechat'
 'tmux.conf' 'bash_alias' 'i3status.conf' 'zshrc' 'vimperatorrc' 'zprofile'
-'pentadactylrc' 'mpv' 'zsh')
+'pentadactylrc' 'mpv' 'zsh' 'Xmodmap')
 
 for i in "${files[@]}"; do
     rm -rf "~/.$i"

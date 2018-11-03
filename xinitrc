@@ -5,10 +5,8 @@
 # Executed by startx (run your window manager from here)
 #
 
-xrandr --output DVI-D-0 --auto
-xrandr --output DVI-D-0 --left-of DP-0
-xrandr --output DVI-D-0 --scale 1.5x1.5 --pos 0x0
-xrandr --output DP-0 --primary --pos 3840x0
+xrandr --output DP-1 --left-of DP-0
+xrandr --output DP-2 --primary --pos 3840x0
 pulseaudio --start
 redshift -l "47.66916:-122.388690" &
 sh ~/.fehbg
@@ -26,7 +24,6 @@ xrdb -merge ~/.Xresources
 urxvtd -q -o -f
 sleep 10s && dropbox start &
 xmodmap ~/.Xmodmap
-#google-chrome-stable &
-#urxvtc &
+urxvtc &
 
 exec /usr/bin/i3
