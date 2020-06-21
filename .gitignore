@@ -19,13 +19,28 @@ ncmpcpp/error.log
 mpdscribble/mpdscribble.log
 mpdscribble/lastfm.journal
 
-#mutt
+# mutt
 mutt/cache/*
 mutt/mailboxes
 
-#weechat
+# weechat
 weechat/weechat_crash*
 weechat/logs
 weechat/irc.conf
 weechat/weechat.log
 weechat/script/plugins.xml.gz
+weechat/alias.conf
+weechat/aspell.conf
+weechat/buffers.conf
+weechat/charset.conf
+weechat/exec.conf
+weechat/iset.conf
+weechat/logger.conf
+weechat/plugins.conf
+weechat/relay.conf
+weechat/script.conf
+weechat/sec.conf
+weechat/trigger.conf
+weechat/xfer.conf
+weechat/buflist.conf
+weechat/fifo.conf
