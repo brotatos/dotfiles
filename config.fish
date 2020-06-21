@@ -3,7 +3,7 @@ source ~/.z.fish
 source /usr/local/share/chruby/chruby.fish
 source /usr/local/share/chruby/auto.fish
 chruby ruby-2.2.2
-set -u fish_user_paths ~/bin ~/github/scripts /usr/local/sbin $fish_user_paths
+set -u fish_user_paths ~/bin /usr/local/sbin $fish_user_paths
 
 set EMACS "emacsclient -t"
 set VIM "vim"
