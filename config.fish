@@ -1,43 +1,18 @@
-set PATH /usr/local/sbin $PATH
-# Regular syntax highlighting colors
-set fish_color_normal normal
-set fish_color_param 00afff cyan
-set fish_color_redirection normal
-set fish_color_comment red
-set fish_color_error red --bold
-set fish_color_escape cyan
-set fish_color_operator cyan
-set fish_color_quote brown
-set fish_color_autosuggestion 555 yellow
-set fish_color_valid_path --underline
+set -x HOMEBREW_GITHUB_API_TOKEN 382053d1b4abf1a7508c2e1250bd9658ae39c205
+source ~/.z.fish
+source /usr/local/share/chruby/chruby.fish
+source /usr/local/share/chruby/auto.fish
+chruby ruby-2.2.2
+set -u fish_user_paths ~/bin ~/github/scripts /usr/local/sbin $fish_user_paths
 
-set fish_color_cwd green
-set fish_color_cwd_root red
+set EMACS "emacsclient -t"
+set VIM "vim"
 
-# Background color for matching quotes and parenthesis
-set fish_color_match cyan
-
-# Background color for search matches
-set fish_color_search_match --background=purple
-
-# Pager colors
-set fish_pager_color_prefix cyan
-set fish_pager_color_completion normal
-set fish_pager_color_description 555 yellow
-set fish_pager_color_progress cyan
-
-#
-# Directory history colors
-#
-set fish_color_history_current cyan
-
-set fish_color_command d787ff
-set -u fish_user_paths $fish_user_paths ~/github/scripts
-set -x EDITOR vim
-set -x VISUAL vim
+set -x EDITOR $EMACS
+set -x VISUAL $EMACS
 set -x BROWSER chromium
-set -x GIT_EDITOR vim
-set -x SUDO_EDITOR vim
+set -x GIT_EDITOR $EMACS
+set -x SUDO_EDITOR $EMACS
 
 set fish_greeting ""
 set fish_git_dirty_color red
@@ -63,7 +38,6 @@ function fish_prompt
   set -l normal (set_color normal)
 
   set -l arrow "$red➜"
-  #set -l cwd $cyan(basename (prompt_pwd))
   set -l cwd $cyan(prompt_pwd)
   set -l pwd $cyan(pwd)
 
@@ -78,24 +52,13 @@ function fish_prompt
      end
   end
 
-  #echo -n -s $green(hostname|cut -d . -f 1) ':' $cwd $git_info
-  echo -n -s $green(hostname|cut -d . -f 1) ':' $pwd $git_info
+  echo -n -s '[' (date "+%T") '] '$green(hostname|cut -d . -f 1) ':' $cwd $git_info
   echo  ''
   echo -n -s $arrow ' ' $normal
 end
 
-function rm
-   rsync -av $argv ~/dump
-   /bin/rm -rf $argv
-end function
-
 function sprunge
    curl -F 'sprunge=<-' http://sprunge.us
-end function
-
-function program
-   djtgcfg enum
-   djtgcfg prog -d Nexys2 -i 0 -f $argv --verbose
 end function
 
 # git
@@ -114,10 +77,20 @@ function gstatus
    end
 end function
 
-alias v="vim"
-alias la="ls -a"
-alias l="ls"
+function my
+   mysql --defaults-file=~/.my.cnf
+end
+
+alias vim="$EMACS"
+alias v="$EMACS"
+alias e="emacsclient -nc"
+alias e="$EMACS"
+alias l="/usr/local/bin/gls --color -h --group-directories-first"
+alias ls="l"
+alias la="l -a"
 alias pysource=". venv/bin/activate.fish"
 alias reload_fish=". ~/.config/fish/config.fish"
 alias g="git"
 alias gg="git grep -n"
+alias rf="reload_fish"
+alias rm="rmtrash"
