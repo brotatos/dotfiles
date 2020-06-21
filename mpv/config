@@ -13,6 +13,63 @@
 #
 # Profiles should be placed at the bottom of the configuration file to ensure
 # that settings wanted as defaults are not restricted to specific profiles.
+#
+save-position-on-quit
+#############
+# OSD / OSC #
+#############
+
+osd-level=1                             # enable osd and display --osd-status-msg on interaction
+osd-duration=2500                       # hide the osd after x ms
+osd-status-msg='${time-pos} / ${duration}${?percent-pos:　(${percent-pos}%)}${?frame-drop-count:${!frame-drop-count==0:　Dropped: ${frame-drop-count}}}\n${?chapter:Chapter: ${chapter}}'
+
+osd-font='Source Sans Pro'
+osd-font-size=32
+osd-color='#CCFFFFFF'                   # ARGB format
+osd-border-color='#DD322640'            # ARGB format
+#osd-shadow-offset=1                    # pixel width for osd text and progress bar
+osd-bar-align-y=0                       # progress bar y alignment (-1 top, 0 centered, 1 bottom)
+osd-border-size=2                       # size for osd text and progress bar
+osd-bar-h=2                             # height of osd bar as a fractional percentage of your screen height
+osd-bar-w=60                            # width of " " "
+
+
+#############
+# Subtitles #
+#############
+
+sub-auto=fuzzy                          # external subs don't have to match the file name exactly to autoload
+sub-file-paths-append=ass               # search for external subs in these relative subdirectories
+sub-file-paths-append=srt
+sub-file-paths-append=sub
+sub-file-paths-append=subs
+sub-file-paths-append=subtitles
+
+demuxer-mkv-subtitle-preroll            # try to correctly show embedded subs when seeking
+embeddedfonts=yes                       # use embedded fonts for SSA/ASS subs
+sub-fix-timing=no                       # do not try to fix gaps (which might make it worse in some cases)
+sub-ass-force-style=Kerning=yes         # allows you to override style parameters of ASS scripts
+sub-use-margins
+sub-ass-force-margins
+
+# the following options only apply to subtitles without own styling (i.e. not ASS but e.g. SRT)
+sub-font="Source Sans Pro Semibold"
+sub-font-size=36
+sub-color="#FFFFFFFF"
+sub-border-color="#FF262626"
+sub-border-size=3.2
+sub-shadow-offset=1
+sub-shadow-color="#33000000"
+sub-spacing=0.5
+
+
+#############
+# Languages #
+#############
+
+slang=enm,en,eng,de,deu,ger             # automatically select these subtitles (decreasing priority)
+alang=ja,jp,jpn,en,eng,de,deu,ger       # automatically select these audio tracks (decreasing priority)
+
 
 
 ##################
@@ -20,7 +77,8 @@
 ##################
 
 # Specify default video driver (see -vo help for a list).
-vo=vdpau
+#vo=vdpau
+input-ipc-server=/tmp/mpvpipe
 
 # Start in fullscreen mode by default.
 #fs=yes
@@ -38,12 +96,6 @@ vo=vdpau
 ##################
 # audio settings #
 ##################
-
-# Specify default audio driver (see -ao help for a list).
-ao=pulse
-
-# Enable softvol usage,
-softvol=yes
 
 
 ##################
