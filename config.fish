@@ -1,9 +1,5 @@
 set -x HOMEBREW_GITHUB_API_TOKEN 382053d1b4abf1a7508c2e1250bd9658ae39c205
 source ~/.z.fish
-source /usr/local/share/chruby/chruby.fish
-source /usr/local/share/chruby/auto.fish
-chruby ruby-2.2.2
-set -u fish_user_paths ~/bin /usr/local/sbin $fish_user_paths
 
 set EMACS "emacsclient -t"
 set VIM "vim"
