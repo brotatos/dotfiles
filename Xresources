@@ -2,8 +2,6 @@
 
 URxvt*font         :  xft:SourceCodePro:pixelsize=22,xft:Symbola:pixelsize=18
 URxvt*boldFont     :  xft:SourceCodePro:pixelsize=22:bold,xft:Symbola:pixelsize=18:bold
-!URxvt*font        :  -*-terminus-*-*-*-*-*-*-*-*-*-*-*-*
-!URxvt*boldFont    :  -*-terminus-bold-*-*-*-*-*-*-*-*-*-*-*
 urxvt.italicFont   :  xft:Bitstream Vera Sans Mono:italic:autohint=true
 URxvt*urgentOnBell :  true
 URxvt*termname     :  screen-256color
@@ -21,29 +19,54 @@ URxvt.keysym.M-Escape           :  perl:keyboard-select:activate
 URxvt.keysym.M-s                :  perl:keyboard-select:search
 
 ! Effects
-*fading    :  20
-*fadeColor :  #0d0d0d
+! *fading    :  20
+! *fadeColor :  #0d0d0d
 
 ! Colors
 
-URxvt*cursorColor :  #cf6a4c
-URxvt*background  :  #151515
-URxvt*foreground  :  #d7d7d7
-URxvt*color11     :  #ffb96c
-URxvt*color6      :  #8fbfdc
-URxvt*color2      :  #799d6a
-URxvt*color10     :  #799d6a
-URxvt*color9      :  #cf6a4c
-URxvt*color7      :  #303030
-URxvt*color12     :  #8197bf
-URxvt*color1      :  #cf6a4c
-URxvt*color4      :  #8197bf
-URxvt*color13     :  #ff3b77
-URxvt*color15     :  #eeeeec
-URxvt*color3      :  #ffb964
-URxvt*color5      :  #eeeeec
-URxvt*color14     :  #8fbfdc
-URxvt*color8      :  #555753
+*.foreground:  #9cc2c3
+*.background:  #001e27
+*.cursorColor: #f34b00
+!
+! Black
+*.color0:      #002831
+*.color8:      #006488
+!
+! Red
+*.color1:      #d11c24
+*.color9:      #f5163b
+!
+! Green
+*.color2:      #6cbe6c
+*.color10:     #51ef84
+!
+! Yellow
+*.color3:      #a57706
+*.color11:     #b27e28
+!
+! Blue
+*.color4:      #2176c7
+*.color12:     #178ec8
+!
+! Magenta
+*.color5:      #c61c6f
+*.color13:     #e24d8e
+!
+! Cyan
+*.color6:      #259286
+*.color14:     #00b39e
+!
+! White
+*.color7:      #eae3cb
+*.color15:     #fcf4dc
+!
+! Bold, Italic, Underline
+*.colorBD:     #b5d5d3
+!*.colorIT:
+!*.colorUL:
 
 ! X org
-Xft.dpi: 144
+Xft.dpi: 100
+
+
+Xcursor.size: 64

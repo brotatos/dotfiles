@@ -5,9 +5,6 @@
 # Executed by startx (run your window manager from here)
 #
 
-xrandr --output DP-1 --left-of DP-0
-xrandr --output DP-2 --primary --pos 3840x0
-pulseaudio --start
 redshift -l "47.66916:-122.388690" &
 sh ~/.fehbg
 xset s off
@@ -22,8 +19,12 @@ ps -C mpdscribble &>/dev/null || mpdscribble
 xsetroot -cursor_name left_ptr
 xrdb -merge ~/.Xresources
 urxvtd -q -o -f
-sleep 10s && dropbox start &
+#sleep 10s && dropbox start &
 xmodmap ~/.Xmodmap
-urxvtc &
+opensnitch-ui &
+
 
 exec /usr/bin/i3
+#exec cinnamon-session
+#exec i3-gnome
+#exec cinnamon-session-i3
